@@ -1,0 +1,9 @@
+fas,fa fa-chess
+fas,fa fa-chess-bishop
+fas,fa fa-chess-board
+fas,fa fa-chess-king
+fas,fa fa-chess-knight
+fas,fa fa-chess-pawn
+fas,fa fa-chess-queen
+fas,fa fa-chess-rook
+fas,fa fa-square-full

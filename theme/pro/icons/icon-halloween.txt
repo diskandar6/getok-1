@@ -1,0 +1,11 @@
+fas,fa fa-book-dead
+fas,fa fa-broom
+fas,fa fa-cat
+fas,fa fa-cloud-moon
+fas,fa fa-crow
+fas,fa fa-ghost
+fas,fa fa-hat-wizard
+fas,fa fa-mask
+fas,fa fa-skull-crossbones
+fas,fa fa-spider
+fas,fa fa-toilet-paper

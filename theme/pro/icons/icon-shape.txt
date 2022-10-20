@@ -1,0 +1,14 @@
+far,fas,fa fa-bookmark
+far,fas,fa fa-calendar
+fas,fa fa-certificate
+far,fas,fa fa-circle
+fas,fa fa-cloud
+far,fas,fa fa-comment
+far,fas,fa fa-file
+far,fas,fa fa-folder
+far,fas,fa fa-heart
+fas,fa fa-map-marker
+fas,fa fa-play
+fas,fa fa-shapes
+far,fas,fa fa-square
+far,fas,fa fa-star

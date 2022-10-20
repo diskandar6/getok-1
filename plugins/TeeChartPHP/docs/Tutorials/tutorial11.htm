@@ -1,0 +1,887 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="tutorial11_archivos/filelist.xml">
+<link rel=Edit-Time-Data href="tutorial11_archivos/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>TeeChart tutorial 11</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Portatil</o:Author>
+  <o:LastAuthor>pep</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>50</o:TotalTime>
+  <o:Created>2008-12-05T13:54:00Z</o:Created>
+  <o:LastSaved>2012-10-16T09:48:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>678</o:Words>
+  <o:Characters>3733</o:Characters>
+  <o:Company>...</o:Company>
+  <o:Lines>31</o:Lines>
+  <o:Paragraphs>8</o:Paragraphs>
+  <o:CharactersWithSpaces>4403</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData href="tutorial11_archivos/themedata.thmx">
+<link rel=colorSchemeMapping href="tutorial11_archivos/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>ES</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SplitPgBreakAndParaMark/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" Name="No List"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<link rel=Stylesheet type="text/css" media=all href=helpstyle.css>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1593833729 1073750107 16 0 415 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-520092929 1073806591 9 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	line-height:28.0pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:black;
+	font-weight:bold;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-margin-top-alt:auto;
+	margin-right:59.5pt;
+	mso-margin-bottom-alt:auto;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-margin-top-alt:auto;
+	margin-right:59.5pt;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:12.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:black;
+	font-weight:bold;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 4 Char";
+	mso-margin-top-alt:auto;
+	margin-right:59.5pt;
+	mso-margin-bottom-alt:auto;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:11.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	color:blue;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	color:blue;}
+p
+	{mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+address
+	{mso-style-unhide:no;
+	mso-style-link:"HTML Address Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:535.65pt;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:12.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-style:italic;}
+code
+	{mso-style-unhide:no;
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{mso-style-unhide:no;
+	mso-style-link:"HTML Preformatted Char";
+	margin-top:0cm;
+	margin-right:142.8pt;
+	margin-bottom:0cm;
+	margin-left:23.8pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:8.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Courier New";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-unhide:no;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;}
+span.HTMLAddressChar
+	{mso-style-name:"HTML Address Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML Address";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-style:italic;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#365F91;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 4";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;
+	font-style:italic;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML Preformatted";
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	mso-bidi-font-family:Consolas;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1277714576;
+	mso-list-type:hybrid;
+	mso-list-template-ids:977975484 1439885480 201981955 201981957 201981953 201981955 201981957 201981953 201981955 201981957;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Verdana","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:windowtext;}
+table.Tablanormal
+	{mso-style-name:"Tabla normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:windowtext;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=ES link=blue vlink=blue style='tab-interval:35.4pt'
+topmargin=4>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>&nbsp;
+<o:p></o:p></span></p>
+
+<table class=Tablanormal border=0 cellpadding=0 width="100%" style='width:100.0%;
+ mso-cellspacing:1.5pt;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+
+<table class=Tablanormal border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0cm;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  mso-no-proof:yes'><img width=288 height=121 id="_x0000_i1031"
+  src="timages/HeaderLogo.gif"></span><span style='font-size:9.0pt;font-family:
+  "Verdana","sans-serif"'><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.0pt;font-family:Verdana'>&nbsp; <a href="Contents.HTM">Contents&nbsp;page</a>&nbsp;<br>
+  &nbsp; <a href="Tutorial10.htm">Previous</a>&nbsp;|&nbsp;<a
+  href="Tutorial12.htm">Next</a>&nbsp;</span><span style='font-size:9.0pt;
+  font-family:Verdana'> <o:p></o:p></span></p>
+  </td>
+  <td width=20 valign=top style='width:15.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="TeeChart_tutorial_14"></a><span style='mso-fareast-font-family:
+"Times New Roman"'>Tutorial 11 – <span class=SpellE>Plug-ins</span> and extras
+    <o:p></o:p></span></h2>
+
+<div class=MsoNormal align=center style='margin-right:29.75pt;text-align:center'><span
+style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<table class=Tablanormal border=0 cellpadding=0 width="80%" style='width:80.0%;
+ mso-cellspacing:1.5pt;mso-yfti-tbllook:1184;mso-padding-alt:2.25pt 2.25pt 2.25pt 2.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span class=SpellE><b><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif"'>Contents</span></b></span><span
+  style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <h3 style='margin-right:89.25pt'><span style='mso-fareast-font-family:"Times New Roman"'><a 
+  href="#Plug-ins">TeeChart Plug-ins</a></h3>
+  <p><a href="#JoomlaPlugin">Joomla plug-in</a><br>
+  <a href="#WordPressPlugin">WordPress plug-in</a><br>
+  <a href="#DrupalPlugin">Drupal plug-in</a></p>
+  <h3 style='margin-right:89.25pt'><span style='mso-fareast-font-family:"Times New Roman"'><a
+  href="#Javascript">TeeChart JavaScript</a></h3>
+  <p><a href="#TeeChart.jswithinTeeChartforPHP">TeeChart.js within TeeChart for PHP</a><br>
+  <a href="#UsingTeeChartforJavaScript">Using TeeChart for JavaScript</a><br>
+  <a href="#CMSPlug-ins">CMS plug-ins</a></p>
+  </td>
+ </tr>
+</table>
+
+<div class=MsoNormal align=center style='margin-right:29.75pt;text-align:center'><span
+style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h3 style='margin-right:89.25pt'><a name=Plug-ins></a><span class=SpellE><span
+style='mso-bookmark:StdPrinting'><span lang=EN-US style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US'>TeeChart</span></span></span><span
+style='mso-bookmark:StdPrinting'><span lang=EN-US style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US'> Plug-ins</span></span><span
+lang=EN-US style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN-US'>
+<o:p></o:p></span></h3>
+
+<p style='margin-right:59.5pt'><span class=SpellE>TeeChart</span> <span
+class=SpellE>for</span> PHP can be used to create plug-ins for Joomla, WordPress and Drupal among others, thereby making it possible to show Charts in the web portals designed using these CMS's. The TeeChart  for PHP installer includes an example of a plug-in for each one of these CMS's, which can be found in the <strong>plugins</strong> folder.</p>
+<h4 style='margin-right:119.0pt'><a name=JoomlaPlugin></a><span class=SpellE><span
+style='mso-bookmark:JoomlaPlugin'><span style='mso-fareast-font-family:"Times New Roman"'>Joomla</span></span></span><span
+style='mso-bookmark:JoomlaPlugin'><span style='mso-fareast-font-family:"Times New Roman"'>
+<span class=SpellE>plug-in</span></span></span><span style='mso-fareast-font-family:
+"Times New Roman"'>
+<o:p></o:p></span></h4>
+
+<p style='margin-right:89.25pt'><span class=SpellE>	TeeChart</span> can be easily integrated as a plug-in into versions Joomla 1.5 and 2.5 as can be seen in the example found in the <strong>/plugins/joomla</strong> folder.</p>
+<p style='margin-right:89.25pt'><em>To see the plugin in operation click on the following link:</em></p>
+<p><a href="http://steema.us/joomla/index.php?option=com_content&amp;view=article&amp;id=2&amp;Itemid=2"><u>http://steema.us/joomla/index.php?option=com_content&amp;view=article&amp;id=2&amp;Itemid=2</u></a><o:p></o:p></p>
+
+<p><a href="http://steema.us/joomla25/index.php/teechartphp"><u>http://steema.us/joomla25/index.php/teechartphp</u></a><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:160.65pt;margin-bottom:
+0cm;margin-left:11.9pt;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<h4><a
+name=WordPressPlugin></a><span class=SpellE><span style='mso-bookmark:WordPressPlugin'><span
+style='mso-fareast-font-family:"Times New Roman"'>WordPress</span></span></span><span
+style='mso-bookmark:WordPressPlugin'><span style='mso-fareast-font-family:"Times New Roman"'>
+<span class=SpellE>plug-in</span></span></span><span style='mso-fareast-font-family:
+"Times New Roman"'>
+<o:p></o:p></span></h4>
+
+<p>TeeChart also offers the possibility to appear within WordPress contents.</p>
+<em>To see a working example of the plug-in click on the following link:</em>
+<p><a href="http://steema.us/wp/?page_id=3">http://steema.us/wp/?page_id=3</a><o:p></o:p></i></p><br>
+<h4><a
+name=DrupalPlugin></a><span class=SpellE><span style='mso-bookmark:DrupalPlugin'><span
+style='mso-fareast-font-family:"Times New Roman"'>Drupal</span></span></span><span
+style='mso-bookmark:DrupalPlugin'><span style='mso-fareast-font-family:"Times New Roman"'>
+<span class=SpellE>plug-in</span></span></span><span style='mso-fareast-font-family:
+"Times New Roman"'>
+<o:p></o:p></span></h4>
+
+<p>The installer for TeeChart for PHP also includes a plug-in for Drupal.</p><br>
+
+
+<h3><a name=Javascript>TeeChart JavaScript</a></h3>
+
+<h4><a name=TeeChart.jswithinTeeChartforPHP><span lang=EN-GB style='mso-fareast-font-family:"Times New Roman";
+mso-ansi-language:EN-GB'>TeeChart.js into TeeChart for PHP</a></h4>
+
+<p>The latest version of TeeChart for PHP also includes the TeeChart JavaScript product. This way the user of TeeChart for PHP has the option of obtaining a live Chart, which generate the minimum amount of PHP code by exporting the Chart in JavaScript instead.</p>
+<p>Tutorial 12 shows us the series types we can use to export a JavaScript Chart, together with the tools and code necessary.</p>
+
+<p>By integrating TeeChart JavaScript into TeeChart for PHP the programmer can choose between the following:</p>
+
+<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Continue using PHP code to generate the Chart, in the same way that they were doing until now, but with the option to export it to javascript.</p>
+
+<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Use javascript code directly to obtain the Chart in its final form.</p>
+
+<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Mix PHP code and javascript in the same PHP page.</p>
+
+<h4><a name=UsingTeeChartforJavaScript><span lang=EN-GB style='mso-fareast-font-family:"Times New Roman";
+mso-ansi-language:EN-GB'>Using TeeChart for JavaScript</a></h4>
+
+<p>By default TeeChart for PHP references the latest version of TeeChart.js from its source code via the Steema server where it wil be periodically updated. The existing references are defined as static variables within the JavaScriptExport class </p>
+
+<p><a href="http://www.steema.com/files/public/teechart/html5/jscript/src/teechart.js"><u>http://www.steema.com/files/public/teechart/html5/jscript/src/teechart.js</u></a></p>
+
+<p><a href="http://www.steema.com/files/public/teechart/html5/jscript/src/teechart-extras.js"><u>http://www.steema.com/files/public/teechart/html5/jscript/src/teechart-extras.js</u></a></p>
+
+<p>Giving the option to the developed to easily modify the value to the one disired.</p>
+
+<p>If, on the other hand, the developer prefers to save the .js files to another location and to reference them manually, then they can find the files necessary in the "teechartjs" folder within the "sources" folder of TeeChart for PHP.</p>
+
+
+<h4><a name=CMSPlug-ins><span lang=EN-GB style='mso-fareast-font-family:"Times New Roman";
+mso-ansi-language:EN-GB'>CMS plug-ins</span></a></h4>
+
+<p>TeeChart JavaScript can also be integrated into the CMS’s mentioned above, namely Joomla WordPress or Drupal. These are not included in the installer but can be downloaded directly from our web site at:</p>
+
+<p><a href="http://www.steema.com/download/html5">http://www.steema.com/download/html5</a></p>
+
+<p>And to see a working example of each:</p>
+
+<p><a href="http://steema.us/wp/">http://steema.us/wp/</a></p>
+
+<p><a href="http://steema.us/joomla/">http://steema.us/joomla/</a></p>
+
+<p><a href="http://steema.us/joomla25/">http://steema.us/joomla25/</a></p>
+
+
+
+
+<pre style='margin-top:0cm;margin-right:696.15pt;margin-bottom:0cm;margin-left:
+179.4pt;margin-bottom:.0001pt'><span style='mso-spacerun:yes'>    </span></pre>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:1410.15pt;margin-bottom:
+0cm;margin-left:298.4pt;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<div class=MsoNormal align=center style='margin-top:0cm;margin-right:1410.15pt;
+margin-bottom:0cm;margin-left:298.4pt;margin-bottom:.0001pt;text-align:center;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:1410.15pt;margin-bottom:
+0cm;margin-left:298.4pt;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><br
+style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></p>
+
+<div align=center>
+
+<table class=Tablanormal border=0 cellspacing=0 cellpadding=0 width=359
+ style='width:269.25pt;mso-cellspacing:0cm;margin-left:298.4pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width="42%" valign=top style='width:42.0%;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><a href="tutorial10.htm"><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";mso-no-proof:yes'><img border=0 width=135
+  height=81 id="_x0000_i1030" src="timages/backtut.gif"></span></a><span
+  style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p></o:p></span></p>
+  </td>
+  <td width="58%" valign=top style='width:58.0%;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><a href="tutorial12.htm"><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";mso-no-proof:yes'><img border=0 width=116
+  height=81 id="_x0000_i1029" src="timages/fwdtut.gif"></span></a><span
+  style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div class=MsoNormal align=center style='margin-top:0cm;margin-right:1410.15pt;
+margin-bottom:0cm;margin-left:298.4pt;margin-bottom:.0001pt;text-align:center;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p>© 1996-2012 Steema Software SL. All rights reserved.</p>
+
+</div>
+
+</body>
+
+</html>

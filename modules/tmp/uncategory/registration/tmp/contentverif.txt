@@ -1,0 +1,20 @@
+<p>Selamat bergabung di {domain}<br />
+<br />
+Gunakan akun berikut untuk masuk ke {domain}:</p>
+
+<p>Hal pertama yang haru anda lakukan adalah memverifikasi akun email ini dengan cara membuka link berikut : <a href="{link}">{link}</a><br />
+Atau gunakan code <strong>{code}</strong><br />
+<br />
+Terimakasih<br />
+Salam Hangat<br />
+{domain} Team Support<br />
+<br />
+<br />
+<br />
+Perhatian: Jangan membalas email ini karena tidak akan direspon</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>

@@ -1,0 +1,1 @@
+{"options":{"create":"CREATE TABLE `options` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `name` varchar(50) NOT NULL,\n  `value` text NOT NULL,\n  `history` text NOT NULL,\n  PRIMARY KEY (`id`)\n) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4"}}

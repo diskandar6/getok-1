@@ -1,0 +1,9 @@
+fab fa-android
+fab fa-apple
+fab fa-bitbucket
+fab fa-docker
+fab fa-dyalog
+fab fa-linux
+fab fa-microsoft
+fab fa-ubuntu
+fab fa-windows

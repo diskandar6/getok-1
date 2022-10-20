@@ -1,0 +1,12 @@
+fas,fa fa-archive
+fas,fa fa-box-open
+fas,fa fa-couch
+fas,fa fa-dolly
+fas,fa fa-people-carry
+fas,fa fa-route
+fas,fa fa-ruble-sign
+fas,fa fa-suitcase
+fas,fa fa-tape
+fas,fa fa-truck-loading
+fas,fa fa-truck-moving
+fas,fa fa-wine-glass

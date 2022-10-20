@@ -1,0 +1,15 @@
+fa,fas fa-cat
+fa,fas fa-crow
+fa,fas fa-dog
+fa,fas fa-dove
+fa,fas fa-dragon
+fa,fas fa-feather
+fa,fas fa-feather-alt
+fa,fas fa-fish
+fa,fas fa-frog
+fas,fa fa-hippo
+fa,fas fa-horse
+fa,fas fa-kiwi-bird
+fa,fas fa-otter
+fa,fas fa-paw
+fa,fas fa-spider

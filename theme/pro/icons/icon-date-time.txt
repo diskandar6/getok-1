@@ -1,0 +1,10 @@
+far,fas,fa fa-bell
+far,fas,fa fa-bell-slash
+far,fas,fa fa-calendar
+far,fas,fa fa-calendar-alt
+far,fas,fa fa-clock
+fas,far,fa fa-hourglass
+fas,fa fa-hourglass-end
+fas,fa fa-hourglass-half
+fas,fa fa-hourglass-start
+fas,fa fa-stopwatch

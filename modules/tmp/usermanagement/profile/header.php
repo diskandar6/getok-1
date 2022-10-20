@@ -1,0 +1,2 @@
+<?php if(!defined('D_KEY_PIPE'))exit;?>
+<?php $var=array('theme'=>'pro','status'=>'1','skin'=>'white-skin','subtheme'=>'admin','position'=>'1','browser_title'=>'Profile','menu_title'=>'Profile','menu_icon'=>'fas fa-user-cog','level'=>'admin','parent_menu'=>'Settings',);?>

@@ -1,0 +1,13 @@
+@import 'components/variables';
+@import 'components/defaults';
+// @import 'components/validate-js-fix';
+@import 'components/inside-card-fix';
+// The stepper itself
+ul.stepper {
+   counter-reset: section;
+   overflow-y: auto;
+   overflow-x: hidden;
+   @import 'components/feedback-loader';
+   @import 'components/vertical-stepper';
+   @import 'components/horizontal-stepper';
+}

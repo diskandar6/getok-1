@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+
+
+		function ensureVisible(sequenceID, tocNodeID)
+		{
+			// Expand parent node ID
+			expandNode(tocNodeID);
+
+			// Select sample tree item
+			var linkID = "Link" + sequenceID;
+			var sampleLink = contentTreeFrame.document.getElementById(linkID);
+			if(sampleLink != null)
+			{
+				onMouseDown(sampleLink);
+
+				// Ensure the sample link is visible
+				sampleLink.scrollIntoView(true);
+			}
+		}
+
+		function expandNode(tocNodeID)
+		{
+			var ImgID = tocNodeID + "Img";
+			var ImgID2 = tocNodeID + "Img2";
+			if(contentTreeFrame.document.getElementById(tocNodeID) != null)
+			{
+				// Expand specified table
+				contentTreeFrame.document.getElementById(tocNodeID).style.display = "";
+				if(contentTreeFrame.document.getElementById(ImgID) != null)
+				{
+					contentTreeFrame.document.getElementById(ImgID).src = "images/minus.gif";
+				}
+				if(contentTreeFrame.document.getElementById(ImgID2) != null)
+				{
+					contentTreeFrame.document.getElementById(ImgID2).src = "images/Folder-Open.bmp";
+				}
+
+				// Expand parent tables
+				var currentTable = contentTreeFrame.document.getElementById(tocNodeID);
+				if(currentTable != null)
+				{
+					var parentNodeID = currentTable.ParentFolderID;
+					if(parentNodeID != "")
+					{
+						expandNode(parentNodeID);
+					}
+				}
+			}
+		}
+
+		var selectedElementID = "Link1";
+
+		function onMouseDown(element)
+		{
+			if(selectedElementID != "")
+			{
+				var selectedElement = contentTreeFrame.document.getElementById(selectedElementID);
+				if(selectedElement != null)
+				{
+					selectedElement.style.backgroundColor="#FFFFFF";
+					selectedElement.style.color="#000000";
+				}
+			}
+
+			if(element != null)
+			{
+				element.style.backgroundColor="#000080";
+				element.style.color="#FFFFFF";
+				selectedElementID = element.id;
+			}
+		}
+
+
+
+    </script>
+  </head>
+  <frameset id="contentNavigationFrameset" framespacing="0" rows="27,95%" frameborder="0">
+    <frame id="contentTabFrame" src="TabTree.htm" noresize="noresize" scrolling="no" />
+    <frame id="contentTreeFrame" style="border-right: #bfbfbf 1px solid; border-left: #bfbfbf 1px solid; border-bottom: #bfbfbf 1px solid" name="contentTreeFrame" src="Tree.htm" noresize="noresize" />
+  </frameset>
+</html>

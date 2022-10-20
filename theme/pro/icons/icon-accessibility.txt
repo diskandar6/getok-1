@@ -1,0 +1,15 @@
+fab fa-accessible-icon
+fa,fas fa-american-sign-language-interpreting
+fa,fas fa-assistive-listening-systems
+fa,fas fa-audio-description
+fa,fas fa-blind
+fa,fas fa-braille
+fa,fas,far fa-closed-captioning
+fa,fas fa-deaf
+fa,fas fa-low-vision
+fa,fas fa-phone-volume
+fa,fas,far fa-question-circle
+fa,fas fa-sign-language
+fa,fas fa-tty
+fa,fas fa-universal-access
+fa,fas fa-wheelchair

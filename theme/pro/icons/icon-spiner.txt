@@ -1,0 +1,11 @@
+fas,fa fa-asterisk
+fas,fa fa-certificate
+fas,fa fa-circle-notch
+fas,fa fa-cog
+far,fas,fa fa-compass
+fas,fa fa-crosshairs
+far,fas,fa fa-life-ring
+far,fas,fa fa-snowflake
+fas,fa fa-spinner
+far,fas,fa fa-sun
+fas,fa fa-sync

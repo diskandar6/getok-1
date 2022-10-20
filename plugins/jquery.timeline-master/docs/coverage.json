@@ -1,0 +1,15 @@
+{
+  "coverage": "97.91%",
+  "expectCount": 96,
+  "actualCount": 94,
+  "files": {
+    "src/timeline.esdoc.js": {
+      "expectCount": 96,
+      "actualCount": 94,
+      "undocumentLines": [
+        347,
+        2374
+      ]
+    }
+  }
+}

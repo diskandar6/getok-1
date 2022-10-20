@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>TeeChart for JavaScript Getting Started Guide</title>
+<script src="http://steema.us/files/jscript/src/teechart.js" type="text/javascript"></SCRIPT>
+<script type="text/javascript">
+function draw() {
+  Chart1=new Tee.Chart("canvas");
+  Chart1.addSeries(new Tee.Pie([5,3,2,7,1]) );
+  Chart1.draw();
+}
+</script>
+</head>
+<body style="font-family:Arial" onload="draw();">
+<h1>TeeChart for Javascript.  Getting Started Guide</h1>
+<hr>
+<h2>First steps. Creating a Chart</h2>
+1) Add the TeeChart script to your html page, preferably at &lt;head&gt; tag:</br>
+</br>
+&lt;script src=&quot;http://steema.us/files/jscript/src/teechart.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;<br/>
+</br>
+2) Add the html5 canvas tag to display the chart:</br>
+</br>
+&lt;canvas id=&quot;canvas&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;<br/>This browser does not seem to support HTML5 Canvas.<br/>&lt;/canvas&gt;<br/><br/>
+3) Add code to create a Chart with sample data:</br>
+</br>
+&lt;script type=&quot;text/javascript&quot;&gt;<br/>
+function draw() {<br/>
+&nbsp;&nbsp;Chart1=new Tee.Chart(&quot;canvas&quot;);<br/>
+&nbsp;&nbsp;Chart1.addSeries(new Tee.Pie([5,3,2,7,1]) );<br/>
+&nbsp;&nbsp;Chart1.draw();<br/>
+}<br/>&lt;/script&gt;<br/><br/>
+</br>
+4) Call the draw() function from the appropiate place, for example at body "onload" event:</br>
+</br>
+&lt;body onload=&quot;draw()&quot;&gt;<br/><br/>
+</br>
+The resulting output chart is:</br></br>
+
+<canvas id="canvas" width="300" height="200">
+This browser does not seem to support HTML5 Canvas.</br>
+Latest versions of major browsers include support for canvas.</br>
+</canvas>
+
+</br></br>
+The above code does the following:</br>
+</br>
+<ul>
+<li>Creates a Chart object, passing the canvas "id" as a parameter.</li>
+<li>Calls the Chart addSeries method, passing a new "Pie" series object, filled with an array of data numbers.</li>
+<li>Calls the Chart draw() method to generate and display the chart into "canvas".</li>
+</ul>
+</br>
+Notes:</br></br>
+<ul>
+<li>The "Tee." prefix refers to all contents inside TeeChart.js script. This prefix is necessary to avoid conflicts with potentially equal named global namespace objects.</li>
+<li>The canvas "id" parameter can also be a DOM object, for example: "new Tee.Chart(document.getElementById("canvas"))".</li>
+<li>In this limited version, available series styles are "Line", "Bar", "HorizBar", "PointXY", "Area", "HorizArea", "Pie", "Donut" and "Bubble".</li>
+<li>Many series can be added and mixed to the same chart, but mixing Pie or Donut with non-circular styles might not be visually pleasant.</li>
+</ul>
+</br>
+
+
+<h2>Chart main properties and classes</h2>
+For a complete reference of TeeChart API, please <a href="tee/index.html">follow this link</A>
+</br>
+</br>
+The Chart object includes the following properties and sub-objects:</br>
+</br>
+<ul>
+<li>Chart1.series, a list of Tee.Series derived objects, like Line, Bar, Pie, etc.</li>
+</br>Series objects are used to group and display data values, and many of them can be added to the same chart.</br>
+Several ways to create a series using the Tee.Series constructor:</br>
+</br>
+Empty series, passing Chart parameter: var Series1 = new Tee.Line(Chart1);</br>
+Create and fill with data:  var Series1 = Tee.Line(Chart1, [1,2,3,4,5]);</br>
+
+<li>Chart1.title, to show text at the upper side.</li>
+<li>Chart1.footer, to show text at the bottom side.</li>
+<li>Chart1.legend, to show the list of series or a given series list of values.</li>
+<li>Chart1.axes, a sub-object with four axes: Left, Top, Right and Bottom.</li>
+<li>Chart1.panel, defines the chart background properties.</li>
+<li>Chart1.walls, a sub-object with four walls: Left, Bottom, Right and Back.</li>
+<li>Chart1.tools, a list of Tee.Tool derived objects, like CursorTool or Annotations.</li>
+<li>Chart1.zoom, properties to control mouse/touch drag, to zoom the chart axes.</li>
+<li>Chart1.scroll, properties to control mouse/touch drag, to scroll chart contents.</li>
+<li>Chart1.aspect, a sub-object with properties to control canvas parameters.</li>
+
+</ul>
+
+<hr>
+Steema Software SL., 2012-2017.
+</body>
+</html>

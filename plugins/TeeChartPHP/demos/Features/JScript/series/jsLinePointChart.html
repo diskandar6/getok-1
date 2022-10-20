@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+<title>Chart1</title><script src="http://www.steema.com/files/public/teechart/html5/latest/src/teechart.js" type="text/javascript"></SCRIPT>
+<script src="http://www.steema.com/files/public/teechart/html5/latest/src/teechart-extras.js" type="text/javascript"></SCRIPT>
+<script type="text/javascript">
+var Chart1;
+function draw() {
+  Chart1=new Tee.Chart("canvas");
+  Chart1.zoom.enabled=true;
+  Chart1.scroll.enabled=true;
+  Chart1.scroll.mouseButton=0;
+  Chart1.scroll.direction="horizontal";
+  Chart1.panel.format.fill="#C0C0C0";
+  Chart1.panel.format.round.x=0;
+  Chart1.panel.format.round.y=0;
+  Chart1.panel.format.stroke.fill="#808080";
+  Chart1.walls.back.format.fill="#E2E2E2";
+  Chart1.walls.back.format.round.x=0;
+  Chart1.walls.back.format.round.y=0;
+  Chart1.title.text="Line and Point";
+  Chart1.title.format.fill="#DCDCDC";
+  Chart1.title.format.round.x=0;
+  Chart1.title.format.round.y=0;
+  Chart1.title.format.font.style="16px verdana";
+  Chart1.title.format.font.fill="#464646";
+  Chart1.title.format.stroke.fill="#000000";
+  Chart1.footer.text="";
+  Chart1.footer.format.fill="#DCDCDC";
+  Chart1.footer.format.round.x=0;
+  Chart1.footer.format.round.y=0;
+  Chart1.footer.format.font.style="11px verdana";
+  Chart1.footer.format.font.fill="#FF0000";
+  Chart1.footer.format.stroke.fill="#000000";
+  Chart1.axes.left.format.stroke.fill="#646464";
+  Chart1.axes.left.grid.format.stroke.fill="#DCDCDC";
+  Chart1.axes.left.labels.format.font.style="11px verdana";
+  Chart1.axes.left.labels.format.font.fill="#000000";
+  Chart1.axes.top.format.stroke.fill="#646464";
+  Chart1.axes.top.grid.format.stroke.fill="#DCDCDC";
+  Chart1.axes.top.labels.format.font.style="11px verdana";
+  Chart1.axes.top.labels.format.font.fill="#000000";
+  Chart1.axes.right.format.stroke.fill="#646464";
+  Chart1.axes.right.grid.format.stroke.fill="#DCDCDC";
+  Chart1.axes.right.labels.format.font.style="11px verdana";
+  Chart1.axes.right.labels.format.font.fill="#000000";
+  Chart1.axes.bottom.format.stroke.fill="#646464";
+  Chart1.axes.bottom.grid.format.stroke.fill="#DCDCDC";
+  Chart1.axes.bottom.labels.format.font.style="11px verdana";
+  Chart1.axes.bottom.labels.format.font.fill="#000000";
+  var Series0=Chart1.addSeries(new Tee.Line());
+  Series0.pointer.visible=true;
+  Series0.title="Series0";
+  Series0.format.fill="#BA4330";
+  Series0.data.values=[11,12,23,58,10,36,2,13,86,6,32,85,40,84,59,39,27,49,45,73];
+  Series0.marks.visible=false;
+  Series0.marks.format.fill="#FFFFB4";
+  Series0.marks.format.round.x=0;
+  Series0.marks.format.round.y=0;
+  Series0.marks.format.font.style="11px verdana";
+  Series0.marks.format.font.fill="#000000";
+  Series0.marks.format.stroke.fill="#000000";
+  Series0.marks.format.shadow.color="#808080";
+  Series0.marks.format.shadow.width=1;
+  Series0.marks.format.shadow.height=1;
+  var Series1=Chart1.addSeries(new Tee.Line());
+  Series1.pointer.visible=true;
+  Series1.title="Series1";
+  Series1.format.fill="#1171BA";
+  Series1.data.values=[77,88,81,55,94,56,39,15,66,55,26,30,79,84,93,67,38,6,53,97];
+  Series1.marks.visible=false;
+  Series1.marks.format.fill="#FFFFB4";
+  Series1.marks.format.round.x=0;
+  Series1.marks.format.round.y=0;
+  Series1.marks.format.font.style="11px verdana";
+  Series1.marks.format.font.fill="#000000";
+  Series1.marks.format.stroke.fill="#000000";
+  Series1.marks.format.shadow.color="#808080";
+  Series1.marks.format.shadow.width=1;
+  Series1.marks.format.shadow.height=1;
+  var Series2=Chart1.addSeries(new Tee.Line());
+  Series2.pointer.visible=true;
+  Series2.title="Series2";
+  Series2.format.fill="#641470";
+  Series2.data.values=[90,37,74,49,28,2,50,73,27,44,3,67,25,58,62,81,49,77,99,5];
+  Series2.marks.visible=false;
+  Series2.marks.format.fill="#FFFFB4";
+  Series2.marks.format.round.x=0;
+  Series2.marks.format.round.y=0;
+  Series2.marks.format.font.style="11px verdana";
+  Series2.marks.format.font.fill="#000000";
+  Series2.marks.format.stroke.fill="#000000";
+  Series2.marks.format.shadow.color="#808080";
+  Series2.marks.format.shadow.width=1;
+  Series2.marks.format.shadow.height=1;
+  Chart1.legend.position="right";
+  Chart1.legend.format.fill="#FFFFFF";
+  Chart1.legend.format.round.x=0;
+  Chart1.legend.format.round.y=0;
+  Chart1.legend.format.font.style="11px verdana";
+  Chart1.legend.format.font.fill="#000000";
+  Chart1.legend.format.shadow.color="#787878";
+  Chart1.legend.format.shadow.width=3;
+  Chart1.legend.format.shadow.height=3;
+  Chart1.draw();
+}
+</script>
+</HEAD>
+<BODY onload="draw()">
+<canvas id="canvas" width="600" height="400">
+This browser does not seem to support HTML5 Canvas.
+</canvas>
+</BODY>
+</HTML>

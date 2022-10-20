@@ -1,0 +1,613 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="tutorial10_archivos/filelist.xml">
+<link rel=Edit-Time-Data href="tutorial10_archivos/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>TeeChart tutorial 10</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Portatil</o:Author>
+  <o:LastAuthor>Portatil</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>32</o:TotalTime>
+  <o:Created>2008-12-05T12:16:00Z</o:Created>
+  <o:LastSaved>2008-12-05T12:48:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1460</o:Words>
+  <o:Characters>8036</o:Characters>
+  <o:Company>...</o:Company>
+  <o:Lines>66</o:Lines>
+  <o:Paragraphs>18</o:Paragraphs>
+  <o:CharactersWithSpaces>9478</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<link rel=Stylesheet type="text/css" media=all href=helpstyle.css>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;
+	mso-font-alt:"Courier New";
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 0 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	line-height:28.0pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	color:black;
+	font-weight:bold;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:29.75pt;
+	mso-margin-bottom-alt:auto;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-weight:bold;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:29.75pt;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:12.0pt;
+	color:black;
+	font-weight:bold;}
+h4
+	{mso-margin-top-alt:auto;
+	margin-right:29.75pt;
+	mso-margin-bottom-alt:auto;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:11.0pt;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+address
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:178.55pt;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:12.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-style:italic;}
+code
+	{mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{margin-top:0cm;
+	margin-right:71.4pt;
+	margin-bottom:0cm;
+	margin-left:11.9pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:8.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Courier New";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Tabla normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=ES link=blue vlink=blue style='tab-interval:35.4pt'
+topmargin=4>
+
+<div class=Section1>
+
+<div style='background-image:'url('url(timages/headerback.png)')';left:0in;
+position:absolute;top:0in;z-index:-10' id=one>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp; <o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0cm;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><img
+  width=288 height=121 id="_x0000_i1025" src="timages/HeaderLogo.gif"><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.0pt;font-family:Verdana'>&nbsp; <a href="Contents.HTM">Contents&nbsp;page</a>&nbsp;<br>
+  &nbsp; <a href="Tutorial9.htm">Previous</a>&nbsp;|&nbsp;<a
+  href="Tutorial11.htm">Next</a>&nbsp;</span><span style='font-size:9.0pt;
+  font-family:Verdana'> <o:p></o:p></span></p>
+  </td>
+  <td width=20 valign=top style='width:15.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="TeeChart_tutorial_13"></a><span lang=EN-GB style='mso-ansi-language:
+EN-GB'>Tutorial 10 - Custom drawing on the Chart Panel<o:p></o:p></span></h2>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>TeeChart offers extensive
+custom drawing facilities via the TCanvas3D component. With Canvas you may add
+shapes, lines and text anywhere on the Chart Panel and define their colours,
+pen and brush styles.<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="80%"
+ style='width:80.0%;mso-cellspacing:1.5pt;mso-padding-alt:2.25pt 2.25pt 2.25pt 2.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'>Contents</span></b><span
+  style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <h3><a href="#Canvas"><span lang=EN-GB style='mso-ansi-language:EN-GB'>TeeChart
+  Canvas</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+  <p style='margin-bottom:12.0pt'><a href="#AddLines"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Drawing Lines</span></a><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'><br>
+  </span><a href="#PenBrush"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Canvas
+  Pen and Brush</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+  </span><a href="#AddShapes"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Adding
+  2D Shapes</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+  </span><a href="#Add3DShapes"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Adding
+  3D Shapes</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+  </span><a href="#AddText"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Adding
+  text</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+  </span><a href="#egCanvas"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Applied
+  example</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h3><a name=Canvas><span lang=EN-GB style='mso-ansi-language:EN-GB'>TeeChart
+Canvas</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+
+<h4><a name=AddLines><span lang=EN-GB style='mso-ansi-language:EN-GB'>Drawing
+Lines</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>2D Chart</span></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+Let's add a Canvas Line:<o:p></o:p></span></p>
+
+<p><i><span lang=EN-GB style='mso-ansi-language:EN-GB'>Example</span></i><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>private function Load() { <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$line1-&gt;fillSampleValues(20); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$line1-&gt;setVertAxis(VerticalAxis::$BOTH); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$line1-&gt;setHorizAxis(HorizontalAxis::$BOTH); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$tChart1-&gt;getAspect-&gt;setView3D(false); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>} <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>public function chartEvent($e) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'> <span style='mso-spacerun:yes'>  </span>if ($e instanceof AfterDrawEventArgs) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$g = $tChart1-&gt;getGraphics3D(); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$s = new TeePoint($tChart1-&gt;getAxes()-&gt;getLeft()-&gt;getPosition(), $tChart1-&gt;getAxes()-&gt;getTop()-&gt;getPosition()); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$e = new TeePoint($tChart1-&gt;getAxes()-&gt;getRight()-&gt;getPosition(), $tChart1-&gt;getAxes()-&gt;getBottom()-&gt;getPosition()); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></pre><pre><span style='mso-spacerun:yes'>        </span>$g-&gt;MoveTo($s); </pre><pre><span style='mso-spacerun:yes'>        </span>$g-&gt;LineTo($e,0); </pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>    </span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>}<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>}<o:p></o:p></span></pre>
+
+<p><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>3D&nbsp; Chart</span></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+On a 3D Chart the Axis positions are offset from the Chart area due to 3D
+orthogonal displacement. We can move the Line accordingly:<o:p></o:p></span></p>
+
+<p><i><span lang=EN-GB style='mso-ansi-language:EN-GB'>Example </span></i><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>(drawing a Line diagonally from top
+left to bottom right in the Chart Area of a 3D Chart)<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>private function Load() { <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$line1-&gt;fillSampleValues(20); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$line1-&gt;setVertAxis(VerticalAxis::$BOTH); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$line1-&gt;setHorizAxis(HorizontalAxis::$BOTH); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$tChart1-&gt;getAspect-&gt;setChart3DPercent(50); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>} <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>public function chartEvent(EventArgs e) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>if ($e instanceof AfterDrawEventArgs) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$g = $tChart1-&gt;getGraphics3D(); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$s = Point3D(); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$s-&gt;x = $tChart1-&gt;getAxes()-&gt;getLeft()-&gt;getPosition(); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>      </span><span style='mso-spacerun:yes'>  </span>$s-&gt;y = tChart1-&gt;getAxes()-&gt;getTop()-&gt;getPosition(); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$s-&gt;z = 0; <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span><span style='mso-spacerun:yes'>    </span>C$e = Point3D(); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$e-&gt;x = $tChart1-&gt;getAxes()-&gt;getRight()-&gt;getPosition(); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$e-&gt;y = $tChart1-&gt;getAxes()-&gt;getBottom()-&gt;getPosition(); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$e-&gt;z = $tChart1-&gt;getAspect()-&gt;width3D; <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span></span>$g-&gt;moveTo($s); </pre><pre><span style='mso-spacerun:yes'>        </span>$g-&gt;lineTo($e); </pre><pre><o:p>&nbsp;</o:p></pre><pre><span
+style='mso-tab-count:1'>      </span><span lang=EN-GB style='mso-ansi-language:
+EN-GB'>}<o:p></o:p></span></pre><pre><span lang=EN-GB style='mso-ansi-language:
+EN-GB'>}<o:p></o:p></span></pre>
+
+<h4><a name=PenBrush><span lang=EN-GB style='mso-ansi-language:EN-GB'>Canvas
+Pen and Brush</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>The Line above is drawn
+using the Pen and Brush defined for the last object drawn before the Line is
+drawn. That may or may not be the Pen you want. You can change the Pen
+accordingly:<o:p></o:p></span></p>
+
+<p><i><span lang=EN-GB style='mso-ansi-language:EN-GB'>Example </span></i><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>(define Pen before drawing the Line)<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span>public function chartEvent(EventArgs $e) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>if ($e instanceof AfterDrawEventArgs) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>         </span><span style='mso-spacerun:yes'> </span><span style='mso-spacerun:yes'> </span><span style='mso-spacerun:yes'> </span>$g = $tChart1-&gt;getGraphics3D();<span style='mso-spacerun:yes'>                       </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-tab-count:1'>      </span><span style='mso-spacerun:yes'>    </span><span style='mso-spacerun:yes'>  </span>$p5 = new TeePoint($line1-&gt;calcXPos(5), $line1-&gt;calcYPos(5)); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>      </span><span
+style='mso-tab-count:1'> </span><span style='mso-spacerun:yes'>    </span><span style='mso-spacerun:yes'>  </span>$p15 = new TeePoint($line1-&gt;calcXPos(15), $line1-&gt;calcYPos(15)); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$g-&gt;getPen()-&gt;setDashCap(DashCap::$SQUARE);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$g-&gt;getPen()-&gt;setEndCap(LineCap::$MITER);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$g-&gt;getPen()-&gt;setStyle(DashStyle::$DASHDOTDOT); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$g-&gt;getPen()-&gt;setTransparency(70); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$g-&gt;getPen()-&gt;setWidth(3); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$g-&gt;getPen()-&gt;setColor(Color::BLUE()); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$g-&gt;moveTo($p5); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$g-&gt;lineTo($p15, 0);<span style='mso-spacerun:yes'>   </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>       </span>}<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>   </span>}<o:p></o:p></span></pre>
+
+<h4><a name=AddShapes><span lang=EN-GB style='mso-ansi-language:EN-GB'>Adding
+2D Shapes</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Add 2D Canvas Shapes in a
+similar manner to Canvas Lines. The following example adds a Rectangle in the
+centre of the Chart Area:<o:p></o:p></span></p>
+
+<p><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>2D Charts</span></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+2D Charts support only 2D shapes.<o:p></o:p></span></p>
+
+<p class=MsoNormal><i><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'>Example</span></i><span lang=EN-GB style='font-size:
+9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'> <o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span>public function chartEvent(EventArgs $e) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>if ($e instanceof AfterDrawEventArgs) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$g = $tChart1-&gt;getGraphics3D();<span style='mso-spacerun:yes'>                       </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$d = new Dimension(100,100); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$p = new TeePoint(((int)($g-&gt;getXCenter() - ($d-&gt;getWidth()/2))),((int)($g-&gt;getYCenter() - ($d-&gt;getHeight()/2))));<span style='mso-spacerun:yes'>         </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$r = new Rectangle($p,$d); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$g-&gt;getPen()-&gt;setColor(Color::CYAN()); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$g-&gt;getBrush()-&gt;setColor(Color::BLUE()); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$g-&gt;rectangle($r);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>       </span>}<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>   </span>}<o:p></o:p></span></pre>
+
+<p><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>3D Charts</span></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+On a 3D Chart you can move the Rectangle in a Z plane too. See the
+RectangleWithZ method. This example places the Rectangle on the Left Wall but
+displaces it halfway towards the rear of the Chart (towards the Back Wall). <o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>private function Load() { <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$point3D1-&gt;LinePen-&gt;Visible = false; <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$point3D1-&gt;fillSampleValues(20); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$point3D1-&gt;setVertAxis(VerticalAxis::$BOTH); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$point3D1-&gt;setHorizAxis(HorizontalAxis::$BOTH); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$tChart1-&gt;getAspect-&gt;setChart3DPercent(50); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$tChart1-&gt;getAxes()-&gt;getDepth()-&gt;setVisible(true); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>} <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>public function chartEvent(EventArgs $e) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>      </span>if ($e instanceof AfterDrawEventArgs) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$g = $tChart1-&gt;getGraphics3D();<span style='mso-spacerun:yes'>   </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$d = new Dimension(100, 100); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$l = new TeePoint(((int)$tChart1-&gt;getAxes()-&gt;getLeft()-&gt;getPosition()),((int)(g-&gt;getYCenter() – <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-tab-count:2'>               </span>($d-&gt;getHeight() / 2)))); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$r = new Rectangle($l,$d); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$g-&gt;getPen()-&gt;setColor(Color::CYAN()); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$g-&gt;getBrush().setColor(Color::BLUE()); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$g-&gt;rectangle($r, $tChart1-&gt;getAspect()-&gt;width3D/2);<span style='mso-spacerun:yes'>         </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>}<o:p></o:p></span></pre>
+
+<p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+
+<h4><a name=Add3DShapes><span lang=EN-GB style='mso-ansi-language:EN-GB'>Adding
+3D Shapes</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>You may add 3D shapes to 3D
+Charts. This example draws a Cube in the middle of the Chart rectangle: <o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>private function Load() { <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$point3D1-&gt;getLinePen()-&gt;setVisible(false); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$point3D1-&gt;fillSampleValues(20); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$tChart1-&gt;getAspect()-&gt;setChart3DPercent(50); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$tChart1-&gt;getLegend()-&gt;setVisible(false); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$tChart1-&gt;getAxes()-&gt;getDepth()-&gt;setVisible(true); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>} <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>public function chartEvent(EventArgs $e) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>if (e instanceof AfterDrawEventArgs) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>IGraphics3D g = tChart1.getGraphics3D();<span style='mso-spacerun:yes'>                       </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-tab-count:1'>      </span> <span style='mso-spacerun:yes'>     </span>$d = new Dimension(50,50); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span><span style='mso-spacerun:yes'>    </span>$p = new TeePoint(((int)($g-&gt;getXCenter() - ($d-&gt;getWidth()/2))),((int)($g-&gt;getYCenter() – <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-tab-count:2'>               </span>($d-&gt;getHeight()/2))));<span style='mso-spacerun:yes'>         </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span><span style='mso-spacerun:yes'>    </span>$r = new Rectangle($p,$d); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span><span style='mso-spacerun:yes'>    </span>$g-&gt;cube($r, 0, 20, true);<span style='mso-spacerun:yes'>     </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-tab-count:1'>      </span><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>}<o:p></o:p></span></pre>
+
+<p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+
+<h4><a name=AddText><span lang=EN-GB style='mso-ansi-language:EN-GB'>Adding
+text</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>2D Text location</span></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+Add Text to the last Rectangle:<o:p></o:p></span></p>
+
+<p><i><span lang=EN-GB style='mso-ansi-language:EN-GB'>Example</span></i><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span>public function chartEvent(EventArgs $e) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>if (e instanceof AfterDrawEventArgs) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$text = &quot;My Text&quot;; <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$g = $tChart1-&gt;getGraphics3D();<span style='mso-spacerun:yes'>                       </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$d = new Dimension(150, 50); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$p = new TeePoint(((int)($g-&gt;getXCenter() - ($d-&gt;getWidth()/2))),((int)($g-&gt;getYCenter() – <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-tab-count:3'>                        </span>($d-&gt;getHeight()/2)))); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$r = new Rectangle($p,$d); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$g-&gt;getPen()-&gt;setColor(Color::BLUE()); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$g-&gt;rectangle($r); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$g-&gt;textOut(((int)($g-&gt;getXCenter() - ($g-&gt;textWidth($text)/2))), <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>                  </span>((int)($g-&gt;getYCenter() - ($g-&gt;textHeight($text)/2))), $text);<span style='mso-spacerun:yes'>             </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></pre>
+
+<p><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>3D Text location</span></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+You can place Text in a differing 3D plane by using the TextOut overload with a
+z coordinate. <o:p></o:p></span></p>
+
+<p class=MsoNormal><i><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'>Example</span></i><span lang=EN-GB style='font-size:
+9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'> <o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'> </span>private function Load() { <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>     </span><span style='mso-spacerun:yes'>   </span>$point3D1-&gt;fillSampleValues(20); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$point3D1-&gt;getLinePen()-&gt;setVisible(false); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$tChart1-&gt;getAspect()-&gt;setChart3DPercent(50); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>}<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>public function chartEvent(EventArgs $e) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>if ($e instanceof AfterDrawEventArgs) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$text = &quot;My Text&quot;; <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$g = $tChart1-&gt;getGraphics3D();<span style='mso-spacerun:yes'>            </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$g-&gt;textOut($g-&gt;getXCenter(), $g-&gt;getYCenter(), $tChart1-&gt;getAspect()-&gt;width3D / 2, $text); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>}<o:p></o:p></span></pre>
+
+<p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+
+<h4><a name=egCanvas><span lang=EN-GB style='mso-ansi-language:EN-GB'>Applied
+example</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>This example takes the 3rd
+and 10th values of a Series, plots a Line between them and tells us the value
+of the first and Last point of the new Line and the difference between them:<o:p></o:p></span></p>
+
+<p><i><span lang=EN-GB style='mso-ansi-language:EN-GB'>Example</span></i><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>'First add some data to the empty Chart<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Public function button1_Click();<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>begin<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>  </span>$Series1-&gt;FillSampleValues(20);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>end;<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>private function Load() { <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$tChart1-&gt;getAspect()-&gt;setView3D(false); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$line1-&gt;fillSampleValues(20); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>} <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>public void chartEvent(EventArgs e) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>if ($e instanceof AfterDrawEventArgs) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$g = $tChart1-&gt;getGraphics3D();<span style='mso-spacerun:yes'>            </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>if($tChart1-&gt;getSeriesCount() &gt; 0){ <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>                </span>if($tChart1-&gt;getSeries(0)-&gt;getCount() &gt; 10) { <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>                    </span>$s = $tChart1-&gt;getSeries(0);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>                    </span>$h = $g-&gt;textHeight(&quot;H&quot;);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>                    </span>$p1 = new TeePoint($s-&gt;calcXPos(3), $s-&gt;calcYPos(3));<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>                    </span>$p2 = new TeePoint($s-&gt;calcXPos(10), $s-&gt;calcYPos(10));<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>                    </span>$g-&gt;getPen()-&gt;setColor(Color::BLUE());<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>              </span><span style='mso-spacerun:yes'>      </span>$g-&gt;getPen()-&gt;setWidth(2);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>                    </span>$g-&gt;getPen()-&gt;setStyle(DashStyle::$DASH);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>                    </span>$g-&gt;moveTo($p1);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>                    </span>$g-&gt;lineTo($p2, 0);<span style='mso-spacerun:yes'>                </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>                    </span>$g-&gt;textOut($p1-&gt;x, $p1-&gt;y - $h, &quot;Point value: &quot; . $s-&gt;getYValues(3)); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>                    </span>$g-&gt;textOut($p2-&gt;x, $p2-&gt;y, &quot;Point value: &quot; . $s.getYValues(10)); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>                    </span>$g-&gt;textOut($p2-&gt;x, $p2-&gt;y + $h, &quot;Change is: &quot; + $s-&gt;getYValues(3) - <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-tab-count:3'>                        </span><span style='mso-spacerun:yes'>    </span>$</span>s-&gt;getYValues(10)); </pre><pre><span style='mso-spacerun:yes'>            </span>}<span style='mso-spacerun:yes'>             </span></pre><pre><span style='mso-spacerun:yes'>        </span>}</pre><pre>}</pre>
+
+<p>&nbsp;</p>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><br
+style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></p>
+
+<ALIGN="CENTER">
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=359
+ style='width:269.25pt;mso-cellspacing:0cm;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width="42%" valign=top style='width:42.0%;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="tutorial9.htm"><span style='text-decoration:none;text-underline:none'><img
+  border=0 width=135 height=81 id="_x0000_i1029" src="timages/backtut.gif"></span></a><o:p></o:p></span></p>
+  </td>
+  <td width="58%" valign=top style='width:58.0%;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="tutorial11.htm"><span style='text-decoration:none;text-underline:none'><img
+  border=0 width=116 height=81 id="_x0000_i1030" src="timages/fwdtut.gif"></span></a><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'>© 1996-2012 Steema Software SL. All rights reserved. <o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

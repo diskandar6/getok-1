@@ -1,0 +1,17 @@
+far,fas,fa fa-building
+fas,fa fa-church
+fas,fa fa-gopuram
+fas,fa fa-hard-hat
+fas,fa fa-home
+far,fas,fa fa-hospital
+fas,fa fa-hospital-alt
+fas,fa fa-house-damage
+fas,fa fa-igloo
+fas,fa fa-industry
+fas,fa fa-mosque
+fas,fa fa-place-of-worship
+fas,fa fa-school
+fas,fa fa-synagogue
+fas,fa fa-torii-gate
+fas,fa fa-university
+fas,fa fa-vihara

@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\TeeChartPHP.clpprj">
+	<settings><PM_URL><![CDATA[D:\steema\root\TeeChartPHP\TeeChartPHP\sources\]]></PM_URL><PM_HOME_URL><![CDATA[D:\steema\root\TeeChartPHP\TeeChartPHP\sources\]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\GraphicsGD.php"/>
+	</lastopfiles>
+	<todoblock>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\Chart.php">
+			<todo name="TODO      $this-&gt;printer = new Printer($this);" pos="9;276"/>
+			<todo name="TODO" pos="10;348"/>
+			<todo name="TODO  $this-&gt;printer-&gt;setChart($this);" pos="9;401"/>
+			<todo name="TODO" pos="6;605"/>
+			<todo name="TODO" pos="6;646"/>
+			<todo name="TODO" pos="10;1737"/>
+			<todo name="TODO  $this-&gt;parent-&gt;doBeforeDraw();" pos="9;2248"/>
+			<todo name="TODO" pos="10;2252"/>
+			<todo name="TODO" pos="10;2262"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\DateTimeStep.php">
+			<todo name="@todo FINISH ! (copy from Axis class)" pos="10;191"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\GraphicsGD.php">
+			<todo name="TODO" pos="12;223"/>
+			<todo name="TODO polygon uniclip" pos="9;577"/>
+			<todo name="TODO Re-check if required" pos="8;608"/>
+			<todo name="TODO clipPolygon" pos="7;625"/>
+			<todo name="TODO" pos="6;913"/>
+			<todo name="TODO - Here draw directly the ellipse with p1 and p2 $this-&gt;ellipsePoints($p1, $p2);" pos="8;1162"/>
+			<todo name="TODO check     if (sizeof($penColorStyle)==1)" pos="2;1371"/>
+			<todo name="TODO review - workaround for legend symbol when series lines and legend custom position true" pos="9;1588"/>
+			<todo name="TODO" pos="14;2018"/>
+			<todo name="TODO Gradient - post the code into the shape.." pos="10;2356"/>
+			<todo name="TODO - z param is not considred at the moment" pos="9;2591"/>
+			<todo name="TODO style of font" pos="14;2669"/>
+			<todo name="TODO text shadow" pos="10;2683"/>
+			<todo name="TODO Check which better" pos="12;4403"/>
+			<todo name="TODO $this-&gt;gradientBrush-&gt;getGradient()-&gt;setMiddleColor(Color::fromArgb(160, 255, 255, 255));" pos="13;4455"/>
+			<todo name="TODO $this-&gt;gradientBrush-&gt;getGradient()-&gt;setUseMiddle(true);" pos="13;4456"/>
+			<todo name="TODO $this-&gt;gradientBrush-&gt;getGradient()-&gt;setDirection(GradientDirection::$FORWARDDIAGONAL);" pos="13;4459"/>
+			<todo name="TODO" pos="12;4501"/>
+			<todo name="TODO" pos="14;4518"/>
+			<todo name="TODO Remove the following 2 lines" pos="13;4524"/>
+			<todo name="TODO" pos="14;4528"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\TChart.php">
+			<todo name="TODO $this-&gt;fireChartAdded(new ChartEvent($s, ChartEvent.CHART_ADDED));" pos="9;341"/>
+			<todo name="TODO" pos="8;494"/>
+			<todo name="TODO" pos="10;507"/>
+			<todo name="TODO" pos="10;978"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\TextShape.php">
+			<todo name="TODO  correct line, temp code added" pos="9;170"/>
+			<todo name="TODO" pos="14;185"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\Axis.php">
+			<todo name="@todo RAISING EXCEPTIONS HERE FORCES DECLARING &quot;THROW&quot; EVERYWHERE!" pos="12;565"/>
+			<todo name="TODO" pos="9;2095"/>
+			<todo name="TODO get the format from ..." pos="13;2494"/>
+			<todo name="TODO return (new DateTime($this-&gt;year, $this-&gt;month, $this-&gt;day))-&gt;toDouble();" pos="8;2867"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\AxisDraw.php">
+			<todo name="TODO remove" pos="18;477"/>
+			<todo name="TODO if ($this-&gt;g-&gt;getPen()-&gt;getColor()-&gt;isEmpty()) {" pos="9;848"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\AxisLabels.php">
+			<todo name="TODO" pos="6;113"/>
+			<todo name="todo $this-&gt;valuesDecimal = new NumberFormat($this-&gt;axisvaluesformat);" pos="9;345"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\CanvasFlex.php">
+			<todo name="TODO  must work for all Series... now just work for 0 index" pos="9;137"/>
+			<todo name="TODO" pos="12;329"/>
+			<todo name="TODO search original net file for pointtostr" pos="5;681"/>
+			<todo name="TODO $this-&gt;Draw($r, $b-&gt;Image, $b-&gt;ImageTransparent);" pos="9;749"/>
+			<todo name="TODO" pos="9;1192"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\CanvasHTML5.php">
+			<todo name="TODO" pos="9;287"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\CanvasMing.php">
+			<todo name="TODO" pos="8;601"/>
+			<todo name="TODO clipPolygon" pos="6;633"/>
+			<todo name="TODO z param is not considred for the moment" pos="9;2686"/>
+			<todo name="TODO style of font" pos="14;2764"/>
+			<todo name="TODO text shadow" pos="10;2778"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\CanvasSVG.php">
+			<todo name="TODO apply color and width" pos="9;300"/>
+			<todo name="@TODO: When DiffRegion is True," pos="7;352"/>
+			<todo name="TODO" pos="6;411"/>
+			<todo name="TODO" pos="6;464"/>
+			<todo name="TODO       $tmpSt='points=&quot;'.$this-&gt;PointToStr($x1,$y1).' '.$this-&gt;PointToStr($x2,$y2).' '." pos="2;513"/>
+			<todo name="TODO $AllowedSVGChars=['!'..'z'] - ['&amp;', '&lt;', '&gt;', '&quot;', ''''];" pos="13;549"/>
+			<todo name="TODO" pos="16;554"/>
+			<todo name="TODO" pos="10;585"/>
+			<todo name="TODO" pos="10;598"/>
+			<todo name="TODO         $this-&gt;Add($this-&gt;VerifySpecial($Text));" pos="1;614"/>
+			<todo name="TODO: RotDegree text rotation" pos="5;668"/>
+			<todo name="TODO         $this-&gt;Add($this-&gt;VerifySpecial($Text));" pos="1;673"/>
+			<todo name="TODO render rotate label." pos="7;677"/>
+			<todo name="TODO" pos="10;738"/>
+			<todo name="TODO review pep    for ($t=min($Points);$t&lt;=max($Points);$t++)" pos="1;757"/>
+			<todo name="TODO Pen.OnChange:=ChangedPen;" pos="7;849"/>
+			<todo name="TODO" pos="6;852"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\ChartBrush.php">
+			<todo name="todo    public function loadImage($location) {" pos="2;479"/>
+			<todo name="todo    private function writeObject($stream) {" pos="2;491"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\ChartFont.php">
+			<todo name="TODO pep" pos="8;104"/>
+			<todo name="todo    public function getDrawingFont() {" pos="5;363"/>
+			<todo name="@todo CREATE FONT USING MAP OBJECT WITH TEXTATTRIBUTE (Strike, Underline, etc)" pos="7;385"/>
+			<todo name="@todo INSTEAD OF CREATING IT HERE WITH A SIMPLE &quot;style&quot; value" pos="7;386"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\ChartPen.php">
+			<todo name="TODO  $tmpLineCap=new LineCap();" pos="10;67"/>
+			<todo name="TODO" pos="10;120"/>
+			<todo name="TODO        $this-&gt;dashCap = $p-&gt;dashCap;" pos="1;132"/>
+			<todo name="@todo FINISH / NECESSARY?" pos="12;298"/>
+			<todo name="TODO maybe remove" pos="13;374"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\Color.php">
+			<todo name="TODO review what to return ??" pos="28;625"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\GradientDirection.php">
+			<todo name="TODO public static $FORWARDDIAGONAL = 2;" pos="5;38"/>
+			<todo name="TODO public static $BACKDIAGONAL = 3;" pos="5;39"/>
+			<todo name="TODO public static $RADIAL = 4;" pos="5;40"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\InternalPyramidTrunc.php">
+			<todo name="TODO review protected" pos="4;26"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\DataExportFormat.php">
+			<todo name="TODO throw IOException" pos="38;225"/>
+			<todo name="TODO             if (Utils::yesNo(&quot;File $exists-&gt; &quot; + &quot;Overwrite ($this-&gt;y/$this-&gt;n)" pos="1;235"/>
+			<todo name="tODO throws IOException" pos="37;248"/>
+			<todo name="TODO:" pos="9;258"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\Exports.php">
+			<todo name="TODO" pos="6;314"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\FlexOptions.php">
+			<todo name="TODO remove fs = File.Create(path + &quot;\\&quot; + movie + &quot;.html&quot;);" pos="14;208"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\GIFFormat.php">
+			<todo name="TODO throws IOException" pos="33;56"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\ImageExport.php">
+			<todo name="TODO return new DataFlavor[] {$this-&gt;DataFlavor-&gt;imageFlavor};" pos="13;181"/>
+			<todo name="tODO throws" pos="62;188"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\ImageExportFormat.php">
+			<todo name="TODO throws IOException" pos="33;94"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\JPEGFormat.php">
+			<todo name="TODO throws IOException" pos="33;59"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\JavaScriptExport.php">
+			<todo name="TODO" pos="7;181"/>
+			<todo name="TODO &amp;&amp; ($this-&gt;ColorToRGB($AShadow-&gt;getColor())!=&quot;Silver2&quot;)" pos="47;242"/>
+			<todo name="TODO" pos="6;254"/>
+			<todo name="TODO" pos="6;322"/>
+			<todo name="TODO" pos="6;551"/>
+			<todo name="TODO This should be added just in case some tools added requires it" pos="5;766"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\PNGFormat.php">
+			<todo name="TODO throws IOException" pos="33;52"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\SVGFormat.php">
+			<todo name="TODO $g-&gt;setImagePath($this-&gt;ImagePath);" pos="11;81"/>
+			<todo name="TODO Remove $g-&gt;ShowImage($g);" pos="11;87"/>
+			<todo name="TODO" pos="10;122"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\TextFormat.php">
+			<todo name="TODO $this-&gt;Language-&gt;getString(" pos="62;144"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\WBMPFormat.php">
+			<todo name="TODO throws IOException" pos="33;55"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\XMLFormat.php">
+			<todo name="TODO $this-&gt;Language-&gt;getString(&quot;XMLFilter&quot;);" pos="29;48"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\ADX.php">
+			<todo name="TODO        $series-&gt;addSeriesPaintListener( new SeriesPaintAdapter() {" pos="2;112"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\Functions.php">
+			<todo name="@todo ELIMINATE EXCEPTION HERE !" pos="12;110"/>
+			<todo name="@todo FINISH !!" pos="20;317"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\Perimeter.php">
+			<todo name="TODO check $this-&gt;getChart()-&gt;getParent()-&gt;refreshControl();" pos="29;83"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\imports\Imports.php">
+			<todo name="TODO" pos="2;170"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\imports\XMLImport.php">
+			<todo name="TODO throws ChartException" pos="38;67"/>
+			<todo name="TODO throws InstantiationException," pos="53;124"/>
+			<todo name="TODO remove $tmpValue = $tmpItems-&gt;getNamedItem(tmpList);" pos="31;243"/>
+			<todo name="TODO throws ChartException" pos="31;288"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\legend\Legend.php">
+			<todo name="TODO" pos="18;852"/>
+			<todo name="TODO    $res = $this-&gt;chart-&gt;getParent()-&gt;getLegendResolver()-&gt;getItemCoordinates($this, $res);" pos="13;1104"/>
+			<todo name="TODO" pos="21;1197"/>
+			<todo name="TODO $this-&gt;setShapeBounds($this-&gt;chart-&gt;getParent()-&gt;getLegendResolver()-&gt;getBounds(" pos="18;1500"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\legend\LegendItemCoordinates.php">
+			<todo name="todo public function LegendItemCoordinates($c) {" pos="5;66"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\legend\LegendResolver.php">
+			<todo name="TODO Check: is this on total legend, or only item" pos="41;26"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\legend\LegendSymbol.php">
+			<todo name="todo review protected" pos="6;32"/>
+			<todo name="todo review protected" pos="6;37"/>
+			<todo name="todo review protected" pos="6;213"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\misc\Utils.php">
+			<todo name="todo throws Exception" pos="52;152"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Area.php">
+			<todo name="TODO review $tmpColor-&gt;getEmpty());" pos="92;54"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Bar.php">
+			<todo name="TODO else" pos="28;295"/>
+			<todo name="TODO else" pos="24;360"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Bar3D.php">
+			<todo name="TODO $this-&gt;Language-&gt;getString(&quot;ValuesOffset&quot;)" pos="50;51"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\BarStyle.php">
+			<todo name="TODO public static $INVCONE = 8;" pos="4;80"/>
+			<todo name="TODO public static $RECTGRADIENT = 9;" pos="4;85"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Bubble.php">
+			<todo name="TODO $point-&gt;allowChangeSize = false;" pos="7;76"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Candle.php">
+			<todo name="TODO $this-&gt;onGetPointerStyle($valueIndex, $tmpStyle);" pos="9;317"/>
+			<todo name="TODO" pos="6;495"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Circular.php">
+			<todo name="TODO $this-&gt;Language-&gt;getString(&quot;ValuesAngle&quot;);" pos="48;74"/>
+			<todo name="todo: obtain width and height from &quot;g&quot; instead of screen device" pos="9;168"/>
+			<todo name="TODO textWidth($this-&gt;Language-&gt;getString(&quot;CharForHeight&quot;))" pos="74;218"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ColorList.php">
+			<todo name="TODO       parent::removeRange($startIndex, $startIndex + $count - 1);" pos="2;67"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\CustomBar.php">
+			<todo name="TODO review before int[100];" pos="35;77"/>
+			<todo name="TODO if ($this-&gt;barStyle == BarStyle::$RECTGRADIENT) {" pos="14;468"/>
+			<todo name="TODO            $g-&gt;setEndColor($this-&gt;Color-&gt;fromArgb(" pos="2;576"/>
+			<todo name="TODO" pos="8;1013"/>
+			<todo name="todo change the isnull         if ($barColor-&gt;isNull()) {" pos="2;1052"/>
+			<todo name="TODO    public function createSubGallery(" pos="2;1065"/>
+			<todo name="tODO public $BarStyleResolver ${" pos="6;1154"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\CustomPoint.php">
+			<todo name="TODO" pos="6;70"/>
+			<todo name="TODO" pos="6;352"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\FastLine.php">
+			<todo name="@todo FINISH !" pos="12;81"/>
+			<todo name="TODO check transparent" pos="52;265"/>
+			<todo name="todo remove ... baseline class done in separate class unit" pos="4;482"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Funnel.php">
+			<todo name="TODO" pos="10;330"/>
+			<todo name="TODO" pos="14;385"/>
+			<todo name="TODO" pos="14;393"/>
+			<todo name="TODO there must be a correct way to use overload of add method" pos="38;614"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Gantt.php">
+			<todo name="TODO  $this-&gt;Language-&gt;getString(&quot;ValuesGanttStart&quot;);" pos="52;54"/>
+			<todo name="TODO datetime" pos="5;327"/>
+			<todo name="TODO review temp or correct   ****  ****" pos="7;357"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\HorizArea.php">
+			<todo name="TODO" pos="8;58"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\HorizBar.php">
+			<todo name="TODO $tmpGradientDirection = new GradientDirection();" pos="9;48"/>
+			<todo name="TODO $this-&gt;getGradient()-&gt;setDirection($tmpGradientDirection-&gt;HORIZONTAL);" pos="9;49"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\MarksItems.php">
+			<todo name="tODO review      $this-&gt;iMarks-&gt;invalidate();" pos="1;92"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\OHLC.php">
+			<todo name="TODO $this-&gt;Language-&gt;getString(&quot;ValuesDate&quot;);" pos="53;50"/>
+			<todo name="TODO $this-&gt;Language-&gt;getString(&quot;ValuesClose&quot;);" pos="54;51"/>
+			<todo name="TODO $this-&gt;Language-&gt;getString(&quot;ValuesHigh&quot;));" pos="66;53"/>
+			<todo name="TODO $this-&gt;Language-&gt;getString(&quot;ValuesLow&quot;));" pos="64;54"/>
+			<todo name="TODO remove    public function add($index, $open, $high, $low,$close) {" pos="2;178"/>
+			<todo name="TODO    public function add($open, $high, $low, $close) {" pos="2;214"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Pie.php">
+			<todo name="TODO" pos="10;781"/>
+			<todo name="TODO review rect params" pos="32;804"/>
+			<todo name="TODO remove int[$tmpCount];" pos="47;816"/>
+			<todo name="TODO" pos="14;913"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Series.php">
+			<todo name="TODO      $this-&gt;customMarkText = $this-&gt;MARKTEXT_RESOLVER;" pos="1;182"/>
+			<todo name="todo    $this-&gt;Object[] $this-&gt;listeners = $this-&gt;listenerList-&gt;getListenerList();" pos="8;194"/>
+			<todo name="todo   $this-&gt;listenerList-&gt;add($this-&gt;SeriesMouseListener-&gt;class, $l);" pos="7;214"/>
+			<todo name="todo    $this-&gt;listenerList-&gt;remove($this-&gt;SeriesMouseListener-&gt;class, $l);" pos="7;218"/>
+			<todo name="todo    $this-&gt;Object[] $this-&gt;listeners = $this-&gt;listenerList-&gt;getListenerList();" pos="8;222"/>
+			<todo name="todo    $this-&gt;Object[] $this-&gt;listeners = $this-&gt;listenerList-&gt;getListenerList();" pos="8;252"/>
+			<todo name="todo $this-&gt;Language-&gt;getString(&quot;ValuesX&quot;));" pos="57;283"/>
+			<todo name="todo $this-&gt;Language-&gt;getString(&quot;ValuesY&quot;));" pos="57;285"/>
+			<todo name="TODO        $this-&gt;listenerList = new EventListenerList();" pos="7;336"/>
+			<todo name="TODO        $this-&gt;customMarkText = $this-&gt;MARKTEXT_RESOLVER;" pos="7;337"/>
+			<todo name="TODO" pos="8;378"/>
+			<todo name="TODO" pos="8;387"/>
+			<todo name="TODO remove old     $this-&gt;chart-&gt;setAutoRepaint(false);" pos="1;819"/>
+			<todo name="TODO remove old       $this-&gt;getChart()-&gt;setAutoRepaint(true);" pos="1;832"/>
+			<todo name="tODO    $result = new DateTime($this-&gt;vxValues-&gt;value[$valueIndex])-&gt;" pos="20;1577"/>
+			<todo name="TODO    $result = new DateTime($this-&gt;vxValues-&gt;" pos="20;1584"/>
+			<todo name="todo   $result = (new DecimalFormat($this-&gt;Language-&gt;getString(&quot;DefValueFormat&quot;)))-&gt;format(" pos="17;1591"/>
+			<todo name="TODO       return $this-&gt;customMarkText-&gt;getMarkText($valueIndex, $tmpResult);" pos="9;1672"/>
+			<todo name="TODO   public function sortByLabels($order) {" pos="5;1729"/>
+			<todo name="TODO                !($this-&gt;datasource instanceof Series[]) &amp;&amp;" pos="10;2374"/>
+			<todo name="TODO" pos="5;2389"/>
+			<todo name="todo throws ChartException" pos="44;2435"/>
+			<todo name="TODO  ($a-&gt;get($t))-&gt;checkOtherSeries($this);" pos="16;2448"/>
+			<todo name="TODO review - if is not commented freeseriescolor makes a repaint which affects to the" pos="11;2573"/>
+			<todo name="TODO       $this-&gt;chart-&gt;broadcastEvent($this, $tmpSeriesEventStyle-&gt;CHANGECOLOR);" pos="13;2631"/>
+			<todo name="TODO     $this-&gt;chart-&gt;broadcastEvent($this, $tmpSeriesEventStyle-&gt;CHANGEACTIVE);" pos="13;2664"/>
+			<todo name="TODO" pos="14;2726"/>
+			<todo name="TODO add datatime" pos="7;2796"/>
+			<todo name="todo public function add($x, $y) {" pos="8;2809"/>
+			<todo name="TODO public function add($x, $y, $c) {" pos="8;2824"/>
+			<todo name="TODO    public function add($x, $y, $text) {" pos="8;2838"/>
+			<todo name="TODO public function add($value) {" pos="8;2896"/>
+			<todo name="TODO    public function add($value) {" pos="8;2910"/>
+			<todo name="todo    public function add($p) {" pos="8;2965"/>
+			<todo name="TODO    public function add($aDate, $y, $text, $color) {" pos="8;3025"/>
+			<todo name="tODO    public function add($source) {" pos="8;3100"/>
+			<todo name="TODO    public function add($xValues, $yValues) {" pos="8;3131"/>
+			<todo name="TODO    public function add($values) {" pos="8;3181"/>
+			<todo name="TODO" pos="8;3272"/>
+			<todo name="TODO    public function delete($index, $count, $removeGap) {" pos="8;3350"/>
+			<todo name="tODO temp lines added" pos="19;3888"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\SeriesCollection.php">
+			<todo name="TODO" pos="6;63"/>
+			<todo name="TODO $this-&gt;chart-&gt;broadcastEvent($s, SeriesEventStyle.ADD);" pos="13;90"/>
+			<todo name="TODO remove, but adding series throught delphi ide does not" pos="13;92"/>
+			<todo name="@todo VALID?" pos="12;113"/>
+			<todo name="TODO $this-&gt;chart-&gt;broadcastEvent($s, SeriesEventStyle.REMOVE);" pos="13;162"/>
+			<todo name="TODO $this-&gt;chart-&gt;invalidate();" pos="13;176"/>
+			<todo name="TODO $this-&gt;chart-&gt;broadcastEvent(null, SeriesEventStyle.SWAP);" pos="9;204"/>
+			<todo name="TODO" pos="10;214"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\SeriesPointer.php">
+			<todo name="TODO" pos="10;462"/>
+			<todo name="todo review protected" pos="13;598"/>
+			<todo name="Todo TransparentColor" pos="39;600"/>
+			<todo name="TODO" pos="6;649"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ShapeSeries.php">
+			<todo name="TODO assign visible brush to false if transparent is true" pos="9;439"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Smith.php">
+			<todo name="TODO $this-&gt;chart-&gt;getGraphics3D()-&gt;clipEllipse($this-&gt;getCircleRect());" pos="13;548"/>
+			<todo name="TODO" pos="18;551"/>
+			<todo name="TODO $this-&gt;chart-&gt;getGraphics3D()-&gt;unClip();" pos="13;570"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ValueList.php">
+			<todo name="todo review double[$this-&gt;count];" pos="43;288"/>
+			<todo name="todo review new double[$tmp];" pos="47;514"/>
+			<todo name="TODO Review   before         System-&gt;arraycopy($this-&gt;value,0,newValue,0,$this-&gt;count-1);" pos="1;516"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\themes\BlueSkyTheme.php">
+			<todo name="TODO         $this-&gt;chart-&gt;getLegend()-&gt;getGradient()-&gt;setDirection(GradientDirection.HORIZONTAL);" pos="1;53"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\themes\XPTheme.php">
+			<todo name="TODO         $this-&gt;chart-&gt;getPanel().getGradient()-&gt;setDirection(GradientDirectionBACKDIAGONAL);" pos="1;56"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\Annotation.php">
+			<todo name="TODO" pos="8;398"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\ColorBand.php">
+			<todo name="TODO ($e-&gt;getID()==ChartDrawEvent::$PAINTED) &amp;&amp;" pos="16;379"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\ColorLine.php">
+			<todo name="TODO ($e-&gt;getID() == ChartDrawEvent::$PAINTING) &amp;&amp;" pos="10;200"/>
+			<todo name="TODO ($e-&gt;getID() == ChartDrawEvent::$PAINTED) &amp;&amp;" pos="9;202"/>
+			<todo name="TODO ($e-&gt;getID() == ChartDrawEvent::$PAINTING) &amp;&amp;" pos="32;206"/>
+			<todo name="@todo DO NOTHING?" pos="28;339"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\ExtraLegend.php">
+			<todo name="TODO" pos="9;75"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\GridBand.php">
+			<todo name="TODO ($e-&gt;getID()==$tmpChartDrawEvent-&gt;PAINTING) &amp;&amp;" pos="11;166"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\SeriesBand.php">
+			<todo name="TODO" pos="14;217"/>
+		</todofile>
+		<todofile name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\Tool.php">
+			<todo name="TODO" pos="6;100"/>
+		</todofile>
+	</todoblock>
+	<dbgurls>
+	</dbgurls>
+	<filescache>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\ToolSeries.php" crc="1517842607"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\ToolsCollection.php" crc="1515779055"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\ToolAxis.php" crc="1515779055"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\Tool.php" crc="1517842607"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\SeriesBand.php" crc="1515779055"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\MarksTip.php" crc="1515779055"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\GridBand.php" crc="1515779055"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\ExtraLegend.php" crc="1515779055"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\ColorLineStyle.php" crc="1515779055"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\ColorLine.php" crc="1515779055"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\ColorBand.php" crc="1515779055"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\AnnotationPosition.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\AnnotationCallout.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tools\Annotation.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\themes\Y2009.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\themes\XPTheme.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\themes\WebTheme.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\themes\ThemesList.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\themes\Theme.php" crc="1516619839"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\themes\OperaTheme.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\themes\GrayscaleTheme.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\themes\ExcelTheme.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\themes\DefaultTheme.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\themes\ColorPalettes.php" crc="1516398205"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\themes\ClassicTheme.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\themes\BusinessTheme.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\themes\BlueSkyTheme.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\themes\BlackIsBackTheme.php" crc="1515779072"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Volume.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\VerticalAxis.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ValuesLists.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ValueListOrder.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ValueList.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Smith.php" crc="1515779072"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ShapeXYStyle.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ShapeTextVertAlign.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ShapeTextHorizAlign.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ShapeStyle.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ShapeSeries.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\SeriesRandom.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\SeriesPointer.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\SeriesMarksPosition.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\SeriesMarks.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\SeriesEventStyle.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\SeriesCollection.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Series.php" crc="1520344390"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\RandomOHLC.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Pyramid.php" crc="1515779054"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Polar.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Points.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\PointerStyle.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\PieOtherStyles.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\PieMarks.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\PieAngle.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Pie.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\OHLC.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\MultiPies.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\MultiBars.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\MultiAreas.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\MarksStyle.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\MarksItems.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\MarksItem.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\MarksCallout.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\MarkPositions.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Margins.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Line.php" crc="1515776114"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ISeries.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\IErrorPoint.php" crc="1515773582"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\HorizontalAxis.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\HorizLine.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\HorizBar.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\HorizArea.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Histogram.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\HighLow.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Gantt.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Funnel.php" crc="1516105345"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\FastLine.php" crc="1520430251"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ErrorWidthUnit.php" crc="1515773582"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ErrorStyle.php" crc="1515779071"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ErrorsFormat.php" crc="1515773582"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ErrorSeries.php" crc="1515776114"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ErrorPoint.php" crc="1516104739"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ErrorBar.php" crc="1515776114"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Donut.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\CustomStack.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\CustomPolar.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\CustomPoint.php" crc="1517232540"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\CustomErrorPoint.php" crc="1516104815"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\CustomError.php" crc="1516104671"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\CustomBar.php" crc="1515779053"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Custom.php" crc="1516057736"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ColorList.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Circular.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ChartErrorsBase.php" crc="1515773582"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ChartErrors.php" crc="1515776114"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\CandleStyle.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Candle.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Callout.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Bubble.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Bezier.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\BaseLine.php" crc="1517842607"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\BarStyle.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Bar3D.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Bar.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\ArrowHeadStyle.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Arrow.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\styles\Area.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\misc\Utils.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\misc\StringFormat.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\misc\StringBuilder.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\misc\MathUtils.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\misc\ImageUtils.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\misc\Enum.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\legend\LegendTitle.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\legend\LegendTextStyle.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\legend\LegendSymbolSize.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\legend\LegendSymbolPosition.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\legend\LegendSymbol.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\legend\LegendStyle.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\legend\LegendResolver.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\legend\LegendItemCoordinates.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\legend\LegendAlignment.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\legend\LegendAdapter.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\legend\Legend.php" crc="1515779071"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\languages\Language.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\languages\English.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\jstools\ToolTip.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\jstools\Slider.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\jstools\ScrollerThumb.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\jstools\Scroller.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\jstools\JsToolsCollection.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\jstools\JsTool.php" crc="1517842607"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\jstools\CursorRender.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\jstools\CursorDirection.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\jstools\Cursor.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\imports\XMLImport.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\imports\Imports.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\imports\DataImportFormat.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\Variance.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\Subtract.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\Spline.php" crc="1515779052"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\Smoothing.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\PeriodStyle.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\PeriodAlign.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\Perimeter.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\Multiply.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\ManySeries.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\Low.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\High.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\Functions.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\DownSamplingMethod.php" crc="1520267017"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\DownSampling.php" crc="1520437087"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\Divide.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\Count.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\Average.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\ADX.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\functions\Add.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\XMLFormat.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\WBMPFormat.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\unserialize-object-by-manager.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\TextFormat.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\SVGFormat.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\SerializeManager.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\serialize-object-by-manager.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\post-serialize-by-manager.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\PNGFormat.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\JPEGFormat.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\JavaScriptFormat.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\JavaScriptExport.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\ImageExportFormat.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\ImageExport.php" crc="1557391826"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\HTML5Format.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\GIFFormat.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\FlexOptions.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\FlexFormat.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\Exports.php" crc="1515774764"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\exports\DataExportFormat.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\events\IEventListener.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\events\EventListenerList.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\events\EventHandlerCollection.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\events\EventHandler.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\events\ChartEvent.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\events\ChartDrawEvent.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\StringFormat.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\StringAlignment.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\LineCap.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\InternalPyramidTrunc.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\HatchStyle.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\GradientDirection.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\Gradient.php" crc="1515779071"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\EdgeStyles.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\DashStyle.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\Color.php" crc="1515779051"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\ChartPen.php" crc="1516055973"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\ChartFont.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\ChartBrush.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\CanvasSVG.php" crc="1557395375"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\CanvasMing.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\CanvasHTML5.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\drawing\CanvasFlex.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\TicksPen.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\NextAxisLabelValue.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\GridPen.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\DepthAxis.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\CustomAxes.php" crc="1493206677"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\AxisTitle.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\AxisSavedScales.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\AxisLinePen.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\AxisLabelStyle.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\AxisLabelsItems.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\AxisLabels.php" crc="1519758239"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\AxisLabelItem.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\AxisLabelAlign.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\AxisDraw.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\Axis.php" crc="1520345036"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\Axes.php" crc="1515779078"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\axis\AllAxisSavedScales.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\animations\Expand.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\animations\AnimationsCollection.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\animations\Animation.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\ZoomScroll.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\ZoomDirections.php" crc="1515779050"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\Zoom.php" crc="1515779078"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\Walls.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\Wall.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\Title.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\TextShapeStyle.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\TextShapePosition.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\TextShape.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\Texts.php" crc="1520438990"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\TextFormat.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\TeeShape.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\TeePoint.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\TeePanel.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\TeePage.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\TeeChart.package.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\TeeBevel.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\TeeBase.php" crc="1515779078"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\TChart.php" crc="1551096627"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tchart.inc.php" crc="1515779071"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\tchart.ide.inc.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\ShapeBorders.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\Shadow.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\ScrollDirections.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\Scroll.php" crc="1516107256"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\Rectangle.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\PositionUnits.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\PointDouble.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\Point3D.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\PanelMarginUnits.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\MultiLine.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\libTeeChart.php" crc="1520266464"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\ImageMode.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\IChart.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\IBaseChart.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\Header.php" crc="1516107256"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\GraphicsGD.php" crc="1564747604"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\Footer.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\FloatRange.php" crc="1516107256"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\Dimension.php" crc="1516107256"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\DateTimeStep.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\Comparator.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\ChartClickedPartStyle.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\Chart.php" crc="1515779078"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\BevelStyle.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\Aspect.php" crc="1515779049"/>
+		<file name="D:\steema\root\TeeChartPHP\TeeChartPHP\sources\ArrowPoint.php" crc="1516107256"/>
+	</filescache>
+</project>

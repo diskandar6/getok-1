@@ -1,0 +1,1 @@
+<?php $var=array('theme'=>'blank','status'=>'1','skin'=>'white-skin','subtheme'=>'blank','position'=>'0','browser_title'=>'Forgot','parent_menu'=>'-',);?>

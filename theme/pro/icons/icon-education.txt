@@ -1,0 +1,16 @@
+fas,fa fa-apple-alt
+fas,fa fa-atom
+fas,fa fa-award
+far,fas,fa fa-bell
+far,fas,fa fa-bell-slash
+fas,fa fa-book-open
+fas,fa fa-chalkboard
+fas,fa fa-chalkboard-teacher
+fas,fa fa-graduation-cap
+fas,fa fa-laptop-code
+fas,fa fa-microscope
+fas,fa fa-music
+fas,fa fa-school
+fas,fa fa-shapes
+fas,fa fa-theater-masks
+fas,fa fa-user-graduate

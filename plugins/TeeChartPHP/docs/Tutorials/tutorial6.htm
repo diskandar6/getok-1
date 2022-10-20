@@ -1,0 +1,1943 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=Edit-Time-Data href="tutorial6_archivos/editdata.mso">
+<title>Tutorial 6 - Working with Series</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Portatil</o:Author>
+  <o:LastAuthor>Portatil</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>27</o:TotalTime>
+  <o:Created>2008-12-05T10:48:00Z</o:Created>
+  <o:LastSaved>2008-12-05T11:15:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>3325</o:Words>
+  <o:Characters>18292</o:Characters>
+  <o:Company>...</o:Company>
+  <o:Lines>152</o:Lines>
+  <o:Paragraphs>43</o:Paragraphs>
+  <o:CharactersWithSpaces>21574</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<link rel=Stylesheet type="text/css" media=all href=helpstyle.css>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;
+	mso-font-alt:"Courier New";
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 0 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	line-height:28.0pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	color:black;
+	font-weight:bold;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:29.75pt;
+	mso-margin-bottom-alt:auto;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-weight:bold;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:29.75pt;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:12.0pt;
+	color:black;
+	font-weight:bold;}
+h4
+	{mso-margin-top-alt:auto;
+	margin-right:29.75pt;
+	mso-margin-bottom-alt:auto;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:11.0pt;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+address
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:178.55pt;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:12.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-style:italic;}
+code
+	{mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{margin-top:0cm;
+	margin-right:71.4pt;
+	margin-bottom:0cm;
+	margin-left:11.9pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:8.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Courier New";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Tabla normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=ES link=blue vlink=blue style='tab-interval:35.4pt'
+topmargin=4>
+
+<div class=Section1>
+
+<div style='background-image:'url('url(timages/headerback.png)')';left:0in;
+position:absolute;top:0in;z-index:-10' id=one>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp; <o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0cm;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><img
+  width=288 height=121 id="_x0000_i1025" src="timages/HeaderLogo.gif"><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.0pt;font-family:Verdana'>&nbsp; <a href="Contents.HTM">Contents&nbsp;page</a>&nbsp;<br>
+  &nbsp; <a href="Tutorial5.htm">Previous</a>&nbsp;|&nbsp;<a
+  href="Tutorial7.htm">Next</a>&nbsp;</span><span style='font-size:9.0pt;
+  font-family:Verdana'> <o:p></o:p></span></p>
+  </td>
+  <td width=20 valign=top style='width:15.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="TeeChart_tutorial_6"></a>Tutorial 6 - Working with Series</h2>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="80%"
+ style='width:80.0%;mso-cellspacing:1.5pt;mso-padding-alt:2.25pt 2.25pt 2.25pt 2.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'>Contents</span></b><span
+  style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <h3><a href="#SeriesTypes"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Series
+  Types</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+  <p><a href="#SeriesHierarchy"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Series
+  Class structure</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+  </span><a href="#ChooseSeries"><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'>Choosing a Series Type</span></a><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><br>
+  </span><a href="#AddToSeries"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Adding
+  data to a Series</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+  </span><a href="#DeleteFromSeries"><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'>Deleting data points from a Series</span></a><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'><br>
+  </span><a href="#NullPoints"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Adding
+  Null points to a Series</span></a><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><o:p></o:p></span></p>
+  <h3><a href="#MixingSeries"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Mixing
+  Series Types on a Chart</span></a><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><o:p></o:p></span></h3>
+  <p><a href="#AddSeries"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Adding
+  New Series</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+  </span><a href="#ChooseAxis"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Choose
+  Axes for a Series</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+  </span><a href="#ConnectSeries"><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'>Connecting Series</span></a><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><br>
+  </span><a href="#ChangeSeriesOrder"><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'>Changing Series order</span></a><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><o:p></o:p></span></p>
+  <h3><a href="#Valuelist"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Series
+  Value list</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+  <p><a href="#EgValues"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Example
+  using Values</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <h3><a href="#SeriesEvents">Series Events</a></h3>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="#GetPointer">OnGetSeriesPointerStyle&lt;</a><br>
+  <a href="#GetMarkText">OnGetSeriesMark</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h3><a name=SeriesTypes><span lang=EN-GB style='mso-ansi-language:EN-GB'>Series
+Types</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>The Series component
+is the common ancestor for all Series types.<o:p></o:p></span></p>
+
+<h4><a name=SeriesHierarchy><span lang=EN-GB style='mso-ansi-language:EN-GB'>Series
+Class structure</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>As a little background on
+the structure of the TeeChart Type Library, here is an explanation of the
+Series classes and interfaces. The diagram below shows the relationship between
+TeeChart Series classes. All classes derive from the generic &quot;Series&quot;
+class and thus share &quot;Series&quot; methods. Several abstract Classes
+derive from Series (Custom3DSeries, CustomBarSeries and CircledSeries), these
+are highlighted in grey and their interfaces are not directly accessible for
+programming, their characteristics are inherited by their descendant Series
+types. All derived Series (in orange) are accessible in the TeeChart gallery
+for inclusion in your Chart. TeeChart Series, derived in this way, allow
+programmable access to the inherited methods via a common index structure (see
+example code later in this section). <br>
+&nbsp;<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="80%"
+ style='width:80.0%;mso-cellspacing:1.5pt;mso-padding-alt:2.25pt 2.25pt 2.25pt 2.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><img
+  border=0 width=708 height=1417 id="_x0000_i1028" src="timages/seriestree.png"><o:p></o:p></span></p>
+  </td>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><b><span lang=EN-GB style='font-size:9.0pt;font-family:
+  Verdana;mso-ansi-language:EN-GB'>TeeChart for PHP's internal Series Class
+  hierarchy</span></b><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>You can create and add new
+and differing Series types to the same Chart.<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>//Add a series at runtime <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$area1 = new Area($tChart1-&gt;getChart());<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$area1-&gt;fillSampleValues(4);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>      </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//Or <o:p></o:p></span></pre>
+<pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$area1 = new Area();
+$tChart1-&gt;addSeries($area1);
+$area1-&gt;fillSampleValues(4); 
+</span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>An example of mixing
+different series classes in the same Chart would be to add a Area (Series(0)),
+Bar (Series(1)) and Line (Series(2)) Series to a Chart at design time.<br>
+All access a common index structure, the Chart's Series list. To work with the
+Series may look something like the below: <o:p></o:p></span></p>
+
+<p class=MsoNormal><font color="#000066">
+<span style="font-family: Verdana; font-size: 9pt" lang="en-gb">&lt;?php<br>
+//Includes<br>
+require_once &quot;../sources/TChart.php&quot;;<br>
+<br>
+$tChart1 = new TChart(500,300);<br>
+<br>
+$tChart1-&gt;getAspect()-&gt;setView3D(false);<br>
+//$tChart1-&gt;getPanel()-&gt;getGradient()-&gt;setVisible(false);<br>
+$tChart1-&gt;getPanel()-&gt;getGradient()-&gt;setEndColor(Color::GRAY());<br>
+<br>
+//You could add the Series at runtime <br>
+$area1 = new Area($tChart1-&gt;getChart()); <br>
+$bar1 = new Bar($tChart1-&gt;getChart()); <br>
+$line1 = new Line($tChart1-&gt;getChart()); <br>
+$line2 = new Line($tChart1-&gt;getChart()); <br>
+&nbsp;</span></font></p>
+<p class=MsoNormal><font color="#000066">
+<span style="font-family: Verdana; font-size: 9pt" lang="en-gb">//Use Series 
+common properties <br>
+$tChart1-&gt;getSeries(0)-&gt;fillSampleValues(10); <br>
+$tChart1-&gt;getSeries(1)-&gt;fillSampleValues(10); <br>
+$tChart1-&gt;getSeries(2)-&gt;fillSampleValues(10); <br>
+$tChart1-&gt;getSeries(3)-&gt;fillSampleValues(10); <br>
+<br>
+$area1-&gt;setColor(new Color(230,250,105));<br>
+$area1-&gt;getLinePen()-&gt;setVisible(false);<br>
+<br>
+$bar1-&gt;setColor(new Color(100,155,255));<br>
+$bar1-&gt;getMarks()-&gt;setColor(Color::WHITE());<br>
+$bar1-&gt;getMarks()-&gt;getPen()-&gt;setVisible(false);<br>
+$bar1-&gt;getMarks()-&gt;getArrow()-&gt;setVisible(false);<br>
+$bar1-&gt;getPen()-&gt;setVisible(false);<br>
+<br>
+$line1-&gt;setColor(Color::RED());<br>
+$line2-&gt;setColor(Color::FUCHSIA());<br>
+<br>
+$bar1-&gt;setBarStyle(BarStyle::$PYRAMID);<br>
+//Modify Line specific properties <br>
+$line1-&gt;setStairs(true); //Set line to Stairs <br>
+$line1-&gt;getLinePen()-&gt;setColor(Color::BLUE()); //LineSeries bounding lines 
+colour <br>
+<br>
+$tChart1-&gt;render(&quot;chart1.png&quot;);<br>
+$rand=rand();<br>
+print '&lt;img src=&quot;chart1.png?rand='.$rand.'&quot;&gt;'; <br>
+?&gt;</span></font><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'><br>
+&nbsp;<o:p></o:p></span></p>
+
+<h4><a name=ChooseSeries><span lang=EN-GB style='mso-ansi-language:EN-GB'>Choosing
+a Series Type</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Choosing a Series Type for
+a Chart will very much depend on your own requirements for the Chart. There are
+occasions, however, where the choice of Chart depends on which Series types
+support the number of input variables because of the high number of variables
+to plot. The following table shows the number of variables allowed by a sample
+of Series types.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'><br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></p>
+
+<ALIGN="LEFT"><LEFT>
+
+<table class=MsoNormalTable border=1 cellspacing=1 cellpadding=0 width=450
+ style='width:337.5pt;mso-cellspacing:.7pt;border:outset #B5B500 1.0pt;
+ mso-border-alt:outset #B5B500 .75pt;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:#CECEFF;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><b>Series Type</b></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:#CECEFF;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'>No.
+  of variables</span></b><span style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:#CECEFF;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><b>Datasource Properties</b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><b>Basic</b></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><a href="Javascript:CallHelp('TLineSeries','Tc7')">Line</a></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>2<o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p>XValues, YValues, XLabel</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><a href="Javascript:CallHelp('TFastLineSeries','Tc7')">Fast Line</a></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>2<o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p>XValues, YValues, XLabel</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><a href="Javascript:CallHelp('TBarSeries','Tc7')">Bar</a></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>2<o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><span lang=EN-GB style='mso-ansi-language:EN-GB'>XValues, YValues (called
+  Bar), XLabel<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><a href="Javascript:CallHelp('THorizBarSeries','Tc7')">HorizBar</a></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>2<o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><span lang=EN-GB style='mso-ansi-language:EN-GB'>XValues, YValues (called
+  Bar), XLabel<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><a href="Javascript:CallHelp('TAreaSeries','Tc7')">Area</a></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>2<o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p>XValues, YValues, XLabel</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><a href="Javascript:CallHelp('TPointSeries','Tc7')">Point</a></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>2<o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p>Xvalues, YValues, XLabel</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><a href="Javascript:CallHelp('TPieSeries','Tc7')">Pie</a></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>1<o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p>PieValues, XLabel</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><a href="Javascript:CallHelp('TArrowSeries','Tc7')">Arrow</a></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>4<o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><span lang=EN-GB style='mso-ansi-language:EN-GB'>StartXValues,
+  StartYValues, XLabel, EndXValues, EndYValues<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><a href="Javascript:CallHelp('TBubbleSeries','Tc7')">Bubble</a></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>3<o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p>Xvalues, YValues, XLabel, RadiusValues</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><a href="Javascript:CallHelp('TGanttSeries','Tc7')">Gantt</a></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>3<o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><span lang=EN-GB style='mso-ansi-language:EN-GB'>StartValues, EndValues,
+  AY (Y axis level), AXLabel (Label optionally shown on Y-axis or as mark)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><a href="Javascript:CallHelp('TChartShape','Tc7')">ShapeSeries</a></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>4<o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><span lang=EN-GB style='mso-ansi-language:EN-GB'>X0 (Top), Y0 (Bottom), X1
+  (Left), Y1 (Right)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><b>Extended</b></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><a href="Javascript:CallHelp('TBezierSeries','Tc7')">Bezier</a></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>2<o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p>XValues, YValues, XLabel</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><a href="Javascript:CallHelp('TCandleSeries','Tc7')">Candle</a></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>5<o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><span lang=EN-GB style='mso-ansi-language:EN-GB'>OpenValues, CloseValues,
+  HighValues, LowValues, DateValues<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:19'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><a href="Javascript:CallHelp('TPoint3DSeries','Tc7')">Point3D</a></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>3<o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p>XValues, YValues, XLabel, ZValues</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:23;mso-yfti-lastrow:yes'>
+  <td width="35%" valign=top style='width:35.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><a href="Javascript:CallHelp('TVolumeSeries','Tc7')">Volume</a></p>
+  </td>
+  <td width="15%" valign=top style='width:15.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>2<o:p></o:p></span></p>
+  </td>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p>XValues, YValues (VolumeValues), XLabel</p>
+  </td>
+ </tr>
+</table>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Labelling can be used to
+extend the value of a 2 variable Series Type. See the example below that uses 3
+instances of the Bar Series type in the same Chart.<o:p></o:p></span></p>
+
+<p><b>Example</b></p>
+
+<p><i>Uses Bar Series types</i></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'>Product
+  code</span></b><span style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'>Month</span></b><span
+  style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'>Quantity
+  produced</span></b><span style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>10<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Jan<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>300<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>10<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Feb<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>325<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>10<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Mar<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>287<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>12<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Jan<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>175<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>12<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Feb<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>223<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>12<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Mar<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>241<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>14<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Jan<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>461<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>14<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Feb<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>470<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>14<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Mar<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>455<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>In its simplest form, the
+data produces the following Chart, grouping the information by month:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><img
+border=0 width=364 height=247 id="_x0000_i1029" src="timages/series1.gif"><o:p></o:p></span></p>
+
+<p>or (grouping by product):</p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><img
+border=0 width=364 height=247 id="_x0000_i1030" src="timages/series2.gif"><o:p></o:p></span></p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>We have added new values to
+the table above (Stock).<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'>Product
+  code</span></b><span style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'>Month</span></b><span
+  style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'>Quantity
+  produced</span></b><span style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'>Stock
+  level</span></b><span style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>10<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Jan<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>300<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>600<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>10<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Feb<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>325<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>715<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>10<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Mar<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>287<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>676<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>12<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Jan<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>175<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>245<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>12<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Feb<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>223<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>270<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>12<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Mar<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>241<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>315<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>14<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Jan<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>461<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>800<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>14<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Feb<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>470<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>755<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>14<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Mar<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>455<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>835<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>The values of stock are
+generally higher than those of monthly production so displaying them gives the
+following chart (2D this time). </span>The Chart uses Line Series to
+differentiate Stocks.</p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><img
+border=0 width=347 height=281 id="_x0000_i1031" src="timages/series3.gif"><o:p></o:p></span></p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<h4><a name=AddToSeries><span lang=EN-GB style='mso-ansi-language:EN-GB'>Adding
+data to a Series</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Most Series types (other
+than Functions </span><a href="Tutorial7.htm"><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>Tutorial 7</span></a><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>) use the Add and ADDXY methods for adding
+data. </span>There are some exceptions, see the following table:</p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><br
+style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></p>
+
+<ALIGN="LEFT"><LEFT>
+
+<table class=MsoNormalTable border=1 cellspacing=1 cellpadding=0 width=450
+ style='width:337.5pt;mso-cellspacing:.7pt;border:outset #B5B500 1.0pt;
+ mso-border-alt:outset #B5B500 .75pt;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width="50%" valign=top style='width:50.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:#CECEFF;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'>Series
+  Type</span></b><span style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+  <td width="25%" valign=top style='width:25.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:#CECEFF;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'>Add
+  Series points</span></b><span style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+  <td width="25%" valign=top style='width:25.0%;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:#CECEFF;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'>Delete
+  Series points</span></b><span style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'>Standard
+  Series types</span></b><span style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TLineSeries','Tc7')">Line</a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.Add','Tc7')"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.Add</span></a></span><font color="#0000FF"><span lang=EN-GB
+  style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.AddXY','Tc7')"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddXY</span></a></span><font color="#0000FF"><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.AddNull','Tc7')"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddNull</span></a></span><font color="#0000FF"><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.AddNullXY','Tc7')"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddNullXY</span></a></span></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddArray</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYTextColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYTextColor</span></font></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.Delete','Tc7')">Series.Delete</a><br>
+  <a href="Javascript:CallHelp('TChartSeries.Clear','Tc7')">Series.Clear</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('THorizLineSeries','Tc7')">Horiz Line</a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.Add','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.Add</span></a></span><font color="#0000FF"><span lang=EN-GB
+  style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.AddXY','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddXY</span></a></span><font color="#0000FF"><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.AddNull','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddNull</span></a></span><font color="#0000FF"><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.AddNullXY','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddNullXY</span></a></span></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddArray</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYTextColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYTextColor</span></font></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.Delete','Tc7')">Series.Delete</a><br>
+  <a href="Javascript:CallHelp('TChartSeries.Clear','Tc7')">Series.Clear</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TFastLineSeries','Tc7')">Fast Line</a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.Add','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.Add</span></a></span><font color="#0000FF"><span lang=EN-GB
+  style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.AddXY','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddXY</span></a></span><font color="#0000FF"><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.AddNull','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddNull</span></a></span><font color="#0000FF"><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.AddNullXY','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddNullXY</span></a></span></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddArray</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYTextColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYTextColor</span></font></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.Delete','Tc7')">Series.Delete</a><br>
+  <a href="Javascript:CallHelp('TChartSeries.Clear','Tc7')">Series.Clear</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TBarSeries','Tc7')">Bar</a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.Add','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.Add</span></a></span><font color="#0000FF"><span lang=EN-GB
+  style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.AddXY','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddXY</span></a></span><font color="#0000FF"><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.AddNull','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddNull</span></a></span><font color="#0000FF"><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.AddNullXY','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddNullXY</span></a></span></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddArray</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYTextColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYTextColor</span></font></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.Delete','Tc7')">Series.Delete</a><br>
+  <a href="Javascript:CallHelp('TChartSeries.Clear','Tc7')">Series.Clear</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('THorizBarSeries','Tc7')">HorizBar</a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.Add','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.Add</span></a></span><font color="#0000FF"><span lang=EN-GB
+  style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.AddXY','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddXY</span></a></span><font color="#0000FF"><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.AddNull','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddNull</span></a></span><font color="#0000FF"><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.AddNullXY','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddNullXY</span></a></span></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddArray</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYTextColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYTextColor</span></font></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.Delete','Tc7')">Series.Delete</a><br>
+  <a href="Javascript:CallHelp('TChartSeries.Clear','Tc7')">Series.Clear</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TAreaSeries','Tc7')">Area</a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.Add','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.Add</span></a></span><font color="#0000FF"><span lang=EN-GB
+  style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.AddXY','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddXY</span></a></span><font color="#0000FF"><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.AddNull','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddNull</span></a></span><font color="#0000FF"><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.AddNullXY','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddNullXY</span></a></span></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddArray</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYTextColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYTextColor</span></font></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.Delete','Tc7')">Series.Delete</a><br>
+  <a href="Javascript:CallHelp('TChartSeries.Clear','Tc7')">Series.Clear</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TPointSeries','Tc7')">Point</a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.Add','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.Add</span></a></span><font color="#0000FF"><span lang=EN-GB
+  style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.AddXY','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddXY</span></a></span><font color="#0000FF"><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.AddNull','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddNull</span></a></span><font color="#0000FF"><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span></font><span style='font-size:9.0pt;font-family:Verdana'>
+	<a
+  href="Javascript:CallHelp('TChartSeries.AddNullXY','Tc7')" style="color: blue; text-decoration: underline; text-underline: single"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddNullXY</span></a></span></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddArray</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddXYTextColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYColor</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYText</span></font></p>
+	<p class=MsoNormal><font color="#0000FF">
+	<span style="font-family: Verdana; font-size: 9pt; background-position: 0% 0%" lang="en-gb">
+	Series.AddYTextColor</span></font></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.Delete','Tc7')">Series.Delete</a><br>
+  <a href="Javascript:CallHelp('TChartSeries.Clear','Tc7')">Series.Clear</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TPieSeries','Tc7')">Pie</a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.Add','Tc7')">Series.Add</a><br>
+  <a href="Javascript:CallHelp('TChartSeries.AddNull','Tc7')">Series.AddNull</a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.Delete','Tc7')">Series.Delete</a><br>
+  <a href="Javascript:CallHelp('TChartSeries.Clear','Tc7')">Series.Clear</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TArrowSeries','Tc7')">Arrow</a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TArrowSeries.AddArrow','Tc7')"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>ArrowSeries.AddArrow</span></a></span><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.AddNull','Tc7')"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddNull</span></a></span><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.AddNullXY','Tc7')"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddNullXY</span></a></span><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.Delete','Tc7')">Series.Delete</a><br>
+  <a href="Javascript:CallHelp('TChartSeries.Clear','Tc7')">Series.Clear</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TBubbleSeries','Tc7')">Bubble</a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TBubbleSeries.AddBubble','Tc7')"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>BubbleSeries.AddBubble</span></a></span><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.AddNull','Tc7')"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddNull</span></a></span><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.AddNullXY','Tc7')"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>Series.AddNullXY</span></a></span><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.Delete','Tc7')">Series.Delete</a><br>
+  <a href="Javascript:CallHelp('TChartSeries.Clear','Tc7')">Series.Clear</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TGanttSeries','Tc7')">Gantt</a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TGanttSeries.AddGantt','Tc7')">GanttSeries.AddGantt</a></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartSeries.Delete','Tc7')">Series.Delete</a><br>
+  <a href="Javascript:CallHelp('TChartSeries.Clear','Tc7')">Series.Clear</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14;mso-yfti-lastrow:yes'>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartShape','Tc7')">Shape</a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('TChartShape.X0','Tc7')"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>ShapeSeries.X0,<br>
+  ShapeSeries.Y0,<br>
+  ShapeSeries.X1,<br>
+  ShapeSeries.Y1</span></a></span><span lang=EN-GB style='font-size:9.0pt;
+  font-family:Verdana;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:inset #B5B500 1.0pt;mso-border-alt:inset #B5B500 .75pt;
+  background:#FFFFD9;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="Javascript:CallHelp('RemoveSeries','Tc7')"><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'>TChart.RemoveSeries</span></a></span><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  (Each Shape is a unique Series)<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Colour</span></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Colour may be manually
+added for a point when adding the point.<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Example<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;addSeries(new Bar());<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;getSeries(0)-&gt;addYTextColor(50,&quot;oranges&quot;, Color::ORANGE());<o:p></o:p></span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Alternatively, you can
+allow TeeChart to allocate a colour. TeeChart will choose one of up to 19
+unique and as yet unused colours for each new Series, or for each new Series
+point if ColorEach is set to true. <br>
+Example<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;getSeries(0)-&gt;setColorEach(true);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>for($i = 0; $i &lt; 19; ++$i) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span>$higher = $i + 65;<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span>$tChart1-&gt;getSeries(0)-&gt;add(rand(0,100));<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>}<o:p></o:p></span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+
+<h4><a name=DeleteFromSeries><span lang=EN-GB style='mso-ansi-language:EN-GB'>Deleting
+data points from a Series</span></a><span lang=EN-GB style='mso-ansi-language:
+EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Use </span><a
+href="Javascript:CallHelp('TChartSeries.Delete','Tc7')"><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>Series.Delete</span></a><span lang=EN-GB
+style='mso-ansi-language:EN-GB'> to delete a point from a Series.<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Example<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;getSeries(0)-&gt;delete(7);<br>
+//(8th point - Points index start at zero)<o:p></o:p></span></pre>
+
+<p><a href="Javascript:CallHelp('TChartSeries.Clear','Tc7')"><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>Series-&gt;Clear</span></a><span lang=EN-GB
+style='mso-ansi-language:EN-GB'> clears all points from a Series.<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+
+<h4><a name=NullPoints><span lang=EN-GB style='mso-ansi-language:EN-GB'>Adding
+Null points to a Series</span></a><span lang=EN-GB style='mso-ansi-language:
+EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>See the table </span><a
+href="#AddToSeries"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Adding
+data to a Series</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'>
+for a list of Series Types that support the AddNull method. As the name
+suggests, AddNull will add a Null point to the Series allowing you to define a
+label for the point but leaving a break in the Series at that point. In the
+case of a Line Series, the last point before the break will not join to the
+first point after the break. See Series-&gt;AddNull.<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>example<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>$line = new Line($tChart1-&gt;getChart());<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$line-&gt;addNull();<o:p></o:p></span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h3><a name=MixingSeries><span lang=EN-GB style='mso-ansi-language:EN-GB'>Mixing
+Series Types on a Chart</span></a><span lang=EN-GB style='mso-ansi-language:
+EN-GB'><o:p></o:p></span></h3>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>TeeChart Pro offers an
+empty Chart Canvas as a backdrop to data Series. That means that no Chart types
+are predefined. You define the Chart type you require as a mix of the Series Types
+that you wish to display. Due to the specialised nature of some Series types it
+is impractical to mix a few of the Series types together on a Chart. TeeChart
+helps you by greying out unsuitable Series types in the Chart Gallery when you
+arrive to add a new Series. There is no practical limit to the number of Series
+that you can put in one Chart.<o:p></o:p></span></p>
+
+<h4><a name=AddSeries><span lang=EN-GB style='mso-ansi-language:EN-GB'>Adding
+New Series</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Add a Series using the
+Chart Editor (see </span><a href="Tutorial1.htm"><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>Tutorial 1</span></a><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>) or by code.<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Example<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>$bar1 = new Bar($tChart1-&gt;getChart());<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$bar1-&gt;fillSampleValues(10);<o:p></o:p></span></pre>
+
+<p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+
+<h4><a name=ChooseAxis><span lang=EN-GB style='mso-ansi-language:EN-GB'>Choose
+Axes for a Series</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Series added to the Chart
+will automatically take the Left and Bottom axes as their reference axes. You
+may change the reference axes, there are 4 axes available, Top, Left,
+Bottom and Right. By code, changing the axes will look like this:<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>$bar1-&gt;setHorizontalAxis(HorizontalAxis::$TOP);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$bar1-&gt;setVerticalAxis(VerticalAxis::$RIGHT);<o:p></o:p></span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>More than 1 Series may be
+associated with each Axis. TeeChart will decide the best scale to fit the
+Series matched to the Axis but you may change Axis scales yourself (See the </span><a
+href="Tutorial4.htm#Scales"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Axis
+Tutorial</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'>). Additional
+axes may be added, they will copy the scales associated with their counterparts
+from the first 4 axes (see the Tutorial section </span><a
+href="tutorial4.htm#AdditionalAxes"><span lang=EN-GB style='mso-ansi-language:
+EN-GB'>Additional axes</span></a><span lang=EN-GB style='mso-ansi-language:
+EN-GB'>).<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+
+<h4><a name=ConnectSeries><span lang=EN-GB style='mso-ansi-language:EN-GB'>Connecting
+Series</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>You may use a Series as the
+datasource for another Series. To do it by code see below:<o:p></o:p></span></p>
+
+<p><font color="#000066">$bar1 = new Bar($tChart1-&gt;getChart());<br>
+$bar1-&gt;fillSampleValues();<br>
+$line1 = new Line($tChart1-&gt;getChart());<br>
+$average1 = new Average();<br>
+$line1-&gt;setFunction($average1);<br>
+$line1-&gt;setDataSource($bar1);<br>
+$line1-&gt;checkDataSource(); </font></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>See </span><a
+href="Tutorial7.htm"><span lang=EN-GB style='mso-ansi-language:EN-GB'>tutorial
+7 - Working with Functions</span></a><span lang=EN-GB style='mso-ansi-language:
+EN-GB'> for more information about how to use TeeChart functions.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+
+<h4><a name=ChangeSeriesOrder><span lang=EN-GB style='mso-ansi-language:EN-GB'>Changing
+Series order</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Changing series order is
+very easy. Series order will decide the
+relative display position of the Series in the Chart with respect to other
+Series. Use the SeriesList property or the ExchangeSeries method.<o:p></o:p></span></p>
+
+<p class=MsoNormal><i><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'>Example</span></i><span lang=EN-GB style='font-size:
+9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'> <o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;exchangeSeries(0,1);<span style='mso-spacerun:yes'>  </span>//Change Series(0) with Series(1) in the index order<o:p></o:p></span></pre>
+
+<p><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>*Note</span></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>. After exchanging Series, the index
+for the Series will be changed. Thus the line of code above will perpetually
+interchange the 2 Series '0' and '1' if the code is rerun, as 0 becomes 1 and 1
+becomes 0.<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Setting a Series to
+'Active=False' will hide the Series from the Chart but maintain its data
+content intact.<o:p></o:p></span></p>
+
+<h3><a name=Valuelist><span lang=EN-GB style='mso-ansi-language:EN-GB'>Series
+Value list</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>TeeChart Series store their
+values in a Valuelist accessible and modifiable via the </span><a
+href="Javascript:CallHelp('TChartValuelist','Tc7')"><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>TChartValueList component</span></a><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>.<o:p></o:p></span></p>
+
+<h4><a name=EgValues><span lang=EN-GB style='mso-ansi-language:EN-GB'>Example
+using Values</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>This code modifies the
+value of a BarSeries Bar according to the user's mouseclick.<o:p></o:p></span></p>
+
+<p><i><span lang=EN-GB style='mso-ansi-language:EN-GB'>Example</span></i><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>upDatePoint($valueIndex,$tChart1-&gt;getAxes()-&gt;getLeft()-&gt;calcPosPoint($e-&gt;Y));<o:p></o:p></span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Call the UpdatePoint Sub
+routine to modify the Bar's value:<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>private function upDatePoint($bar, $Y)<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>{ <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-tab-count:2'>   </span>if($bar &lt; $tChart1-&gt;getSeries(0)-&gt;getCount())<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-tab-count:2'>   </span>{<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-tab-count:3'>      $</span>tChart1-&gt;getSeries(0)-&gt;getYValues()-&gt;setValue($bar,Y);<o:p></o:p></span></pre>
+<pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-tab-count:2'>   </span>}</span></pre>
+<pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>}<o:p></o:p></span></pre>
+
+<h4><a name=SeriesEvents><span lang=EN-GB style='mso-ansi-language:EN-GB'>Series
+events</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'> <br>
+&nbsp;<o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>The previous section
+introduces some use of Series events. This section shows some additional uses. <br>
+&nbsp;<o:p></o:p></span></p>
+
+<div id=content>
+
+<p class=MsoNormal><a name=GetPointer><b><span lang=EN-GB style='font-size:
+9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'>OnGetAxisLabel</span></b></a></p>
+<p class=MsoNormal>
+<span lang=EN-GB style='font-size:9.0pt;
+font-family:Verdana;mso-ansi-language:EN-GB'> <br>
+In the case we want to change or add extra text to some or all of the axis 
+labels, the OnGetAxisLabel event must be used, it allows to get the LabelText 
+which is going to be displayed and modify it if required.</span></p>
+<p class=MsoNormal>&nbsp;</p>
+<p class=MsoNormal>
+<span style="font-family: Verdana; font-size: 9pt" lang="en-gb">Here we can see 
+an example of use&nbsp; :</span></p>
+<p class=MsoNormal>&nbsp;</p>
+<p class=MsoNormal><span lang="en-gb">
+<font face="Verdana" style="font-size: 9pt" color="#000066">&lt;?php<br>
+//Includes<br>
+include &quot;../../../sources/TChart.php&quot;;<br>
+<br>
+function handleLoad($sender, $args)<br>
+{<br>
+// print 'object '.get_class($sender).' loaded with '.count($args).' args!&lt;br 
+/&gt;';<br>
+$sender-&gt;getHeader()-&gt;setText(&quot;OnLoad Event&quot;);<br>
+}<br>
+<br>
+function handleUnLoad($sender, $args)<br>
+{<br>
+?&gt;&lt;br&gt;&lt;br&gt;&lt;?php<br>
+print 'object '.get_class($sender).' unloaded with '.count($args).' args!&lt;br 
+/&gt;';<br>
+?&gt;&lt;/br&gt;&lt;?php<br>
+}<br>
+<br>
+// Args contains axis, index order to be displayed, labelText<br>
+function handleGetAxisLabel($sender, $args)<br>
+{<br>
+// If it's going to display left axis labels <br>
+if ($args[0] === $sender-&gt;getAxes()-&gt;getLeft()) <br>
+{ <br>
+// if the left axis label value is bigger than 50 add extra character<br>
+if ((int)$args[2] &gt; 50) {<br>
+$args[0]-&gt;getLabels()-&gt;labelText = $args[2].'-e';<br>
+}<br>
+} <br>
+else<br>
+{<br>
+if ($args[0] === $sender-&gt;getAxes()-&gt;getBottom()) <br>
+{ <br>
+if ((int)$args[2] &lt; 4) {<br>
+// if value is less than 5 changes its labeltext<br>
+$args[0]-&gt;getLabels()-&gt;labelText = $args[2].'-u';<br>
+} <br>
+}<br>
+} <br>
+}<br>
+<br>
+$handlers = new EventHandlerCollection();<br>
+$handlers-&gt;add(new EventHandler(new ChartEvent('OnLoad'),'handleLoad'));<br>
+$handlers-&gt;add(new EventHandler(new ChartEvent('OnUnload'),'handleUnload'));<br>
+$handlers-&gt;add(new EventHandler(new ChartEvent('OnGetAxisLabel'),'handleGetAxisLabel'));<br>
+<br>
+$chart = new TChart(500,300, $handlers);<br>
+<br>
+$chart-&gt;getAspect()-&gt;setView3D(false);<br>
+<br>
+$points = new Points($chart-&gt;getChart());<br>
+$chart-&gt;addSeries($points);<br>
+<br>
+$points-&gt;fillSampleValues();<br>
+$points-&gt;getPointer()-&gt;setHorizSize(10);<br>
+$points-&gt;getPointer()-&gt;setVertSize(5);<br>
+$points-&gt;setColorEach(true);<br>
+<br>
+//$chart-&gt;getLegend()-&gt;getSymbol()-&gt;setWidth(10);<br>
+<br>
+$chart-&gt;getLegend()-&gt;getSymbol()-&gt;setSquared(false);<br>
+<br>
+<br>
+$chart-&gt;render('chart.png');<br>
+$rand=rand(); <br>
+<br>
+print '&lt;font face=&quot;Verdana&quot; size=&quot;2&quot;&gt;This Demo shows how to use the OnLoad, 
+OnUnload and OnGetAxisLabel Events&lt;p&gt;';<br>
+print '&lt;img src=&quot;chart.png?rand='.$rand.'&quot;&gt;'; <br>
+?&gt;</font></span></p>
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'><br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></p>
+
+<ALIGN="CENTER">
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=359
+ style='width:269.25pt;mso-cellspacing:0cm;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width="42%" valign=top style='width:42.0%;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="tutorial5.htm"><span style='text-decoration:none;text-underline:none'><img
+  border=0 width=135 height=81 id="_x0000_i1034" src="timages/backtut.gif"></span></a><o:p></o:p></span></p>
+  </td>
+  <td width="58%" valign=top style='width:58.0%;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="tutorial7.htm"><span style='text-decoration:none;text-underline:none'><img
+  border=0 width=116 height=81 id="_x0000_i1035" src="timages/fwdtut.gif"></span></a><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'>© 1996-2012 Steema Software SL. All rights reserved. <o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

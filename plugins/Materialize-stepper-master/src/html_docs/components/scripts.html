@@ -1,0 +1,26 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/mstepper.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script> -->
+<script src="js/prism.js"></script>
+<script>
+   document.addEventListener('DOMContentLoaded', function () {
+      var sideNav = document.querySelector('.toc-wrapper');
+      var footer = document.querySelector('#footer');
+      console.log(sideNav.offsetHeight)
+      M.Pushpin.init(sideNav, { top: sideNav.offsetTop, offset: 77, bottom: footer.offsetTop + footer.offsetHeight - 350 });
+      var scrollSpy = document.querySelectorAll('.scrollspy');
+      M.ScrollSpy.init(scrollSpy);
+   });
+
+   var domSteppers = document.querySelectorAll('.stepper.demos');
+   for (var i = 0, len = domSteppers.length; i < len; i++) {
+      var domStepper = domSteppers[i];
+      new MStepper(domStepper);
+   }
+
+   function someFunction(destroyFeedback) {
+      setTimeout(function () {
+         destroyFeedback(true);
+      }, 1000);
+   }
+</script>

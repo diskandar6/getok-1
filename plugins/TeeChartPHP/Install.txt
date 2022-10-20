@@ -1,0 +1,58 @@
+==========================================================
+ TeeChart for PHP version 2019
+
+ Copyright (c) 2006-2019
+ by Steema Software SL
+ All Rights Reserved.
+
+ http://www.teechart.com
+ http://support.steema.com
+ http://www.steema.com 
+ email: general: info@steema.com
+ support forum: http://www.teechart.net/support/index.php
+
+==========================================================
+
+
+Installation instructions:
+--------------------------
+
+TeeChart for PHP is easy to install. All required files are included into the zip file.
+
+In the case you're using the "Eval" version, you will find all the sources at the "sources" folder.
+For the registered version, you need to run the TeeChart.Installer.jar file in order to extract the "source" folder which contains the required files to work with the TeeChart library. Once you run the jar file it will ask for the Customer Num, License code and password obtained before to download the zip file from our web site.
+
+To be able to run the TeeChart samples included in the zip file you have to copy the extracted files into the desired path of your apache server,
+for example \www\teechart, which gives the following result :
+
+	\www\teechart\sources\*.*
+	\www\teechart\demos\
+	\www\teechart\demos\Features
+	\www\teechart\demos\plugins
+	\www\teechart\docs\*.*
+
+
+Now you should be able to open your browser, point to "http://server/teechart/demos/Features" and see the Demo Features project.
+All you need to do in order to make use of the library is add the libTeeChart.php file (including the server path) as an include into your php files. 
+
+
+Installation under HTML5 Builder IDE :
+---------------------------------------
+
+If you want to use the TeeChart for PHP library under the "HTML5 Builder" IDE the following steps must be taken :
+
+1) Copy the \teechart folder into the \rpcl folder of "RadPHP" installation, creating the following folders : 
+	
+	\rpcl\teechart
+	\rpcl\teechart\sources
+	\rpcl\teechart\demos\*.*
+	\rpcl\teechart\docs\*.*
+
+2) Copy the \teechart\sources\tchart.inc.php and \teechart\sources\tchart.ide.inc.php files into the \rpcl folder of "HTML5 Builder".
+
+3) Open the "HTML5 Builder" IDE, go to "Home -> Packages" menu option, click "Add Package" and look for the "\teechart\sources\TeeChart.package.php" file. This will add the "TeeChart for PHP Components" item into the list of installed packages. Now click OK.
+
+4) If you create a new Delphi for PHP project and go to the design page a new "TeeChart" tab should appear on the Tool Palette. You will find the TChartOBj component there. You should be able to select it and place it on the Form as for any other component.
+
+-------------------------------------------------------
+

@@ -1,0 +1,17 @@
+<p>Yang terhormat,<br />
+<strong>{name}</strong><br />
+<br />
+Anda adalah pemilik akun {domain} dengan</p>
+
+<p><strong>Username</strong>: {username}<br />
+<strong>Email</strong>: {email}</p>
+
+<p>Anda menginginkan perubahan password, untuk itu silahkan klik link <a href="{link}">{link}</a> untuk mengubah password anda.<br />
+<br />
+Terimakasih<br />
+Salam Hangat<br />
+Team Support<br />
+<br />
+<br />
+<br />
+Perhatian: Jangan membalas email ini karena tidak akan direspon</p>

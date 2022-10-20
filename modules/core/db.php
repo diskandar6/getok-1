@@ -1,0 +1,1 @@
+<?php $var=array('uab'=>'getok1',);?>

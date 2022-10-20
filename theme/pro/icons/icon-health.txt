@@ -1,0 +1,12 @@
+fab fa-accessible-icon
+fas,fa fa-ambulance
+fas,fa fa-h-square
+far,fas,fa fa-heart
+fas,fa fa-heartbeat
+fas,fa fa-hospital-alt
+fas,fa fa-medkit
+far,fas,fa fa-plus-square
+fas,fa fa-prescription
+fas,fa fa-stethoscope
+fas,fa fa-user-md
+fas,fa fa-wheelchair

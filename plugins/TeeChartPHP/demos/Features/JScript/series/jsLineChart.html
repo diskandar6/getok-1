@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+<title>Chart1</title><script src="http://www.steema.com/files/public/teechart/html5/latest/src/teechart.js" type="text/javascript"></SCRIPT>
+<script src="http://www.steema.com/files/public/teechart/html5/latest/src/teechart-extras.js" type="text/javascript"></SCRIPT>
+<script type="text/javascript">
+var Chart1;
+function draw() {
+  Chart1=new Tee.Chart("canvas");
+  Chart1.zoom.enabled=true;
+  Chart1.scroll.enabled=true;
+  Chart1.scroll.mouseButton=0;
+  Chart1.scroll.direction="horizontal";
+  Chart1.panel.format.fill="#C0C0C0";
+  Chart1.panel.format.round.x=0;
+  Chart1.panel.format.round.y=0;
+  Chart1.panel.format.stroke.fill="#808080";
+  Chart1.walls.back.format.fill="#E2E2E2";
+  Chart1.walls.back.format.round.x=0;
+  Chart1.walls.back.format.round.y=0;
+  Chart1.title.text="Line Demo";
+  Chart1.title.format.fill="#DCDCDC";
+  Chart1.title.format.round.x=0;
+  Chart1.title.format.round.y=0;
+  Chart1.title.format.font.style="24px Verdana";
+  Chart1.title.format.font.fill="#464646";
+  Chart1.title.format.stroke.fill="#000000";
+  Chart1.footer.text="";
+  Chart1.footer.format.fill="#DCDCDC";
+  Chart1.footer.format.round.x=0;
+  Chart1.footer.format.round.y=0;
+  Chart1.footer.format.font.style="11px verdana";
+  Chart1.footer.format.font.fill="#FF0000";
+  Chart1.footer.format.stroke.fill="#000000";
+  Chart1.axes.left.format.stroke.fill="#646464";
+  Chart1.axes.left.grid.format.stroke.fill="#DCDCDC";
+  Chart1.axes.left.labels.format.font.style="11px verdana";
+  Chart1.axes.left.labels.format.font.fill="#000000";
+  Chart1.axes.left.title.format.font.style="11px verdana";
+  Chart1.axes.left.title.format.font.fill="#000000";
+  Chart1.axes.left.title.text="Y";
+  Chart1.axes.top.format.stroke.fill="#646464";
+  Chart1.axes.top.grid.format.stroke.fill="#DCDCDC";
+  Chart1.axes.top.labels.format.font.style="11px verdana";
+  Chart1.axes.top.labels.format.font.fill="#000000";
+  Chart1.axes.right.format.stroke.fill="#646464";
+  Chart1.axes.right.grid.format.stroke.fill="#DCDCDC";
+  Chart1.axes.right.labels.format.font.style="11px verdana";
+  Chart1.axes.right.labels.format.font.fill="#000000";
+  Chart1.axes.bottom.format.stroke.fill="#646464";
+  Chart1.axes.bottom.grid.format.stroke.fill="#DCDCDC";
+  Chart1.axes.bottom.labels.format.font.style="11px verdana";
+  Chart1.axes.bottom.labels.format.font.fill="#000000";
+  var Series0=Chart1.addSeries(new Tee.Line());
+  Series0.title="Series0";
+  Series0.format.fill="#BA4330";
+  Series0.data.values=[43,61,22,46,75,15,2,54,74,40,32,29,37,86,71,60,33,69,3,14,57,16,48,80,29,18,18,9,32,29,94,76,42,69,74,70,84,77,24,58,69,8,39,6,46,10,67,80,32,22,46,89,38,94,21,67,13,91,28,97,20,23,25,15,92,0,85,28,77,61,39,46,21,78,5,67,89,72,47,73,94,93,62,84,88,83,51,53,74,80,2,47,55,28,14,99,28,99,27,57,12,66,3,33,97,8,52,38,32,0,11,26,45,73,10,85,8,14,38,34,46,93,33,1,21,47,0,49,98,27,6,10,46,61,95,43,22,48,81,54,48,92,33,45,17,95,31,77,9,21,11,55,14,45,8,35,44,8,36,43,88,94,53,86,56,1,29,30,49,62,84,49,6,17,94,75,65,25,52,74,99,15,82,13,12,90,1,57,51,89,0,91,84,5,77,92,6,58,22,7,72,58,56,78,28,51,53,93,28,57,67,79,72,1,93,85,44,46,94,95,35,46,86,71,3,15,15,10,25,89,69,97,48,26,75,76,29,80,21,9,37,40,89,61,42,34,98,86,80,92,33,67,90,71,91,94,86,6,4,11,96,73,8,44,51,35,72,80,15,93,90,4,85,79,17,27,13,16,65,45,60,98,64,51,69,55,45,55,62,1,18,10,26,78,54,78,13,78,10,80,23,0,36,8,31,54,88,96,22,53,93,34,4,58,85,73,13,82,81,27,83,51,37,62,30,43,40,43,73,50,76,96,3,12,57,86,18,45,83,92,50,76,27,54,86,12,80,0,47,61,79,30,64,17,44,94,12,84,90,86,87,66,34,42,30,91,28,49,88,63,41,91,92,20,97,78,85,77,30,32,90,10,14,55,79,59,49,43,95,39,29,34,57,64,76,88,7,57,89,48,72,30,39,16,3,36,47,88,14,77,20,56,39,34,11,70,93,13,14,41,4,43,75,62,59,4,50,19,13,39,67,85,21,58,2,24,46,1,12,12,78,84,69,70,19,32,40,64,45,54,5,50,50,33,12,61,37,14,32,50,5,51,87,26,9,41,3,56,42,67,20,21,52,89,43,71,22,83,87,19,90,45,69,92,78,33,5,15,47,38,17,4,89,4,31,51,98,86,59,40,53,79,13,5,69,56,28,43,92,68,62,82,13,84,26,91,17,31,58,17,69,27,21,11,31,4,14,29,42,73,22,96,4,35,53,25,92,82,68,36,50,83,18,15,67,44,6,36,75,16,5,97,43,79,60,26,83,74,8,78,99,30,74,3,17,27,29,61,61,97,97,63,80,67,78,99,11,36,36,39,52,41,88,47,20,48,26,56,22,34,34,21,16,60,24,85,39,5,47,53,3,96,16,35,64,95,35,27,83,23,66,36,16,54,35,89,54,61,97,28,47,83,1,15,43,78,1,34,83,0,87,86,96,4,74,12,51,61,40,34,36,6,22,52,13,10,41,19,71,90,48,71,73,49,86,68,27,39,3,11,91,90,49,40,46,23,52,97,36,92,84,72,51,58,77,16,68,70,35,40,61,35,63,34,85,49,3,64,41,58,75,32,48,77,72,47,52,77,96,89,69,80,13,72,39,90,40,7,61,28,99,22,63,62,8,0,64,63,65,5,21,40,89,22,17,62,69,70,39,65,11,60,98,24,85,89,15,77,48,28,5,0,2,69,62,62,69,78,26,34,83,99,27,25,73,96,87,94,18,78,12,29,90,10,6,27,51,73,5,99,1,10,99,55,31,14,17,53,92,95,39,28,47,18,53,20,15,92,15,85,22,27,15,12,89,73,92,40,46,97,39,99,59,91,54,43,5,23,96,49,19,35,77,66,6,82,38,21,74,53,6,48,32,73,61,21,98,5,13,96,54,5,95,13,96,1,56,1,77,4,2,48,92,80,14,98,14,4,71,41,10,29,89,42,55,2,16,53,7,29,50,61,34,97,27,30,99,35,83,76,40,86,24,84,18,90,82,84,46,5,25,56,34,15,99,89,17,67,95,77,96,45,38,83,94,17,65,93,53,1,21,45,39,97,29,9,39,63,93,86,68,19,42,54,34,93,96,3,60,91,80,9,88,71,92,82,88,9,28,41,10,1,38,49,99,67,58,90,82,52,76,2,23,71,57,9,16,5,12,77,96,45,38,36,68,82,70,56,91,98,50,54,0,88,55,51,8,14,41,90,18,70,45,93,93,2,2,9,7,66,38,55,11,76,43,79,58,13,88,2,12,38,56,64,78,11,15,38,77,8];
+  Series0.marks.visible=false;
+  Series0.marks.format.fill="#FFFFB4";
+  Series0.marks.format.round.x=0;
+  Series0.marks.format.round.y=0;
+  Series0.marks.format.font.style="11px verdana";
+  Series0.marks.format.font.fill="#000000";
+  Series0.marks.format.stroke.fill="#000000";
+  Series0.marks.format.shadow.color="#808080";
+  Series0.marks.format.shadow.width=1;
+  Series0.marks.format.shadow.height=1;
+  Series0.marks.drawEvery=120;
+  Chart1.legend.position="right";
+  Chart1.legend.format.fill="#FFFFFF";
+  Chart1.legend.format.round.x=0;
+  Chart1.legend.format.round.y=0;
+  Chart1.legend.format.font.style="11px verdana";
+  Chart1.legend.format.font.fill="#000000";
+  Chart1.legend.format.shadow.color="#787878";
+  Chart1.legend.format.shadow.width=3;
+  Chart1.legend.format.shadow.height=3;
+  Chart1.draw();
+}
+</script>
+</HEAD>
+<BODY onload="draw()">
+<canvas id="canvas" width="600" height="400">
+This browser does not seem to support HTML5 Canvas.
+</canvas>
+</BODY>
+</HTML>

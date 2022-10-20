@@ -1,0 +1,657 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=Edit-Time-Data href="tutorial4_archivos/editdata.mso">
+<title>Tutorial 4 - Axis Control</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Portatil</o:Author>
+  <o:LastAuthor>Portatil</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>9</o:TotalTime>
+  <o:Created>2008-12-05T10:38:00Z</o:Created>
+  <o:LastSaved>2008-12-05T10:47:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1878</o:Words>
+  <o:Characters>10333</o:Characters>
+  <o:Company>...</o:Company>
+  <o:Lines>86</o:Lines>
+  <o:Paragraphs>24</o:Paragraphs>
+  <o:CharactersWithSpaces>12187</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<link rel=Stylesheet type="text/css" media=all href=helpstyle.css>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;
+	mso-font-alt:"Courier New";
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 0 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{color:black;}
+h3
+	{color:black;}
+a:link, span.MsoHyperlink
+	{color:blue;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;}
+p
+	{font-size:9.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+address
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:178.55pt;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:12.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-style:italic;}
+code
+	{mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Courier New";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Tabla normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=ES link=blue vlink=blue style='tab-interval:35.4pt'
+topmargin=4>
+
+<div class=Section1>
+
+<div style='background-image:'url('%27url(%27url(timages/headerback.png)%27)%27')';
+left:0in;position:absolute;top:0in;z-index:-10' id=one>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp; <o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0cm;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width="60%" valign=top style='width:60.0%;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><img
+  width=288 height=121 id="_x0000_i1025" src="timages/HeaderLogo.gif"><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.0pt;font-family:Verdana'>&nbsp; <a href="Contents.HTM">Contents&nbsp;page</a>&nbsp;<br>
+  &nbsp; <a href="Tutorial3.htm">Previous</a>&nbsp;|&nbsp;<a
+  href="Tutorial5.htm">Next</a>&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td width=20 valign=top style='width:15.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="TeeChart_tutorial_4"></a>Tutorial 4 - Axis Control</h2>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>TeeChart for PHP will
+automatically define all Axis labelling for you and offers plenty of
+flexibility to tailor any specific requirements you may have. It
+offers true Multiple Axes.with
+countless possibilities and flexibility for Axis definition. </span>See the
+section in this tutorial for more information. <o:p></o:p></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="80%"
+ style='width:80.0%;mso-cellspacing:1.5pt;mso-padding-alt:3.75pt 3.75pt 3.75pt 3.75pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'><!--Axes-->Contents</span></b><span
+  style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td style='padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+  <h3><a href="#AxesControl"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Axes
+  control - Key areas</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+  <p><a href="#Scales"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Scales</span></a><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+  </span><a href="#Increment"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Increment</span></a><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+  </span><a href="#Titles"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Titles</span></a><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+  </span><a href="#Labels"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Labels</span></a><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+  </span><a href="#Ticks"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Ticks</span></a><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+  </span><a href="#Position"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Axis
+  position</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <h3><a href="#AdditionalAxes"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Additional
+  Axes</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+  <p class=MsoNormal style='margin-bottom:12.0pt'><span style='font-size:9.0pt;
+  font-family:Verdana'><a href="#CustomDraw"><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'>Copying axes</span></a></span><span lang=EN-GB style='font-size:9.0pt;
+  font-family:Verdana;mso-ansi-language:EN-GB'><br>
+  </span><span style='font-size:9.0pt;font-family:Verdana'><a href="#MultiAxis"><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'>Multiple Custom axes</span></a></span><span
+  style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'> <span
+  lang=EN-GB><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+</table>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h3><a name=AxesControl><span lang=EN-GB style='mso-ansi-language:EN-GB'>Axes
+control - Key areas</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+
+<h4><a name=Scales></a><span lang=EN-GB style='mso-ansi-language:EN-GB'>Scales<o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Axis scales are set
+automatically when you add Series data to your Chart. You may change from the
+defaults at runtime by using Axis methods. <o:p></o:p></span></p>
+
+<p><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Automatic</span></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'> selects the best axis scale range
+to fit your data. If you turn Automatic off, the Scales section will activate
+options and you can change Axis values. <b>Important</b>, remember to select
+the Axis that you wish to configure from the Axis list at the left of the page.
+<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Add a Line Series to a
+Chart, then add a Button with the following code:<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;removeAllSeries();<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;addSeries(new Line());<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;getSeries(0)-&gt;fillSampleValues(40);<o:p></o:p></span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Running the code in the
+button will draw a Line Series with 40 random values. You may now configure
+Maximum and Minimum values for the Axis scale. <o:p></o:p></span></p>
+
+<p><font color="#000066"><span lang=EN-GB style='mso-ansi-language:EN-GB'>
+$tChart1-&gt;getAxes()-&gt;getBottom()-&gt;setMinMax(0,10);</span></font></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>You may set Axis scale
+Maximum and Minimum to automatic individually. eg:<o:p></o:p></span></p>
+
+<pre><span lang="en-gb">$tChart1-&gt;getAxes()-&gt;getBottom()-&gt;setAutomatic(false);
+$tChart1-&gt;getAxes()-&gt;getBottom()-&gt;setAutomaticMaximum(true);
+$tChart1-&gt;getAxes()-&gt;getBottom()-&gt;setMinimum(2);
+</span></pre>
+
+<h4><a name=Increment></a><span lang=EN-GB style='mso-ansi-language:EN-GB'>Increment<o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>You may tailor the
+intervals for the Axis. Set the increment you require :<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;getAxes()-&gt;getBottom()-&gt;setIncrement(20);</span></pre>
+<pre>&nbsp;</pre>
+
+<p><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Datetime data</span></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>If your data is datetime
+(You may set the data to <b>DateTime</b> for your Series by specifying XValues
+or YValues&nbsp; are dateTime.), the Chart, Axis page and scales section will
+show a datetime range. You may also change the desired increment.<br>
+<br>
+<i>Here you can see one &quot;scatter plot&quot; example code :</i></span></p>
+
+<pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&lt;?php
+
+//Includes
+include &quot;../../../sources/TChart.php&quot;;
+
+$chart = new TChart(500,300);
+
+$chart-&gt;getHeader()-&gt;setText(&quot;Scatter Plot&quot;);
+$chart-&gt;getPanel()-&gt;getGradient()-&gt;setVisible(false);
+$chart-&gt;getAspect()-&gt;setView3D(false);
+
+$panel=$chart-&gt;getPanel();
+$panel-&gt;getBevel()-&gt;setInner(BevelStyle::$NONE);
+$panel-&gt;getBevel()-&gt;setOuter(BevelStyle::$NONE);
+$panel-&gt;getPen()-&gt;setColor(new Color(120,120,120));
+$panel-&gt;getPen()-&gt;setVisible(true);
+
+$line = new Line($chart-&gt;getChart());
+
+// Adding DateTime data
+$today = gettimeofday(true); 
+$days7 = 7 * 86400; 
+$days2 = 2 * 86400; 
+$end_date = $today + $days7; 
+$end_task2= $end_date + $days7 ; 
+
+$chart-&gt;getChart()-&gt;getSeries(0)-&gt;getXValues()-&gt;setDateTime(true); 
+$chart-&gt;getChart()-&gt;getAxes()-&gt;getBottom()-&gt;getLabels()-&gt;setAngle(45); 
+$chart-&gt;getChart()-&gt;getAxes()-&gt;getBottom()-&gt;getLabels()-&gt;setRoundFirstLabel(false);
+
+// If you want to set a datetime format...
+// $chart-&gt;getChart()-&gt;getAxes()-&gt;getBottom()-&gt;getLabels()-&gt;setDateTimeFormat('d-m-y h:m:s');
+
+$line-&gt;addXY($today,30);
+$line-&gt;addXY($today+86400,32);
+$line-&gt;addXY($today+$days2,20);
+$line-&gt;addXY($end_date+$days7+$days7,8);
+$line-&gt;addXY($end_date+$days7+$days7+$days2,18); 
+$line-&gt;addXY($end_date+$days7+$days7+$days7,10);
+
+$line-&gt;getLinePen()-&gt;setWidth(3);
+
+$pointer=$line-&gt;getPointer();
+$pointer-&gt;setVisible(true);
+$pointer-&gt;setStyle(PointerStyle::$CIRCLE);
+$pointer-&gt;getBrush()-&gt;setColor(Color::getWhite());
+$pointer-&gt;getPen()-&gt;setColor($line-&gt;getColor());
+$pointer-&gt;getPen()-&gt;setWidth(2);
+
+$chart-&gt;getPanel()-&gt;getBorderPen()-&gt;setVisible(false);
+
+$chart-&gt;render(&quot;chart1.png&quot;);
+$rand=rand();
+print '&lt;font face=&quot;Verdana&quot; size=&quot;2&quot;&gt;Scatter Plot&lt;p&gt;';
+print '&lt;img src=&quot;chart1.png?rand='.$rand.'&quot;&gt;'; 
+?&gt;</o:p></span></pre>
+
+<p>&nbsp;</p>
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Change the Increment at
+runtime:<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;getAxes()-&gt;getBottom()-&gt;setIncrement(DateTimeSteps::$ONEWEEK);<o:p></o:p></span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>See the
+Axis-&gt;ExactDateTime property for more information about date axis labelling.<o:p></o:p></span></p>
+
+<p><b><i><span lang=EN-GB style='mso-ansi-language:EN-GB'>Note</span></i></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>When changing axis label
+frequency, bear in mind that TeeChart will avoid label overlap according to the
+setting of the LabelsSeparation method. This means that if the label frequency
+is too high for the labels to fit, then TeeChart will allocate 'best fit'. Changing
+the label angle and label separation are 2 options that may help you fit the
+labels you require. See the </span><a href="#Labels"><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>Labels</span></a><span lang=EN-GB
+style='mso-ansi-language:EN-GB'> section and LabelsAngle method.<o:p></o:p></span></p>
+
+<h4><a name=Titles></a><span lang=EN-GB style='mso-ansi-language:EN-GB'>Titles<o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Titles are set in the
+Titles section of the Axis page. You may change the Title text for the Axis and
+its font. The angle may be selected from values 0, 90, 180, 270 degrees. For
+runtime see the ChartAxisTitle Component.</span></p>
+<p>&nbsp;</p>
+
+<h4><a name=Labels></a><span lang=EN-GB style='mso-ansi-language:EN-GB'>Labels<o:p></o:p></span></h4>
+
+<p><b><i><span lang=EN-GB style='mso-ansi-language:EN-GB'>Note</span></i></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>When changing axis label
+frequency, bear in mind that TeeChart will avoid label overlap according to the
+setting of the LabelsSeparation method. This means that if the label frequency
+is too high for the labels to fit, then TeeChart will allocate a 'best fit'. Changing
+the label angle and label separation are 2 options that may help you fit the
+labels you require. See the </span><a href="#Labels"><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>Labels</span></a><span lang=EN-GB
+style='mso-ansi-language:EN-GB'> section and the LabelsAngle method.<o:p></o:p></span></p>
+
+<p><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Label formats</span></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+&nbsp;</span></p>
+<p><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>You may apply all standard number and date formats to Axis labels. The Axis
+page, Labels section contains the field &quot;Values format&quot;. If your data
+is datetime the field name changes to &quot;Date time format&quot;. at runtime use:<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;getAxes()-&gt;getBottom()-&gt;getLabels()-&gt;setValueFormat(&quot;#,##0.00;(#,##0.00)&quot;);<span
+style='background:yellow'><o:p></o:p></span></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//or for Datetime data<span
+style='background:yellow'><o:p></o:p></span></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;getAxes()-&gt;getBottom()-&gt;getLabels()-&gt;setDateTimeFormat(&quot;d-m-y h:i:s&quot;);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>The values to be furnished to TeeChart methods and properties should be formatted on the American localization parameters, using decimal points.</span></p>
+
+<p><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>MultiLine labels</span></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+&nbsp;</span></p>
+<p><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Axis labels can be displayed as multi-line text instead of a single line of
+text. Lines are separated using the TeeLineSeparator global constant, which by
+default is the carriage-return ascii character ( #13 ).<o:p></o:p></span></p>
+
+<p class=MsoNormal><i><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'>Example</span></i><span lang=EN-GB style='font-size:
+9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'> <o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>//Add the Series labels in this way and apply 'Marks' as Axis labelling style<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;getSeries(0)-&gt;addYTextColor(1234, &quot;New cars&quot;, Color::BLUE() );<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;getSeries(0)-&gt;addYTextColor(2000, &quot;Old bicycles&quot;, Color::GREEN());<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;getPanel()-&gt;setMarginBottom(10);</span></pre>
+<pre>&nbsp;</pre>
+
+<p class=MsoNormal><i><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'>Example for DateTime labels:</span></i><span
+lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'>
+<o:p></o:p></span></p>
+
+<h4><a name=Ticks></a>Ticks</h4>
+
+<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><img
+  border=0 width=275 height=150 id="_x0000_i1028" src="timages/ticks.gif"><o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;&nbsp;&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span lang=EN-GB style='mso-ansi-language:EN-GB'>There are 3 tick types.
+  You can change the length, width and colour of each tick type. If the tick
+  width is set to 1 (default) then you may change the style to one of several
+  line types (dot, dash, etc.). </span>Style will be ignored if width is
+  greater than 1.</p>
+  </td>
+ </tr>
+</table>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;getAxes()-&gt;getBottom()-&gt;getTicks()-&gt;setLength(7);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;getAxes()-&gt;getBottom()-&gt;getTicks()-&gt;setColor(Color::GREEN());<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;getAxes()-&gt;getBottom()-&gt;setMinorTickCount(10);<o:p></o:p></span></pre>
+
+<h4><a name=Position></a><span lang=EN-GB style='mso-ansi-language:EN-GB'>Axis
+position<o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Axes have a method which
+modifies where each axis is to be located. In this example, the axis is moved
+to 50% of the total Chart width, so it is shown at the chart center:<o:p></o:p></span></p>
+
+<pre>$tChart1-&gt;getAxes()-&gt;getLeft()-&gt;setRelativePosition(50);</pre>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><o:p>&nbsp;</o:p></span></p>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h3><a name=AdditionalAxes><span lang=EN-GB style='mso-ansi-language:EN-GB'>Additional
+Axes</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+
+<h4><a name=Customdraw></a><span lang=EN-GB style='mso-ansi-language:EN-GB'>Copying
+axes<o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>TeeChart offers 5 axes to
+be associated with data Series: Left, Top, Bottom, Right and Depth. When you
+add a new series to a Chart you may define to which of the axes the Series
+should be related.&nbsp; <o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><img
+  border=0 width=478 height=282 id="_x0000_i1030" src="timages/custaxis.gif"><o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;&nbsp;&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'>Custom
+  axes</span></b><span style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>In this example, TeeChart
+will plot the New axes, one horizontal and one vertical in the centre of your
+Chart. </span></p>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h4><a name=MultiAxis></a><span lang=EN-GB style='mso-ansi-language:EN-GB'>Multiple
+Custom Axes<o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Together with the
+PositionPercent and stretching properties, it’s possible to have unlimited axes
+floating anywhere on the chart. Creating extra axes is now possible at runtime via a few lines of code:<o:p></o:p></span></p>
+
+<p><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Via Code</span></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=MsoNormal><i><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'>Example</span></i><span lang=EN-GB style='font-size:
+9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'> <o:p></o:p></span></p>
+
+<pre><span lang="en-gb">$tChart1 = new TChart(500,300);
+
+$line1 = new Line();
+$line2 = new Line();
+
+$tChart1-&gt;getAspect()-&gt;setView3D(false);
+
+$tChart1-&gt;getHeader()-&gt;setText(&quot;TeeChart Multiple Axes&quot;);
+
+$tChart1-&gt;addSeries($line1);
+$tChart1-&gt;addSeries($line2);
+
+for($t = 0; $t &lt;= 10; ++$t) {
+$line1-&gt;addXYColor($t, (10 + $t), Color::RED());
+if($t &gt; 1) { 
+$line2-&gt;addXYColor($t, $t, Color::GREEN());
+}
+} 
+
+$tChart1-&gt;getAxes()-&gt;getLeft()-&gt;setStartPosition(0);
+$tChart1-&gt;getAxes()-&gt;getLeft()-&gt;setEndPosition(50);
+$tChart1-&gt;getAxes()-&gt;getLeft()-&gt;getAxisPen()-&gt;color = Color::RED();
+$tChart1-&gt;getAxes()-&gt;getLeft()-&gt;getTitle()-&gt;getFont()-&gt;setColor(Color::RED());
+$tChart1-&gt;getAxes()-&gt;getLeft()-&gt;getTitle()-&gt;getFont()-&gt;setBold(true);
+$tChart1-&gt;getAxes()-&gt;getLeft()-&gt;getTitle()-&gt;setText(&quot;1st Left Axis&quot;);</span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre>
+<pre>&nbsp;</pre>
+
+<p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'>You are able to then position the new Axis in overall
+relation to the Chart by <br>
+using the StartPosition and EndPosition methods. These figures are expressed as
+percentages of the Chart Rectangle with 0 (zero) (in the case of a <br>
+vertical Axis) being Top. These properties can be applied to the Standard Axes
+to create<br>
+completely partitioned 'SubCharts' within the Chart. <o:p></o:p></span></p>
+
+<pre>&nbsp;</pre><pre><span lang="en-gb">$axis1 = new Axis(false, false, $tChart1-&gt;getChart());
+$tChart1-&gt;getAxes()-&gt;getCustom()-&gt;add($axis1);
+$line2-&gt;setCustomVertAxis($axis1);
+
+$axis1-&gt;setStartPosition(50);
+$axis1-&gt;setEndPosition(100);
+
+$axis1-&gt;getAxisPen()-&gt;setColor(Color::GREEN());
+$axis1-&gt;getTitle()-&gt;getFont()-&gt;setColor(Color::GREEN());
+$axis1-&gt;getTitle()-&gt;getFont()-&gt;setBold(true);
+$axis1-&gt;getTitle()-&gt;setText(&quot;Extra Axis&quot;);
+$axis1-&gt;setRelativePosition(20);
+</span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;&nbsp;&nbsp;<o:p></o:p></span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>The above coded example
+will show the following Chart:<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><img
+  border=0 width=401 height=251 id="_x0000_i1032" src="timages/multaxis.gif"><o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;&nbsp;&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'>Multiple
+  axes</span></b><span style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Options are limitless! We
+advise caution when using Custom Axes as it is easy to start filling the screen
+with new axes and to lose track of which one you wish to manage !<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><o:p>&nbsp;</o:p></span></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=359
+ style='width:269.25pt;mso-cellspacing:0cm;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width="42%" valign=top style='width:42.0%;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><a href="tutorial3.htm"><span style='text-decoration:none;text-underline:
+  none'><img border=0 width=135 height=81 id="_x0000_i1034"
+  src="timages/backtut.gif"></span></a></p>
+  </td>
+  <td width="58%" valign=top style='width:58.0%;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><a href="tutorial5.htm"><span style='text-decoration:none;text-underline:
+  none'><img border=0 width=116 height=81 id="_x0000_i1035"
+  src="timages/fwdtut.gif"></span></a></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'>© 1996-2012 Steema Software SL. All rights reserved. <o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

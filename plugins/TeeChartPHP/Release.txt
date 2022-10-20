@@ -1,0 +1,255 @@
+==========================================================
+ TeeChart for PHP version 2019
+
+ Copyright (c) 2006-2019
+ by Steema Software SL
+ All Rights Reserved.
+
+ http://www.teechart.com
+ http://support.steema.com
+ http://www.steema.com 
+ email: general: info@steema.com
+ support forum: http://www.teechart.net/support/index.php
+
+==========================================================
+
+----------------------------------------------------------
+Release Notes Notes 4th December 2019
+Build 2019.12.04.000
+----------------------------------------------------------
+
+1) Added some missing source files.
+
+----------------------------------------------------------
+Release Notes Notes 7th March 2018
+Build 2018.03.07.000
+----------------------------------------------------------
+
+1) Added backward compatibility of PHP versions.
+2) New DownlSampling Function Added
+3) Other improvements and minor fixes do the source code.
+
+----------------------------------------------------------
+Release Notes Notes 16th January 2018
+Build 2018.01.16.000
+----------------------------------------------------------
+
+1) Added support for the latest PHP version (7.1.1).
+2) Error Series class has been changed to ErrorSeries due 
+   to reserved word.
+3) Improvements in memory management.
+4) Using Funnel Series gives some Warnings, now fixed.
+5) Using ErrorPoint Series gives some Warnings, now fixed.
+6) Using Candle Series gives some Warnings related to 
+   date time values, now fixed.
+7) Improvements on Series class due to the "sizeof" method.
+8) All the class constructors have been modified to make
+   them compatible for further PHP versions.
+
+
+----------------------------------------------------------
+Release Notes Notes 24th April 2017
+Build 2017.04.24.000
+----------------------------------------------------------
+
+1) Big changes for open-source version. Now open-source and
+   registered/commercial versions come with the same features
+   and source code. 
+2) This version include some important memory leak fixes.   
+3) Improvements on samples.
+4) Code refactoring.
+
+----------------------------------------------------------
+Release Notes Notes 13th October 2015
+Build 2015.10.13.005
+----------------------------------------------------------
+
+1) MultiPie property was not available for PieSeries, now
+   it can be used via code ($Pie1->setMultiPie(MultiPies::$AUTOMATIC);
+2) Adding more than one Pie Series to the chart, these are
+   not correctly drawn into the Chart rect area, now fixed.
+3) [Bug 1069]
+   Setting MultiLine for axis labels an error appear. Now 
+   fixed. To use multiline axis labels you have to add \n 
+   for each line. i.e :
+   $arrow->addXYText(0,10,"hello\n World");
+4) Legend text does not appear as one line when multiline
+   axis labels is used, now fixed.
+5) Setting pie marks to show as percentage does not work 
+   fine, it gives an error, now fixed.
+6) [Bug 415]
+   If you have two or more area series with stairs, all 
+   the areas in the rear (Z=1, Z=1,...) draw their face in Z=0, 
+   not in the correct place. Now fixed. Sample code of use :
+   i.e :
+    for ($i=0;$i<3;$i++)
+    {
+        $area1 = new Area($chart->getChart());
+        $area1->setStairs(true);
+        $area1->getAreaLinesPen()->setVisible(true);
+        $area1->fillSampleValues(20);
+    }  
+7) [Bug 412]
+   The line series in 2D don't draw the line segments with a 
+   0 value. Fixed.
+8) SetPixel function was not available for GraphigsGD, now
+   added.
+
+
+----------------------------------------------------------
+Release Notes Notes 31st July 2014
+Build 2014.07.31.004
+----------------------------------------------------------
+
+1) [TF90016575]
+   The null points don't seem to work fine for Line series,
+   now fixed.
+2) TChart.inc.php file has been updaded and some changes have
+   been applied in order to make work the actual version 
+   with the new HTML5 Builder.
+3) TextShape items has been reviewd and changed to better
+   adjustement of text.
+4) Features demos have been updated and improved.
+5) Added the Smith Series type.
+6) Added the Error Series type.
+7) Sorting the ValueList (as Descending for example) does not
+   work fine, now fixed.
+8) ValueList Echange method contains a bug, now fixed.
+9) Added the Funnel Series type.
+10) Added the ErrorBar Series type.
+11) Added the ErrorPoint Series type.
+
+
+----------------------------------------------------------
+Release Notes Notes 16th July 2013
+Build 2013.07.16.003
+----------------------------------------------------------
+
+1)  Some source code changes on destroy methods which
+    make error appears.
+
+
+----------------------------------------------------------
+Release Notes Notes 4th July 2013
+Build 2013.07.04.002
+----------------------------------------------------------
+
+1)  [TF90016463]
+    The Gradients don't work with the Bar series when
+    ColorEach is active. Fixed.
+2)  Memory leaks have improved.
+3)  Several improvements on source code files.
+4)  The Help Library files have been improved.
+
+
+Release Notes Notes 16th Nov 2012
+Build 2012.10.08.001 
+----------------------------------------------------------
+
+1)  LegendTextStyle does not work fine
+    for all the options, like $RIGHTPERCENT, 
+    now fixed.
+2)  TextHeight does not work for all font
+    styles, just for build-in fonts, now
+    it works correctly for all.
+3)  Some fixes in support for Multiline on
+    Axis labels and Series Marks (now text
+    or label can contain \n).
+4)  TeeChart.js is not included into the
+    TeeChart for PHP product. 
+    Now you can generate javascript charts
+    by using the TeeChart for PHP and 
+    throught php code, take a look at the
+    JScript samples included into the
+    Features demos in order to see how to
+    do it.
+    TeeChartJs Tutorials also included 
+    into the installer.
+5)  HTML5 Export is available.
+6)  SVG Export feature has been added.
+7)  Bar Series now can be drawn with 
+    gradient.
+8)  New addNull() method for Line Series
+    which allows to add null points being
+    considered.
+9)  New series type Donut, as extended Series.
+10) New series type High-Low, as Statistical Series.
+
+
+
+Release Notes Notes 16th June 2010
+Build 1.6.16.000 
+-----------------------
+
+1)  GridBand Tool draws centered GridBands
+    when GridCentered is set to true for
+    the Axis.
+2)  Logarithmic axes don't work, now fixed.
+3)  Bar and Horiz. Bar Series now can be 
+    drawn in some styles (Rectangle, Cylinder,
+    Arrow, Cone, Ellipse, InvArrow, Pyramid
+    and InvPyramid).
+    
+4)  Added support for Gradient on most of
+    the Chart objects (also for some Series
+    types).
+5)  New Arrow series type added.
+6)  New Bezier Series type added.
+7)  Stairs mode for 2D line does not work
+    fine, now fixed.
+8)  Area Lines couldn't be displayed, now
+    fixed.
+9)  Tutorials have been improved, part of 
+    codes fixed.
+10) Added Gradient support for the 
+    rectangle objects, like Legend, Bars,
+    etc.
+11) Adding Null points does not paint as
+    transparent color, now fixed.
+12) Transparency doesn't work for some 
+    objects like Legend, now fixed.
+13) Added support for Transparency on 
+    Area Series.
+
+
+Release Notes Notes 18th July 2009
+Build 1.5.9.717 
+-----------------------
+
+ 1) New Smoothing Function.
+ 2) Export to Flash/Flex (flex sdk needs
+    to be installed on the system and
+    \bin path must be added as PATH into
+    the environment variables.
+ 3) New Events.
+ 4) Now includes several themes to be 
+    applied to the Chart.
+ 5) Native (TEP) Export and Import.
+ 6) Shadow for 2D Line Series.
+ 7) New Tools.
+ 8) New Series Types.
+ 9) Flash / Flex export demo added.
+10) CodeIgniter integration demo added.
+11) New color palettes.
+
+
+Fixes
+-----
+1) Improved speed creating the image.
+2) Inprovements for all the Series types.
+3) Improvements for custom axes.
+
+
+
+Release Notes Notes 20th January 2009
+Build 1.0.0.000
+-----------------------
+
+
+
+
+
+==========================================================
+Please send feedback to:
+http://www.teechart.net/support/index.php
+==========================================================

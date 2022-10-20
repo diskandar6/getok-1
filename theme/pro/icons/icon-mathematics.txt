@@ -1,0 +1,17 @@
+fas,fa fa-calculator
+fas,fa fa-divide
+fas,fa fa-equals
+fas,fa fa-greater-than
+fas,fa fa-greater-than-equal
+fas,fa fa-infinity
+fab fa-less
+fas,fa fa-less-than
+fas,fa fa-less-than-equal
+fas,fa fa-minus
+fas,fa fa-not-equal
+fas,fa fa-percentage
+fas,fa fa-plus
+fas,fa fa-square-root-alt
+fas,fa fa-subscript
+fas,fa fa-superscript
+fas,fa fa-times

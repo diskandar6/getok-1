@@ -1,0 +1,10 @@
+fas,fa fa-candy-cane
+fas,fa fa-carrot
+fas,fa fa-cookie-bite
+fas,fa fa-gift
+fas,fa fa-gifts
+fas,fa fa-glass-cheers
+fas,fa fa-holly-berry
+fas,fa fa-mug-hot
+fas,fa fa-sleigh
+fas,fa fa-snowman

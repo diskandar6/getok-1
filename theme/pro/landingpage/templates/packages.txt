@@ -1,0 +1,1 @@
+Home-section,Contact,Content,Call-to-action,Footer,Forms,Navbar,Pricing,Teams,Testimonials,Features,Covers,Blog,E-commerce,Magazine,Projects,Counters,Download,Explore,FAQ,Gallery,Maps,Customers,Portfolio,Steps,Service,Signup,Subscribe,Video,Admin

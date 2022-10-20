@@ -1,0 +1,3551 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="TeeChartforJavascriptUserGuide_files/filelist.xml">
+<link rel=Edit-Time-Data
+href="TeeChartforJavascriptUserGuide_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>TeeChart for Javascript, User Guide</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Marc</o:Author>
+  <o:LastAuthor>Marc</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2017-04-26T11:11:00Z</o:Created>
+  <o:LastSaved>2017-04-26T11:13:00Z</o:LastSaved>
+  <o:Pages>9</o:Pages>
+  <o:Words>3503</o:Words>
+  <o:Characters>19268</o:Characters>
+  <o:Lines>160</o:Lines>
+  <o:Paragraphs>45</o:Paragraphs>
+  <o:CharactersWithSpaces>22726</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="TeeChartforJavascriptUserGuide_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="TeeChartforJavascriptUserGuide_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>ES</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SplitPgBreakAndParaMark/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="374">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--.C4
+	{color:inherit;
+	text-decoration:inherit;}
+
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:Georgia;
+	panose-1:2 4 5 2 5 4 5 2 3 3;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:black;
+	font-weight:bold;}
+h2
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:black;
+	font-weight:bold;}
+h3
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:#666666;
+	font-weight:bold;}
+h4
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 4 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:#666666;
+	font-weight:bold;
+	font-style:italic;}
+h5
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 5 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:#666666;
+	font-weight:bold;}
+h6
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 6 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:6;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:#666666;
+	font-weight:bold;
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#1F3763;
+	mso-themecolor:accent1;
+	mso-themeshade:127;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 4";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-style:italic;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 5";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 6";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#1F3763;
+	mso-themecolor:accent1;
+	mso-themeshade:127;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.c18, li.c18, div.c18
+	{mso-style-name:c18;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.c9, li.c9, div.c9
+	{mso-style-name:c9;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.c19, li.c19, div.c19
+	{mso-style-name:c19;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:white;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.c0, li.c0, div.c0
+	{mso-style-name:c0;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.c17, li.c17, div.c17
+	{mso-style-name:c17;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.c13, li.c13, div.c13
+	{mso-style-name:c13;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:blue;}
+p.c5, li.c5, div.c5
+	{mso-style-name:c5;
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.c7, li.c7, div.c7
+	{mso-style-name:c7;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:#1155CC;
+	text-decoration:underline;
+	text-underline:single;}
+p.c10, li.c10, div.c10
+	{mso-style-name:c10;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-style:italic;}
+p.c12, li.c12, div.c12
+	{mso-style-name:c12;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.c3, li.c3, div.c3
+	{mso-style-name:c3;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:#2A05BC;}
+p.c2, li.c2, div.c2
+	{mso-style-name:c2;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.c15, li.c15, div.c15
+	{mso-style-name:c15;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.c11, li.c11, div.c11
+	{mso-style-name:c11;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-style:italic;}
+p.c16, li.c16, div.c16
+	{mso-style-name:c16;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:blue;}
+p.c14, li.c14, div.c14
+	{mso-style-name:c14;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:#1C4587;}
+p.c8, li.c8, div.c8
+	{mso-style-name:c8;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.c1, li.c1, div.c1
+	{mso-style-name:c1;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.c6, li.c6, div.c6
+	{mso-style-name:c6;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+p.title, li.title, div.title
+	{mso-style-name:title;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:36.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:black;
+	font-weight:bold;}
+p.subtitle, li.subtitle, div.subtitle
+	{mso-style-name:subtitle;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:24.0pt;
+	font-family:"Georgia",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	color:#666666;
+	font-style:italic;}
+span.c161
+	{mso-style-name:c161;
+	mso-style-unhide:no;
+	color:blue;}
+span.c131
+	{mso-style-name:c131;
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	color:blue;}
+span.c101
+	{mso-style-name:c101;
+	mso-style-unhide:no;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-style:italic;}
+span.c71
+	{mso-style-name:c71;
+	mso-style-unhide:no;
+	color:#1155CC;
+	text-decoration:underline;
+	text-underline:single;}
+span.c141
+	{mso-style-name:c141;
+	mso-style-unhide:no;
+	color:#1C4587;}
+span.c111
+	{mso-style-name:c111;
+	mso-style-unhide:no;
+	font-style:italic;}
+span.c31
+	{mso-style-name:c31;
+	mso-style-unhide:no;
+	color:#2A05BC;}
+span.c61
+	{mso-style-name:c61;
+	mso-style-unhide:no;
+	font-weight:bold;}
+span.c151
+	{mso-style-name:c151;
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:616453432;
+	mso-list-template-ids:-162619146;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:890925857;
+	mso-list-template-ids:-115340832;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=ES link=blue vlink=purple style='tab-interval:35.4pt'>
+
+<div class=WordSection1>
+
+<p class=c0><a name=h.f5i637m8q8no></a><span class=SpellE><span class=c161><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+EN-GB'>TeeChart</span></span></span><span class=c131><span lang=EN-GB
+style='font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&#8482;</span></span><span
+class=c161><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'>&nbsp;for <span class=SpellE>Javascript</span></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><a name=h.psv60rgt9r54></a><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>User&nbsp;Guide<o:p></o:p></span></p>
+
+<h3><a name=h.n6ogcu6plj9o></a><span class=c101><span lang=EN-GB
+style='font-size:10.0pt;mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN-GB'>Rev. 1.1, March 2017</span></span><span lang=EN-GB style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<h3 style='border:none;mso-border-bottom-alt:solid windowtext .5pt;padding:
+0cm;mso-padding-alt:0cm 0cm 1.0pt 0cm'><a name=h.axx0351pe606></a><span
+style='mso-fareast-font-family:"Times New Roman";mso-no-proof:yes'><img
+width=145 height=75 id="_x0000_i1025" src="images/image00.png"></span><i><span
+lang=EN-GB style='font-size:10.0pt;mso-fareast-font-family:"Times New Roman";
+mso-ansi-language:EN-GB'><br>
+</span></i><span class=c71><span style='mso-fareast-font-family:"Times New Roman"'><a
+href="http://www.steema.com"><span lang=EN-GB style='mso-ansi-language:EN-GB'>www.steema.com</span></a></span></span><span
+lang=EN-GB style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN-GB'><o:p></o:p></span></h3>
+
+</div>
+
+<ul type=square>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><a
+     name=h.4ybxvb3squ34></a><span class=c71><span style='font-size:11.0pt;
+     font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+     href="#h.5aasyc8efz27"><span class=SpellE>Introduction</span></a></span></span><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><span class=c71><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><a href="#h.uo65ckhz2255"><span class=SpellE>The</span>
+     <span class=SpellE>Tee</span> <span class=SpellE>namespace</span></a></span></span><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><span class=c71><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><a href="#h.9kdvcpaijarh"><span class=SpellE>The</span>
+     <span class=SpellE>Canvas</span></a></span></span><span style='font-size:
+     11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><span class=c71><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><a href="#h.z8hzcw8aygpa"><span class=SpellE>Bounds</span>
+     and position</a></span></span><span style='font-size:11.0pt;font-family:
+     "Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><span class=c71><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><a href="#h.ajm83yle9kyv"><span class=SpellE>Format</span></a></span></span><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><span class=c71><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><a href="#h.wzimsamdqjvo"><span class=SpellE>Background</span></a></span></span><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><span class=c71><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><a href="#h.x6ai963c0auo"><span class=SpellE>Title</span>
+     and <span class=SpellE>Footer</span></a></span></span><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><span class=c71><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><a href="#h.w0yogj4s6fau"><span class=SpellE>Adding</span>
+     data <span class=SpellE>to</span> series</a></span></span><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><span class=c71><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><a href="#h.dbxarmn89fbq"><span class=SpellE>The</span>
+     <span class=SpellE>Legend</span></a></span></span><span style='font-size:
+     11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><span class=c71><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><a href="#h.9dndi52jbc3h"><span class=SpellE>Axes</span></a></span></span><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><span class=c71><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><a href="#h.lcg67chm65vm"><span class=SpellE>Axes</span>
+     Wall</a></span></span><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+     mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><span class=c71><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><a href="#h.ohnbslgr4xs2">Series</a></span></span><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><span class=c71><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><a href="#h.bx72e5n6jt6y">Series and <span
+     class=SpellE>Colors</span></a></span></span><span style='font-size:11.0pt;
+     font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><span class=c71><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><a href="#h.5hwd8zlu10n6">Zoom and <span class=SpellE>Scroll</span></a></span></span><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><span class=c71><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><a href="#h.fr09v96kok89"><span class=SpellE>Exporting</span>
+     a Chart</a></span></span><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+     mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><span class=c71><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><a href="#h.lujew5980kvc"><span class=SpellE>Charting</span>
+     Tools</a></span></span><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+     mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><span class=c71><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><a href="#h.4lem8wtepfp1"><span class=SpellE>Acknowledgements</span></a></span></span><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'><o:p></o:p></span></li>
+</ul>
+
+<h2><a name=h.mh7mmkj5xdvm></a><a name=h.1f5ftpntgf7y></a><span class=SpellE><span
+style='mso-fareast-font-family:"Times New Roman"'>Introduction</span></span><span
+style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h2>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>This document explains in detail how to
+create charts and graphs using the <span class=SpellE>TeeChart</span> for <span
+class=SpellE>Javascript</span> library.<o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Adding charts to your web pages or
+applications is fun and easy, see the one-minute </span><span class=c71><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/docs/TeeChart%20for%20Javascript%20Getting%20Started%20Guide.html"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Starting Guide</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>, play with the </span><span class=c71><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/demos/"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Online Demos</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp;or discover the full </span><span class=c71><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/docs/tee/index.html"><span
+class=SpellE><span lang=EN-GB style='mso-ansi-language:EN-GB'>TeeChart</span></span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'> API Reference</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>.<o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Compared with other programming
+environments (Java, .NET, Delphi VCL / <span class=SpellE>FireMonkey</span>, <span
+class=SpellE>etc</span>), the <span class=SpellE>TeeChart</span> <span
+class=SpellE>Javascript</span> <span class=SpellE>api</span> implements an
+essential subset of features in order to minimize both the script size and
+coding complexity.<o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Current script sizes are </span><span
+class=c71><span style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/src/teechart.js"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>64KB</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp;(minified) and 13KB (<span class=SpellE>gzipped</span>)<o:p></o:p></span></p>
+
+<h2><a name=h.uo65ckhz2255></a><span lang=EN-GB style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>The Tee namespace<o:p></o:p></span></h2>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Full code is wrapped around a single
+&#8220;</span><span class=c71><span style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/docs/tee/symbols/Tee.html"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Tee</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&#8221; identifier (namespace) to avoid cluttering the
+browser Window global space. &nbsp;Several &#8220;classes&#8221; in an
+object-oriented manner exist Inside the Tee namespace, being </span><span
+class=c71><span style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/docs/tee/symbols/Tee.Chart.html"><span
+class=SpellE><span lang=EN-GB style='mso-ansi-language:EN-GB'>Tee.Chart</span></span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp;the main class that defines a chart.<o:p></o:p></span></p>
+
+<h2><a name=h.9kdvcpaijarh></a><span lang=EN-GB style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>The Canvas<o:p></o:p></span></h2>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Charts are displayed by default using </span><span
+class=c71><span style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>HTML5 Canvas</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp;elements. The main class &#8220;<span
+class=SpellE>Tee.Chart</span>&#8221; should be initialized passing the
+&lt;canvas&gt; element or its id as string:<o:p></o:p></span></p>
+
+<p class=c0><span class=c141><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&lt;canvas
+id=&quot;canvas1&quot; width=&quot;300&quot;
+height=&quot;200&quot;&gt;&lt;/canvas&gt;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c111><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Using the
+canvas id:</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:
+"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>var</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> Chart1=new <span class=SpellE>Tee.Chart</span>(&quot;canvas1&quot;);</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&#8230;<o:p></o:p></span></p>
+
+<p class=c0><span class=c111><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Or using
+the element:</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:
+"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>var</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> Chart1=new <span class=SpellE>Tee.Chart</span>(<span
+class=SpellE>document.getElementById</span>(&quot;canvas1&quot;));</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Hidden charts can be created without
+passing any canvas parameter:<o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><br>
+</span><span class=SpellE><span class=c31><span lang=EN-GB style='font-size:
+11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>var</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> Chart1=new <span class=SpellE>Tee.Chart</span>();</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Drawing</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Charts are rendered to canvas when calling
+the draw method:<o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.draw();</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<h2><a name=h.z8hzcw8aygpa></a><span lang=EN-GB style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>Bounds and position<o:p></o:p></span></h2>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The default <span class=SpellE>xy</span>
+position of charts inside canvas is 0,0 &nbsp;(left-top corner), and the
+default size is the same as the associated canvas.<o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>You can override them by changing the
+chart bounds property:<o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.bounds.x=50; </span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:#2A05BC;
+mso-ansi-language:EN-GB'><br>
+<span class=c31>Chart1.bounds.y=20; </span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.bounds.width=200;
+</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.bounds.height=150;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<h2><a name=h.ajm83yle9kyv></a><span lang=EN-GB style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>Format<o:p></o:p></span></h2>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Most objects (like Series, Annotations and
+chart sub-objects) include a &#8220;format&#8221; property to <o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>group all visual attributes in a common
+place.<o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The </span><span class=c71><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/docs/tee/symbols/Tee.Format.html"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Format</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp;class provides the following properties:<o:p></o:p></span></p>
+
+<p class=c0><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>fill</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>: &nbsp;A <span class=SpellE>color</span> in <span
+class=SpellE>css</span> string format, for example: &nbsp;#123456, &nbsp;r<span
+class=SpellE>gb(</span>255,0,0), &nbsp; <span class=SpellE>rgba</span>(0,255,0,0.5),
+&nbsp;&#8220;blue&#8221;<o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.panel.format.fill
+= &#8220;blue&#8221;;</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>round</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>: &nbsp;Amount in pixels of roundness of rectangle
+corners (x: horizontal, y: vertical)<o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.panel.format.round
+= { x:10, y:10 }</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.legend.format.round.y
+= 5;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>transparency</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>: &nbsp;Amount of semi-glass effect, from 0 to 1.
+(default is zero)<o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.legend.format.transparency
+= 0.5;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>shadow</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>: Properties to control drop-shadow visibility behind
+filled shapes or stroked lines.<o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; &nbsp;<span
+class=SpellE>var</span> s = Chart1.panel.format.shadow;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; &nbsp;<span
+class=SpellE>s.visible</span> = true;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; &nbsp;<span
+class=SpellE>s.width</span> = 4; &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>// can be negative for left-side shadow<o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; &nbsp;<span
+class=SpellE>s.height</span> = 4; &nbsp; &nbsp; </span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'>// can be negative for top-side shadow<o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; &nbsp;<span
+class=SpellE>s.blur</span> = 5;</span></span><span lang=EN-GB style='font-size:
+11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; &nbsp;<span
+class=SpellE>s.color</span> = &#8220;silver&#8221;;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>gradient:
+&nbsp;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Attributes to fill shapes using a gradient
+of <span class=SpellE>colors</span>:<o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; <span
+class=SpellE>var</span> g = Chart1.panel.format.gradient;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; <span
+class=SpellE>g.visible</span> = true;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; <span
+class=SpellE>g.colors</span> = [ &#8220;red&#8221;, &#8220;yellow&#8221;,
+&#8220;green&#8221; ];</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>&nbsp; //
+array of <span class=SpellE>colors</span> <o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&nbsp; </span><span class=SpellE><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'>g.stops</span></span></span><span class=c31><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+EN-GB'> = [ 0, 0.1, 1 ]; </span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>&nbsp; //
+&nbsp;percentages from 0 to 1 for each <span class=SpellE>color</span> (default
+is null, automatic)<o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&nbsp; // &#8220;<span class=SpellE>bottomtop</span>&#8221;,
+&#8220;<span class=SpellE>leftright</span>&#8221;, &#8220;<span class=SpellE>rightleft</span>&#8221;,
+&#8220;radial&#8221;, &#8220;<span class=SpellE>diagonalup</span>&#8221;,
+&#8220;<span class=SpellE>diagonaldown</span>&#8221;<o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&nbsp; </span><span class=SpellE><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'>g.direction</span></span></span><span class=c31><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+EN-GB'> = &#8220;<span class=SpellE>topbottom</span>&#8221;; </span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp; <o:p></o:p></span></p>
+
+<p class=c0><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>stroke: </span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>Attributes used to draw lines and outlines around
+filled shapes:<o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&nbsp; &nbsp; </span><span class=SpellE><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'>var</span></span></span><span class=c31><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+EN-GB'> s = Chart1.panel.format.stroke;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; &nbsp; <span
+class=SpellE>s.fill</span> = &#8220;black&#8221;;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; &nbsp; <span
+class=SpellE>s.size</span> = 4;</span></span><span lang=EN-GB style='font-size:
+11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// line thickness<o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&nbsp; &nbsp; </span><span class=SpellE><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'>s.join</span></span></span><span class=c31><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+EN-GB'> = &#8220;round&#8221;;</span></span><span lang=EN-GB style='font-size:
+11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>&nbsp;
+&nbsp; // segment joins (&#8220;round&#8221;, &#8220;<span class=SpellE>miter</span>&#8221;,
+&#8220;bevel&#8221; )<o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&nbsp; &nbsp; </span><span class=SpellE><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'>s.cap</span></span></span><span class=c31><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+EN-GB'> = &#8220;square&#8221;;</span></span><span lang=EN-GB style='font-size:
+11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>&nbsp;
+&nbsp;// ending line terminators (&#8220;square&#8221;, &#8220;butt&#8221;,
+&#8220;round&#8221; )<o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&nbsp; &nbsp; </span><span class=SpellE><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'>s.dash</span></span></span><span class=c31><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+EN-GB'> = [ 5,10 ];</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>&nbsp;
+&nbsp;// dot-dash... array of pixels (default is null to draw solid lines)<o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&nbsp; &nbsp; </span><span class=SpellE><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'>s.gradient.visible</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> = true;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'>&nbsp; &nbsp;// gradient object with <span class=SpellE>colors</span>,
+direction, <span class=SpellE>etc</span><o:p></o:p></span></p>
+
+<p class=c0><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>font</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>: &nbsp;Properties to display text:<o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&nbsp; &nbsp;</span><span class=SpellE><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'>var</span></span></span><span class=c31><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+EN-GB'> f = Chart1.title.format.font;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; &nbsp;</span></span><span
+class=SpellE><span class=c31><span style='font-size:11.0pt;font-family:"Arial",sans-serif'>f.style</span></span></span><span
+class=c31><span style='font-size:11.0pt;font-family:"Arial",sans-serif'> =
+&#8220;22px <span class=SpellE>Verdana</span>&#8221;; </span></span><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;
+&nbsp; // <span class=SpellE>or</span>: &#8220;<span class=SpellE>bold</span> <span
+class=SpellE>italic</span> 14px <span class=SpellE>Tahoma</span>&#8221;, <span
+class=SpellE>etc</span>, <span class=SpellE>etc</span><o:p></o:p></span></p>
+
+<p class=c0><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp; </span><span class=c31><span style='font-size:11.0pt;
+font-family:"Arial",sans-serif'>&nbsp;</span></span><span class=SpellE><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'>f.fill</span></span></span><span class=c31><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+EN-GB'> = &#8220;blue&#8221;;</span></span><span lang=EN-GB style='font-size:
+11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; &nbsp;<span
+class=SpellE>f.shadow.visible</span> = true; &nbsp; &nbsp;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>// text drop-shadow<o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; &nbsp;<span
+class=SpellE>f.stroke.fill</span> = &#8220;white&#8221;;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp; &nbsp; &nbsp; &nbsp; // draws an outline around
+text<o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&nbsp; </span><span class=c31><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+EN-GB'>&nbsp;<span class=SpellE>f.gradient.visible</span> = true;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp; &nbsp;// fills text with gradient instead of
+using <span class=SpellE>font.fill</span><o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&nbsp; &nbsp;</span><span class=SpellE><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'>f.textAlign</span></span></span><span class=c31><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+EN-GB'> = &#8220;<span class=SpellE>center</span>&#8221;;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp; &nbsp; // horizontal alignment:
+&#8220;start&#8221;, &#8220;end&#8221;, &#8220;left&#8221;, &#8220;<span
+class=SpellE>center</span>&#8221;, &#8220;right&#8221;<o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&nbsp; &nbsp;// vertical alignment:
+&#8220;top&#8221;, &#8220;middle&#8221;, &#8220;bottom&#8221;,
+&#8220;alphabetic&#8221;, &#8220;hanging&#8221;, &#8220;ideographic&#8221;<o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&nbsp; &nbsp;</span><span class=SpellE><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'>f.baseLine</span></span></span><span class=c31><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+EN-GB'> = &#8220;top&#8221;;</span></span><span lang=EN-GB style='font-size:
+11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>&nbsp;
+&nbsp; <o:p></o:p></span></p>
+
+<h2><a name=h.wzimsamdqjvo></a><span lang=EN-GB style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>Background<o:p></o:p></span></h2>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The chart background appearance is
+controlled by the &#8220;panel&#8221; sub-object:<o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.panel.transparent
+= false;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:
+"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The panel property includes a format <span
+class=SpellE>subproperty</span> to control background&#8217;s appearance:<o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.panel.format.gradient.visible
+= true;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.panel.format.shadow.color=&#8221;black&#8221;;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&#8230; <span
+class=SpellE>etc</span></span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<h2><a name=h.x6ai963c0auo></a><span lang=EN-GB style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>Title and Footer<o:p></o:p></span></h2>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>These two chart properties are used to
+display text at chart top and bottom sides:<o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.title.text =
+&#8220;Hello&#8221;;</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.footer.text =
+&#8220;World&#8221;;</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Multiple-line text is done by adding
+&#8220;\n&#8221; line-feed delimiters:<o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.title.text =
+&#8220;Hello \n World&#8221;;</span></span><span lang=EN-GB style='font-size:
+11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Title and Footer are Annotation-derived
+objects, and such they inherit the &#8220;format&#8221; sub-properties:<o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.title.visible =
+true;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.title.transparent
+= false;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:
+"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.title.format.gradient.visible
+= true;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.title.format.round.x=20;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<h2><a name=h.w0yogj4s6fau></a><span lang=EN-GB style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>Adding data to series<o:p></o:p></span></h2>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Data is added to a chart using &#8220;</span><span
+class=c71><span style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/docs/tee/symbols/Tee.Series.html"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Series</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&#8221; objects.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Multiple series can exist in the same
+chart. Each series can be of a different type (</span><span class=c71><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/docs/tee/symbols/Tee.Line.html"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>line</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>, </span><span class=c71><span style='font-size:11.0pt;
+font-family:"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/docs/tee/symbols/Tee.Area.html"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>area</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>, </span><span class=c71><span style='font-size:11.0pt;
+font-family:"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/docs/tee/symbols/Tee.Bar.html"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>bar</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>, </span><span class=c71><span style='font-size:11.0pt;
+font-family:"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/docs/tee/symbols/Tee.Pie.html"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>pie</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>, <span class=SpellE>etc</span>) so you can mix
+several styles altogether.<o:p></o:p></span></p>
+
+<p class=c1><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Direct
+data:</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The simplest way to add data to a chart is
+by passing an array of values at chart construction time:<o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>var</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> Chart1=new <span class=SpellE>Tee.Chart</span>(&quot;canvas1&quot;,
+[ 5,6,2,9,1] );</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>This creates a new series object of type <span
+class=SpellE>Tee.Bar</span> by default, and assigns the array to <span
+class=SpellE>series.data.values</span> property.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Multiple series are created when passing a
+multi-dimensional array:<o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>var</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> Chart1=new <span class=SpellE>Tee.Chart</span>(&quot;canvas1&quot;,
+[ [ 5,6,2,9,1], [ 8,4,3,7,5] ] );</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The default series style <span
+class=SpellE>Tee.Bar</span> can be changed passing a type parameter:<o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>var</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> Chart1=new <span class=SpellE>Tee.Chart</span>(&quot;canvas1&quot;,
+[ [ 5,6,2,9,1], [ 8,4,3,7,5] ] , <span class=SpellE>Tee.Area</span>);</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Creating
+series:</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Series are manually added into a chart
+using the <span class=SpellE>addSeries</span> method:<o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>var</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> bar =Chart1.addSeries(new <span class=SpellE>Tee.Bar</span>());</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Series have a default &#8220;title&#8221;
+string property that is used at chart legend.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>When series are added to a chart, title is
+assigned to &#8220;Series&#8221; plus the series index in the </span><span
+class=c71><span style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/docs/tee/symbols/Tee.Chart.html#series"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Chart1.series.items</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp;array (&#8220;Series1&#8221;,
+&#8220;Series2&#8221; and so on).<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>You can override the default title:<o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>bar.title</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> = &#8220;My Data&#8221;;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>By default series are empty, they contain
+no data.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>For testing purposes its handy to add
+random values, for example:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.addSeries(new <span
+class=SpellE>Tee.Line</span>()).<span class=SpellE>addRandom</span>(1000);</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp; // Thousand random points<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Data can be specified inline when creating
+the series:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.addSeries(new <span
+class=SpellE>Tee.Pie</span>( [ 10, 20, 30, 40 ] ));</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>All data is stored under the series
+&#8220;data&#8221; property arrays.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>You can access and modify data directly:<o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>var</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> a = new <span class=SpellE>Tee.Area</span>();</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.addSeries( a );</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>a.data.values</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> = &nbsp;[ 10, 20, 30, 40 ];</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Each series point has an associated text
+label. By default labels are empty, you can modify them using the <span
+class=SpellE>data.labels</span> property:<o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>a.data.labels</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> = &nbsp;[ &#8220;a&#8221;, &#8220;b&#8221;,
+&#8220;c&#8221;, &#8220;d&#8221; ];</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Some series allow specifying point
+positions or other point parameters.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>For example, </span><span class=c71><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/docs/tee/symbols/Tee.Line.html"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Line</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp;and </span><span class=c71><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/docs/tee/symbols/Tee.PointXY.html"><span
+class=SpellE><span lang=EN-GB style='mso-ansi-language:EN-GB'>PointXY</span></span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp;series can optionally display each line segment
+or point at a specific &#8220;X&#8221; axis coordinate:<o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>var</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> p = new <span class=SpellE>Tee.PointXY</span>();</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>p.data.values</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> = [5, 7, 9];</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>p.data.x</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> = [0.23, 14, 16];</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.addSeries(p);</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Other series like</span><span class=c31><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:
+EN-GB'>&nbsp;</span></span><span class=c71><span style='font-size:11.0pt;
+font-family:"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/docs/tee/symbols/Tee.Bubble.html"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Bubble</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp;have a &#8220;<span class=SpellE>data.radius</span>&#8221;
+array, and </span><span class=c71><span style='font-size:11.0pt;font-family:
+"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/docs/tee/symbols/Tee.Candle.html"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Candle</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp;series have <span class=SpellE>data.open</span>,
+<span class=SpellE>data.close</span>, <span class=SpellE>data.high</span> and <span
+class=SpellE>data.low</span> arrays.<o:p></o:p></span></p>
+
+<p class=c1><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Adding data
+from other sources</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Several helper functions are provided in a
+separate script (teechart-table.js) to import data from different sources (see
+the online demos for details), for example:<o:p></o:p></span></p>
+
+<p class=c1><span class=c111><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>From a <span
+class=SpellE>textarea</span> html element:</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.addSeries(new <span
+class=SpellE>Tee.Bar</span>(<span class=SpellE>document.getElementById</span>(&quot;data&quot;))
+);</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&lt;<span class=SpellE>textarea</span>
+id=&quot;data&quot; rows=&quot;20&quot; cols=&quot;20&quot;
+wrap=&quot;off&quot;&gt;</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:#2A05BC;mso-ansi-language:EN-GB'><br>
+<span class=c31>&nbsp;7,Apples</span><br>
+<span class=c31>&nbsp;4</span><br>
+<span class=c31>&nbsp;3,Oranges</span><br>
+<span class=c31>&nbsp;9</span><br>
+<span class=c31>&nbsp;1,Banana</span><br>
+<span class=c31>&nbsp;6,Kiwis</span><br>
+<span class=c31>&nbsp;2&lt;/<span class=SpellE>textarea</span>&gt;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c111><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>From a
+table html element:</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.fromTable('table1',
+<span class=SpellE>Tee.Bar</span>, true, 0,0);</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&lt;table
+id=&#8221;table1&#8221;&gt;...&lt;/table&gt;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c111><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>From a text
+file URL:</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:
+"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>// Warning: data file <span class=SpellE>url</span>
+should be at &#8220;same domain origin&#8221; <o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.addSeries(new <span
+class=SpellE>Tee.Bar</span>(&#8220;http://myweb.com/mydata.txt&#8221;));</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c111><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>From
+another series in same or different chart:</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>// Simply assign the &#8220;data&#8221;
+property from one series to another:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.series.items[0].data
+= Chart2.series.items[3].data;</span></span><span lang=EN-GB style='font-size:
+11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c111><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>From xml
+formatted text:</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp;<span
+class=SpellE>var</span> b=Chart1.addSeries(new <span class=SpellE>Tee.Bar</span>());</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:#2A05BC;
+mso-ansi-language:EN-GB'><br>
+<span class=c31>&nbsp;<span class=SpellE>b.loadXML</span>(<span class=SpellE>document.getElementById</span>(&quot;xml&quot;));</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>...</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:#2A05BC;
+mso-ansi-language:EN-GB'><br>
+<span class=c31>&lt;<span class=SpellE>textarea</span> id=&quot;xml&quot;
+rows=&quot;10&quot; cols=&quot;60&quot; &quot;wrap=&quot;off&quot;&gt;</span><br>
+<span class=c31>&lt;series name=&quot;Friends&quot; <span class=SpellE>color</span>=&quot;Blue&quot;
+metric=&quot;Quantity&quot;&gt;</span><br>
+<span class=c31>&nbsp;&lt;point name=&quot;Facebook&quot;
+value=&quot;123&quot;/&gt;</span><br>
+<span class=c31>&nbsp;&lt;point name=&quot;Twitter&quot;
+value=&quot;456&quot;/&gt;</span><br>
+<span class=c31>&nbsp;&lt;point name=&quot;Google+&quot;
+value=&quot;789&quot;/&gt;</span><br>
+<span class=c31>&lt;/series&gt;</span><br>
+<span class=c31>&lt;/<span class=SpellE>textarea</span>&gt;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c111><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>From JSON
+formatted text:</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>var</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> b=Chart1.addSeries(new <span class=SpellE>Tee.Bar</span>());</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:#2A05BC;
+mso-ansi-language:EN-GB'><br>
+<span class=SpellE><span class=c31>b.loadJSON</span></span><span class=c31>(<span
+class=SpellE>document.getElementById</span>(&quot;<span class=SpellE>json</span>&quot;));</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<h2><a name=h.dbxarmn89fbq></a><span lang=EN-GB style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>The Legend<o:p></o:p></span></h2>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The indicator where series names and
+series points are displayed is called the </span><span class=c71><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/docs/tee/symbols/Tee.Chart.Legend.html"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>legend.</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Several properties can be used to
+customize the legend behaviour and appearance.<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.legend.visible =
+true;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.legend.transparent
+= false;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:
+"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.legend.format.fill
+= &#8220;yellow&#8221;;</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Legend position and orientation:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.legend.position
+= &#8220;left&#8221;;</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>&nbsp; //
+&#8220;top&#8221;, &#8220;bottom&#8221;, &#8220;right&#8221;<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.legend.inverted
+= false;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:
+"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>&nbsp; &nbsp; // draws
+items in normal order<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Select what to display at legend:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.legend.legendStyle
+= &#8220;values&#8221;;</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>&nbsp;
+&nbsp;// &#8220;auto&#8221;, &#8220;series&#8221;, &#8220;values&#8221;<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.legend.textStyle
+= &#8220;<span class=SpellE>percentlabel</span>&#8221;;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp; &nbsp; // show point value as percent, and
+point text label<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Font and formatting:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.legend.format.font.style
+= &#8220;20px Arial&#8221;;</span></span><span lang=EN-GB style='font-size:
+11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Margins to chart top and chart axes:<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>// distance from chart edge, percentage
+from 0 to 100 ( 0 means automatic )<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.legend.align =
+0;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&nbsp; <o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>// distance from legend to axes<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.legend.padding =
+5;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&nbsp; &nbsp;// &nbsp;in pixels<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Title text on top of items:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.legend.title.text
+= &#8220;My Legend&#8221;;</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.legend.title.visible
+= true;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Symbols next to legend items:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.legend.symbol.visible
+= true;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.legend.symbol.width
+= 20;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.legend.symbol.format.shadow.width
+= 5;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Other legend properties:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.legend.fontColor
+= true;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&nbsp; // each item text is painted using
+its point or series <span class=SpellE>color</span><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.dividing.fill =
+&#8220;blue&#8221;;</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>&nbsp;
+&nbsp;// draws lines between legend items<o:p></o:p></span></p>
+
+<h2><a name=h.9dndi52jbc3h></a><span lang=EN-GB style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>Axes<o:p></o:p></span></h2>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Most Series data are displayed using axes
+to convert from data values to canvas pixel coordinates. &nbsp;Some series like
+Pie and Donut do not use axes.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>There exist four default axes inside a
+chart: &nbsp;left, top, right and bottom.<o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>var</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> a = Chart1.axes.left;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Each series has two properties that
+control which horizontal and vertical axes are used.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>By default, the horizontal axis is
+&#8220;bottom&#8221;, and the vertical axis is &#8220;left&#8221;.<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.series.items[0].<span
+class=SpellE>horizAxis</span> = &#8220;top&#8221;;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.getSeries(1).<span
+class=SpellE>vertAxis</span> = &#8220;right&#8221;;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Series can also display using both axes:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.series.items[2].<span
+class=SpellE>horizAxis</span> = &#8220;both&#8221;;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Axis visibility is controlled globally by
+the Chart1.axes.visible property, and individually using the axis visible:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.visible =
+true;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.bottom.visible
+= true;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Scales are automatically controlled by
+default. Each axis calculates its minimum and maximum values based on its
+associated series values and visual properties.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>You can override axis automatic scales and
+set them manually:<o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>var</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> a = Chart1.axes.left;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>a.automatic</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> = false;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>a.minimum</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> = 50;</span></span><span lang=EN-GB style='font-size:
+11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>a.maximum</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> = 200;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The above code is equivalent to:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.left.setMinMax(
+50, 200 );</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:
+"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Logarithmic
+scales</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Axes scales are linear by default. The log
+property determines the axis to use natural logarithm scaling instead of
+linear:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.left.log =
+true;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Axis
+Labelling</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:
+"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Each axis automatically calculates the
+&#8220;best&#8221; distance from labels, using labels formatting properties
+like <span class=SpellE>font.size</span>. &nbsp;Custom labels can be controlled
+changing the axis increment property:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.bottom.increment
+= 100;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&nbsp; &nbsp;// one label at each 100
+values in axis scale.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Increment is zero by default, meaning
+automatic calculation.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Labels can display series values or series
+point labels. This is controlled with the <span class=SpellE>labelStyle</span>
+property:<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>// options are: &nbsp;&#8220;auto&#8221;,
+&#8220;none&#8221;, &#8220;value&#8221;, &#8220;mark&#8221;,
+&#8220;text&#8221;, &#8220;x&#8221;<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.left.labels.labelStyle
+= &#8220;text&#8221;;</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>When series contain date-time values,
+labels are formatted according to <span class=SpellE>dateFormat</span> property
+using </span><span class=c71><span style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://blog.stevenlevithan.com/archives/date-time-format"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Steven <span class=SpellE>Levithan</span>
+&lt;stevenlevithan.com&gt; date.format.js</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp;library.<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.series.items[0].<span
+class=SpellE>data.x</span> = [ new Date() ];</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.bottom.labels.dateFormat
+= &#8220;<span class=SpellE>shortDate</span>&#8221;;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Other properties that control labels:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.left.labels.alternate
+= true; &nbsp;// double quantity of labels</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.right.labels.visible
+= false; &nbsp;// show or hide labels</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.left.labels.decimals
+= 3; &nbsp; &nbsp;// output numbers with up to 3 fixed decimals</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.bottom.labels.rotation
+= 90; &nbsp; &nbsp;// 90 degree rotation</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Axis Grids</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The axis grid property includes a format
+to draw grid lines that go across chart axes space.<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.left.grid.visible
+= true;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>When grid fill <span class=SpellE>color</span>
+is not empty, grids are filled alternatively as &#8220;bands&#8221;:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.left.grid.format.fill
+= &#8220;red&#8221;;</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Grid lines format is controlled by stroke
+property:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.left.grid.format.stroke.size
+= 5;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Default grid lines are solid lines. The <span
+class=SpellE>lineDash</span> property displays dash-dot grids:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.left.grid.lineDash
+= true;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>On browsers that natively support canvas
+dash strokes, the above code is equivalent to:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.left.grid.format.stroke.dash
+= [10,5]; &nbsp;</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>&nbsp;//
+see &#8220;dash&#8221; stroke property<o:p></o:p></span></p>
+
+<p class=c0><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Axis Ticks</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Axis include ticks an <span class=SpellE>innerTicks</span>
+properties of type &#8220;Ticks&#8221;, that have a stroke property.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Ticks are drawn from labels to axis. Inner
+ticks display from axis towards inside.<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.bottom.innerTicks.visible
+= true;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.left.ticks.length
+= 9;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.top.ticks.stroke.fill
+= &#8220;blue&#8221;;</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Minor Ticks</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>From tick to tick, the <span class=SpellE>minorTicks</span>
+axis property can be used to display small sub-ticks:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.left.minorTicks.visible
+= true;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.left.minorTicks.length
+= 2;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.left.minorTicks.count
+= 5;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.left.minorTicks.stroke.fill
+= &#8220;green&#8221;;</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c0><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Axis Title</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Close to an axis, the title property is
+used to display text that identifies the axis:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.bottom.title.text
+= &#8220;Quantity&#8221;;</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.axes.bottom.title.text.format.font.fill
+= &#8220;red&#8221;;</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Axis
+positioning</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:
+"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Size and position of axes is automatic by
+default.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The axis <span class=SpellE>startPos</span>
+and <span class=SpellE>endPos</span> properties control the pixel coordinate of
+axes.<o:p></o:p></span></p>
+
+<h2><a name=h.lcg67chm65vm></a><span lang=EN-GB style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>Axes Wall<o:p></o:p></span></h2>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The rectangular space where axes are
+painted is called &#8220;the back wall&#8221;.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Formatting is provided using the <span
+class=SpellE>walls.back</span> property:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.walls.back.visible
+= true;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.walls.back.transparent
+= false;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:
+"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.walls.back.format.gradient.visible
+= true;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<h2><a name=h.ohnbslgr4xs2></a><span lang=EN-GB style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>Series<o:p></o:p></span></h2>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Inheriting from a common Series class,
+several charting styles are provided, each as a different object class with its
+own properties and methods.<o:p></o:p></span></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'>Line<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'>Bar &nbsp;/ Horizontal Bar <o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:0cm;text-indent:-18.0pt;mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'><![if !supportLists]><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:black'><span
+style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=SpellE><span style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+color:black'>Area</span></span><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman";color:black'> / Horizontal <span
+class=SpellE>Area</span><o:p></o:p></span></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'><span class=SpellE><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'>PointXY</span></span><span style='font-size:11.0pt;
+     font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>
+     (<span class=SpellE>scatter</span>)<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'>Pie<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'>Donut<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'><span class=SpellE><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'>Bubble</span></span><span style='font-size:11.0pt;
+     font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'><span class=SpellE><span
+     style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+     "Times New Roman"'>Candle</span></span><span style='font-size:11.0pt;
+     font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>
+     (<span class=SpellE>financial</span> OHLC)<o:p></o:p></span></li>
+</ul>
+
+<p class=c1><span class=c61><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black'>Series Marks</span></span><span style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The marks property displays text
+annotations near series points:<o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>var</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> s = new <span class=SpellE>Tee.Bar</span>();</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>s.marks.visible</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> = true;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>s.marks.style</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> = &#8220;percent&#8221;;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<h2><a name=h.bx72e5n6jt6y></a><span lang=EN-GB style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>Series and <span class=SpellE>Colors</span><o:p></o:p></span></h2>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Charts have a palette property (an array [
+] of <span class=SpellE>colors</span> in string format).<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>This palette is used by series to paint
+its points, and by chart legend to display series items symbols.<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.palette = [
+&#8220;red&#8221;, &#8220;blue&#8221;, &#8220;green&#8221;,
+&#8220;yellow&#8221; ];</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Colors</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'> in the palette are reused in a circular way when more
+series or more points in a series exist than the size of the palette.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Series also contain a palette of <span
+class=SpellE>colors</span> to override the chart palette. By default is a
+&#8220;null&#8221; empty array so they share the chart palette.<o:p></o:p></span></p>
+
+<h2><a name=h.5hwd8zlu10n6></a><span lang=EN-GB style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>Zoom and Scroll<o:p></o:p></span></h2>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Charts can be zoomed and scrolled by
+manual code or mouse / touch events.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Default behaviour is to drag the right
+mouse button inside axes to scroll, and drag a rectangle using the left mouse
+button to zoom / <span class=SpellE>unzoom</span> (zoom dragging to
+bottom-right direction, and <span class=SpellE>unzoom</span> dragging to
+left-top direction).<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>This can be overridden using the chart
+zoom and scroll properties:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.zoom.enabled =
+true;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.zoom.mouseButton
+= 0;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>&nbsp; &nbsp;// 0=left button, 1=middle,
+2=right button<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.zoom.stroke.fill
+= &#8220;yellow&#8221;;</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.scroll.enabled =
+true;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.scroll.mouseButton
+= 2;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.scroll.direction
+= &#8220;horizontal&#8221;;</span></span><span lang=EN-GB style='font-size:
+11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>&nbsp;
+// can be: &#8220;vertical&#8221; or &#8220;both&#8221;<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The chart <span class=SpellE>onzoom</span>
+event is triggered when the user releases the mouse button after the chart is
+zoomed.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The chart <span class=SpellE>onscroll</span>
+event is triggered while the user is scrolling the chart by dragging it.<o:p></o:p></span></p>
+
+<h2><a name=h.fr09v96kok89></a><span lang=EN-GB style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>Exporting a Chart<o:p></o:p></span></h2>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>To obtain a PNG or JPEG image from a
+chart, you can use the canvas <span class=SpellE>toDataURL</span> method, or
+the included <span class=SpellE>toImage</span> function:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.toImage( &#8220;<span
+class=SpellE>img</span>&#8221; );</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'>&nbsp; &nbsp;// fills &lt;<span class=SpellE>img</span> id=&#8221;<span
+class=SpellE>img</span>&#8221;&gt; element with chart as PNG image.<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.toImage( &#8220;<span
+class=SpellE>img</span>&#8221; , &#8220;jpg&#8221;, 90 );</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp; &nbsp;// fills image with a jpeg image with 90%
+compression<o:p></o:p></span></p>
+
+<h2><a name=h.lujew5980kvc></a><span lang=EN-GB style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>Charting Tools<o:p></o:p></span></h2>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Some features are implemented as a
+&#8220;tool&#8221; objects. &nbsp;These objects can be added to a chart tools
+array property to activate them.<o:p></o:p></span></p>
+
+<p class=c1><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Annotations</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Custom text can be displayed at any chart
+position using annotation tools:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.tools.add( new <span
+class=SpellE>Tee.Annotation</span>( Chart1, &#8220;Hello&#8221;, 50, 50 ) );</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The annotation object has a format, text
+and position properties.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Annotations can also act as buttons when
+using the <span class=SpellE>onclick</span> event:<o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>var</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> &nbsp;b1=new <span class=SpellE>Tee.Annotation</span>(Chart1,
+&#8220;button 1&#8221;, 100, 100);</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>b1.cursor=&quot;pointer&quot;;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>b1.onclick=function(<span
+class=SpellE>button,x,y</span>) { alert(&quot;Clicked button 1&quot;); }</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.tools.add( b1 );</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Tooltips</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>This tool displays series data when moving
+the mouse over series data point.<o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>var</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'> &nbsp;tip=new <span class=SpellE>Tee.ToolTip</span>(Chart1);</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=SpellE><span class=c31><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>tip.format.font.style</span></span></span><span
+class=c31><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+mso-ansi-language:EN-GB'>=&quot;16px Tahoma&quot;;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>Chart1.tools.add(tip);</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The ToolTip tool provides <span
+class=SpellE>onshow</span>, <span class=SpellE>onhide</span> and <span
+class=SpellE>ongettext</span> events.<o:p></o:p></span></p>
+
+<p class=c1><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Cursors</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Draggable cursor lines are implemented as
+a tool object:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; <span
+class=SpellE>var</span> t=new <span class=SpellE>Tee.CursorTool</span>(Chart1);</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; <span
+class=SpellE>t.format.stroke.size</span>=2;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; <span
+class=SpellE>t.format.stroke.fill</span>=&quot;#BB0000&quot;;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp;
+Chart1.tools.add(t);</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The cursor tool includes a direction
+property (to display cursor as an horizontal line, vertical or both) and an <span
+class=SpellE>onchange</span> event that is triggered when the cursor is
+dragged.<o:p></o:p></span></p>
+
+<p class=c1><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Dragging
+Points</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The <span class=SpellE>DragTool</span>
+implements mouse / touch point dragging.<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp;
+Chart1.tools.add(new <span class=SpellE>Tee.DragTool</span>(Chart1));</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Includes <span class=SpellE>onchanging</span>
+and <span class=SpellE>onchanged</span> events.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The target property determines which
+series and which series point index is being dragged.<o:p></o:p></span></p>
+
+<p class=c1><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Slider</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>A generic slider control that can be used
+inside a chart to change any value.<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp;<span
+class=SpellE>var</span> slider=new <span class=SpellE>Tee.Slider</span>(Chart1);</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; <span
+class=SpellE>slider.min</span>=1;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; <span
+class=SpellE>slider.max</span>=100;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; <span
+class=SpellE>slider.position</span>=10;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; <span
+class=SpellE>slider.thumbSize</span>=12;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; <span
+class=SpellE>slider.horizontal</span>=true;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; <span
+class=SpellE>slider.bounds.x</span>=50;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; <span
+class=SpellE>slider.bounds.y</span>=10;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; <span
+class=SpellE>slider.bounds.width</span>=150;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; <span
+class=SpellE>slider.bounds.height</span>=20;</span></span><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; <span
+class=SpellE>slider.onChanging</span>=function(<span class=SpellE>slider,value</span>)
+{</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; &nbsp; Chart1.title.format.font.style
+= <span class=SpellE>value.toFixed</span>(0) + &#8220; Verdana&#8221;;</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; &nbsp; return
+value;</span></span><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; }</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp;
+Chart1.tools.add(slider);</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c61><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'>Scroller</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The scroller tool displays a simplified
+view of another chart and allows scrolling it.<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Please refer to </span><span class=c71><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://www.steema.com/files/public/teechart/html5/jscript/demos/extra/scroller.htm"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>this demo</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp;for a complete example.<o:p></o:p></span></p>
+
+<h2><a name=h.p4zqcuhqbwmj></a><span lang=EN-GB style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-GB'>Series Animations<o:p></o:p></span></h2>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Simple animations performed by changing
+axis scales or rotating transformations:<o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; <span
+class=SpellE>var</span> a=new <span class=SpellE>Tee.SeriesAnimation</span>(Chart1);</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp; <span
+class=SpellE>a.duration</span>=500; // milliseconds</span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span class=c31><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;mso-ansi-language:EN-GB'>&nbsp;
+Chart1.tools.add(a);</span></span><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Arial",sans-serif;color:black;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The animate method to start the animation
+can be called for example from an html button:<o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=c1 style='border:none;mso-border-bottom-alt:solid windowtext .5pt;
+padding:0cm;mso-padding-alt:0cm 0cm 1.0pt 0cm'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'>&lt;BUTTON type=&quot;button&quot; <span class=SpellE>onclick</span>=&quot;Chart1.tools.items[0].animate();&quot;&gt;Animate&lt;/BUTTON&gt;<o:p></o:p></span></p>
+
+<p class=c1 style='border:none;mso-border-bottom-alt:solid windowtext .5pt;
+padding:0cm;mso-padding-alt:0cm 0cm 1.0pt 0cm'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;mso-ansi-language:
+EN-GB'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+<h2><a name=h.2fvfisbp2mli></a><a name=h.4lem8wtepfp1></a><span lang=EN-GB
+style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-GB'>Acknowledgements<o:p></o:p></span></h2>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>The following are libraries and code
+snippets that have been used to develop <span class=SpellE>TeeChart</span> for <span
+class=SpellE>Javascript</span>:<o:p></o:p></span></p>
+
+<p class=c1><span class=c71><span style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://blog.stevenlevithan.com/archives/date-time-format"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>date.format.js</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp;by Steven <span class=SpellE>Levithan</span><o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Used by chart axes to format date-time
+string labels from series data. (See axis <span class=SpellE>dateFormat</span>
+property).<o:p></o:p></span></p>
+
+<p class=c1><span class=c71><span style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://scaledinnovation.com/analytics/splines/aboutSplines.html"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>splines</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp;Copyright 2010 by Robin W. Spencer<o:p></o:p></span></p>
+
+<p class=c1><span lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black;mso-ansi-language:EN-GB'>Custom modified code to draw smooth curves
+between series points (Line, Area, <span class=SpellE>etc</span>).<o:p></o:p></span></p>
+
+<p class=c1><span class=c71><span style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://jquery.org/"><span lang=EN-GB style='mso-ansi-language:EN-GB'>JQuery.js</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>, </span><span class=c71><span style='font-size:11.0pt;
+font-family:"Arial",sans-serif'><a href="http://www.json.org/"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>JSON</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp;and </span><span class=c71><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif'><a
+href="http://threejs.org/"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Three.js</span></a></span></span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black;
+mso-ansi-language:EN-GB'>&nbsp;are technologies used in <span class=SpellE>TeeChart</span>
+online demos that are optional (not required by <span class=SpellE>TeeChart</span>).<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

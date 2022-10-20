@@ -1,0 +1,13 @@
+fas,fa fa-genderless
+fas,fa fa-mars
+fas,fa fa-mars-double
+fas,fa fa-mars-stroke
+fas,fa fa-mars-stroke-h
+fas,fa fa-mars-stroke-v
+fas,fa fa-mercury
+fas,fa fa-neuter
+fas,fa fa-transgender
+fas,fa fa-transgender-alt
+fas,fa fa-venus
+fas,fa fa-venus-double
+fas,fa fa-venus-mars

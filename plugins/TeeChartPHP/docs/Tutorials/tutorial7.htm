@@ -1,0 +1,1184 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=Edit-Time-Data href="tutorial7_archivos/editdata.mso">
+<title>Tutorial 7 - Working with Functions</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="City"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Portatil</o:Author>
+  <o:LastAuthor>Portatil</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>42</o:TotalTime>
+  <o:Created>2008-12-05T11:15:00Z</o:Created>
+  <o:LastSaved>2008-12-05T11:57:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>2280</o:Words>
+  <o:Characters>12542</o:Characters>
+  <o:Company>...</o:Company>
+  <o:Lines>104</o:Lines>
+  <o:Paragraphs>29</o:Paragraphs>
+  <o:CharactersWithSpaces>14793</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<link rel=Stylesheet type="text/css" media=all href=helpstyle.css>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;
+	mso-font-alt:"Courier New";
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 0 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	line-height:28.0pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	color:black;
+	font-weight:bold;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:29.75pt;
+	mso-margin-bottom-alt:auto;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-weight:bold;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:29.75pt;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:12.0pt;
+	color:black;
+	font-weight:bold;}
+h4
+	{mso-margin-top-alt:auto;
+	margin-right:29.75pt;
+	mso-margin-bottom-alt:auto;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:11.0pt;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+address
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:178.55pt;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:12.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-style:italic;}
+code
+	{mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{margin-top:0cm;
+	margin-right:71.4pt;
+	margin-bottom:0cm;
+	margin-left:11.9pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:8.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Courier New";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Tabla normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=ES link=blue vlink=blue style='tab-interval:35.4pt'
+topmargin=4>
+
+<div class=Section1>
+
+<div style='background-image:'url('%27url(%27url(timages/headerback.png)%27)%27')';
+left:0in;position:absolute;top:0in;z-index:-10' id=one>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp; <o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0cm;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><img
+  width=288 height=121 id="_x0000_i1025" src="timages/HeaderLogo.gif"><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.0pt;font-family:Verdana'>&nbsp; <a href="Contents.HTM">Contents&nbsp;page</a>&nbsp;<br>
+  &nbsp; <a href="Tutorial6.htm">Previous</a>&nbsp;|&nbsp;<a
+  href="Tutorial8.htm">Next</a>&nbsp;</span><span style='font-size:9.0pt;
+  font-family:Verdana'> <o:p></o:p></span></p>
+  </td>
+  <td width=20 valign=top style='width:15.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="TeeChart_tutorial_7"></a>Tutorial 7 - Working with Functions</h2>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="80%"
+ style='width:80.0%;mso-cellspacing:1.5pt;mso-padding-alt:2.25pt 2.25pt 2.25pt 2.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'>Contents</span></b><span
+  style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <h3><a href="#FunctionTypes"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Function
+  Types</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+  <p><a href="#Features"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Function
+  characteristics</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+  </span><a href="#AddFunction"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Adding
+  a Function</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+  </span><a href="#Datasource"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Defining
+  a datasource</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+  </span><a href="#FunctionPeriod"><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'>Function Period</span></a><a href="#FunctionPeriodAlign"><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><br>
+  Function Period Align</span></a><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'>&nbsp;<br>
+  </span><a href="#DerivingVCL"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Deriving
+  custom functions</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h3><a name=FunctionTypes><span lang=EN-GB style='mso-ansi-language:EN-GB'>Function
+Types</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h3>
+
+<h4><a name=Features><span lang=EN-GB style='mso-ansi-language:EN-GB'>Function
+characteristics</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>A TeeChart Pro Function is
+a Series, that can be of almost any Series Type, to which an algebraic function
+is applied and for which the datasource is another Chart Series.<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>All Functions derive from
+the Functions Component and inherit Functions' </span><a
+href="#FunctionPeriod"><span lang=EN-GB style='mso-ansi-language:EN-GB'>Period <span
+style='background-position-x:0%;background-position-y:0%'>method</span></span></a><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>.<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>TeeChart Pro includes the
+following list of predefined functions. Please see the TeeChart Editor Gallery
+and Helpfile for a full list of all Function Types:<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=1 cellpadding=0 width=474
+ style='width:355.5pt;mso-cellspacing:.7pt;border:outset #B5B500 1.0pt;
+ mso-border-alt:outset #B5B500 .75pt;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=123 valign=top style='width:92.25pt;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:#CECEFF;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><b><ALIGN="LEFT"><LEFT>Function Type</b></p>
+  </td>
+  <td width=60 valign=top style='width:45.0pt;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:#CECEFF;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:Verdana'>No.
+  of inputs</span></b><span style='font-size:9.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+  <td width=233 valign=top style='width:174.75pt;border:inset #B5B500 1.0pt;
+  mso-border-alt:inset #B5B500 .75pt;background:#CECEFF;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p><b>Description</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Add<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Unlimited<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Plots
+  sum of inputs<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>ADX</span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Unlimited<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Average<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Unlimited<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>The Average Function will calculate the average of
+  every group of Period points<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Count</span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Unlimited<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Divide<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Unlimited<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>The Divide Function plots inputs divided in
+  descending order of inclusion<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>High<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Unlimited<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>The High Function plots <st1:City w:st="on"><st1:place
+   w:st="on">high point</st1:place></st1:City> of inputs<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Low<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Unlimited<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>The Low Function plots low point of inputs<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Multiply<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Unlimited<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>The Multiply Function plots value of inputs
+  multiplied<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Subtract<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Unlimited<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>Plots value of inputs subtracted in descending order
+  of inclusion<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Mode<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>1<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>The mode function returns the source series value
+  that is repeated more times.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Median<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>1<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>Calculates the median value of the source series
+  values.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Count<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>1<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>Draws horizontal line at Y position that is defined
+  by the number of points in underlying Series.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><b><span lang=EN-GB style='font-size:9.0pt;font-family:
+  Verdana;mso-ansi-language:EN-GB'>Subset of Pro version only functions</span></b><span
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Bollinger<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>1<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>The Bollinger Function uses simple or exponential
+  moving average to constructs Bollinger Trading Bands<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Curve
+  Fitting<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>1<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>Draws fitted polynomial through data inputs using
+  the TypeFitting formula<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Exponential
+  Average<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>1<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>Exponential average based on Weight<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Exponential
+  Moving Average<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>1<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>Exponential moving average based on Weight&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Exponential
+  Trend<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>1<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>Draws best exponential trend line through points in
+  input series<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:19'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>MACD<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>1<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Moving
+  Average Convergence Divergence<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:20'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Momentum<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>1<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>Each Y value is the current point's Y value less the
+  last Period point's Y value<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:21'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Momentum
+  Division<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>1<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>Each Y values is the current point's Y value divided
+  by the last Period point's YValue, expressed in percents<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:22'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Moving
+  Average<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>1<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>The Moving Average Function will calculate the
+  simple or weighted average of every group of Period points<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:23'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Root
+  Mean Square<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Unlimited<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>The Root Mean Square Function plots RMS value of
+  inputs<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:24'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Relative
+  Strength Index<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>1<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>RSI Function calculates a percent value based on
+  financial data. Depending on TRSISyle type different formula will be used to
+  calculate RSI value<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:25'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Standard
+  Deviation<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>1<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>Maps the Standard Deviation (or Complete Standard
+  Deviation) of every group of Period points<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:26'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Stochastic<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>1<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:27'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>Trend<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'>1<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>Draws best trend line through points of input Series<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:28;mso-yfti-lastrow:yes'>
+  <td width=123 style='width:92.25pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td width=60 style='width:45.0pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td width=233 style='width:174.75pt;border:inset #B5B500 1.0pt;mso-border-alt:
+  inset #B5B500 .75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+  mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Several Function types
+support only one input Series. However it is possible to chain link Functions,
+thus, for example, taking the average of several Series in your Chart to create
+an Average Function Series, then identify the Trend of the average by using the
+Average Function as the input to the Trend Function.<o:p></o:p></span></p>
+
+<h4><a name=AddFunction><span lang=EN-GB style='mso-ansi-language:EN-GB'>Adding
+a Function</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Each Function is presented as a Line Series, you may
+change the Series Type associated with the Function later. </span></p>
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Assuming we start with a
+completely empty Chart here are the steps in code to build a simple
+Series-Function related Chart.<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>private function Load() {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//Add a data Series <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$line1 = new Line($tChart1-&gt;getChart());<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//Populate it with data (here random) <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$line1-&gt;fillSampleValues(10); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//Add a series to be used for an Average Function <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$line2 = new Line($tChart1-&gt;getChart()); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//Define the Function Type for the new Series <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$average1 = new Average(); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$line2-&gt;setFunction($average1); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//Define the Datasource for the new Function Series <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$line2-&gt;setDataSource($line1); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//*Note - When populating your input Series manually you will need to <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//use the Checkdatasource method <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//- See the section entitled 'Defining a Datasource' <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//Change the Period of the Function so that it groups averages <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//every 2 Points <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$line2-&gt;getFunction()-&gt;setPeriod(2); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$line2-&gt;checkDataSource();<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>}<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>We can add another Function
+to tell us something about the previous Function<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>//Let's change to 2D for visibility <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;getAspect()-&gt;setView3D(false); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//Add another Series to be used for a 2nd Function <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$line3 = new Line($tChart1-&gt;getChart()); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//Define the Function Type for the new Series <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$high1 = High(); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$line3-&gt;setFunction($high1); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//Define the Datasource for the new Function Series <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//Use the existing Function (Series2) as input <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>$line3-&gt;setDataSource($tChart1-&gt;getSeries(1)); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//Leave the Period at default 0 (No Period set) to draw <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//A line at Highest of all points of the Average Function <o:p></o:p></span></pre>
+
+<h4><a name=Datasource><span lang=EN-GB style='mso-ansi-language:EN-GB'>Defining
+a datasource</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>The examples in the
+previous section highlight the use of Datasource for poulating a Function by
+code. Series use Datasource for defining the input for a Function or to define
+a Series Dataset datasource (see the Tutorial about accessing databases).<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Datasource by code uses the
+Series-&gt;Datasource property. <o:p></o:p></span></p>
+
+<p><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Example</span></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Suppose we have 2 data 
+Series in a Chart. We add a
+Function composed of the average of the 2 Series:<o:p></o:p></span></p>
+
+<pre><span lang="en-gb">require_once &quot;../sources/TChart.php&quot;;
+
+$tChart1 = new TChart(600,450); </span></pre>
+<pre>&nbsp;</pre>
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>private function Load() {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'> <span style='mso-spacerun:yes'> </span>$tChart1-&gt;getAspect()-&gt;setView3D(false); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>  </span>$bar1-&gt;fillSampleValues(10); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>  </span>$bar2-&gt;fillSampleValues(10); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'> </span>}<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>public function button1_click() {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>  </span>$line1 = new Line($tChart1-&gt;getChart()); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>  </span>$average3 = new Average(); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>  </span>$tmpDataSource = Array($bar1,$bar2);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>  </span>$line1-&gt;setFunction($tmpDataSource); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>  </span>$line1-&gt;setDataSource($bar1); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>  </span>$line1-&gt;getMarks()-&gt;setVisible(true);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>}<o:p></o:p></span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>We add points to the 2
+Series:<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>public function button1_click() {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span>for($i = 0; $i &lt; 10; ++$i) <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>     </span>$bar1-&gt;add(rand(0,500)); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>     </span>$bar2-&gt;add(rand(0,500)); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>   </span>}<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>}<o:p></o:p></span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Notice that the Function
+doesn't display. You need to use the checkDataSource method to read in values
+for the Function.<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>$tChart1-&gt;getSeries(2)-&gt;checkDataSource();<o:p></o:p></span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Function definitions may be
+changed at runtime to allocate a new Function to the Series simply by
+redefining the Series.DataSource method:<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>public function button3_click() {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-tab-count:1'>      </span>$cumulative1 = Cumulative(); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-tab-count:1'>      </span>$tChart1-&gt;getSeries(2)-&gt;setFunction($cumulative1);<o:p></o:p></span></pre>
+
+<h4><a name=FunctionPeriod><span lang=EN-GB style='mso-ansi-language:EN-GB'>Function
+Period</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Period is an important
+method for working with Functions because the Period defines the range of
+points across which a Function is cyclically applied.<o:p></o:p></span></p>
+
+<p><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Example</span></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>We have 6 data points (eg.
+bars of a Bar Series) with values:<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>3, 8, 6, 2, 9 and 12 <o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>We define a Function Series
+with Period 0 (default) the average drawn is:<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>6.667<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>With Period set to 2 we get
+3 values of average as output from the function:<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>5.5, 4 and 10.5<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>These values will plot
+centrally in their period range, ie. The 1st value between bars 1 and 2 of the
+input series, 2nd value between bars 3 and 4, etc..<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>You may define Period at runtime
+using FunctionType.<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Eg. Where Series 2 is the
+function series:<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>$line1-&gt;getFunction()-&gt;setPeriod(2);<o:p></o:p></span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Below are 2 Charts that
+highlight the effect of an applied Period<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=1 cellpadding=0 width=450
+ style='width:337.5pt;mso-cellspacing:.7pt;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><ALIGN="LEFT"><LEFT><img
+  border=0 width=275 height=304 id="_x0000_i1028" src="timages/Period0.gif"><o:p></o:p></span></p>
+  </td>
+  <td style='padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><img
+  border=0 width=275 height=304 id="_x0000_i1029" src="timages/Period2.gif"><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td style='padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style='padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:windowtext'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+
+<h4><a name=FunctionPeriodAlign><span lang=EN-GB style='mso-ansi-language:EN-GB'>Period
+Style</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Period can be defined to be
+a range. This is very useful when using DateTime series and we want to express
+the &quot;Period&quot; of the function as a TimeStep. The property
+&quot;PeriodStyle&quot; controls how is &quot;Period&quot; expressed. <br>
+<br>
+For example you can now plot the &quot;monthly average of sales&quot; function
+just using a normal &quot;Average&quot; function on a date-time source series
+and setting the function period to &quot;one month&quot;:<o:p></o:p></span></p>
+
+<pre><span lang="en-gb">require_once &quot;../sources/TChart.php&quot;;
+
+$tChart1 = new TChart(600,450); </span></pre>
+<pre>&nbsp;</pre>
+<pre style="tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size: 8.0pt; margin-left: 11.9pt; margin-right: 71.4pt; margin-top: 0cm; margin-bottom: .0001pt"><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>//Add in a Bar Series and Average Function . <o:p></o:p></span></pre>
+<pre><span lang="en-gb">$bar = new Bar($tChart1-&gt;getChart());</span></pre>
+<pre><span lang="en-gb">
+//Populate it with data (here random) 
+$bar-&gt;fillSampleValues(10);
+
+//Add a series to be used for an Average Function 
+$line2 = new Line($tChart1-&gt;getChart()); 
+
+$average1 = new Average();</span></pre>
+<pre><span lang="en-gb">$line2-&gt;setFunction($average1); </span></pre>
+<pre>&nbsp;</pre>
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>private function Load() {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$tChart1-&gt;getAspect()-&gt;setView3D(false);<span style='mso-spacerun:yes'>   </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$today = date_time(‘U’);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$bar1-&gt;getMarks()-&gt;setVisible(false); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$bar1-&gt;getXValues()-&gt;setDateTime(true); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$tChart1-&gt;getAxes()-&gt;getBottom()-&gt;getLabels()-&gt;setAngle(90); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>for($i = 0; $i &lt; 60; ++$i)<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-tab-count:1'>      </span><span style='mso-spacerun:yes'>     </span><span style='mso-spacerun:yes'> </span>$days7 = 7 * 86400;<span
+style='mso-tab-count:1'> </span><o:p></o:p></span></pre><pre><span lang=EN-GB
+style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$today = $today + $days7; <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$bar1-&gt;add($today, rand(0,100),&quot;&quot;,Color::RED()); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$average1-&gt;setPeriodAlign(PeriodAligns::$FIRST); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$average1-&gt;setPeriodStyle(PeriodStyles::$RANGE); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$average1-&gt;setPeriod(30); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$line1-&gt;setDataSource($bar1); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$line1-&gt;checkDataSource();<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>}<o:p></o:p></span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>This will result in several
+points, each one showing the &quot;average&quot; of each month of data in the
+Bar Series. It's mandatory that points in the source Series should be sorted by
+date when calculating functions on datetime periods. The range can also be used
+for non-datetime series: <o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>for($i = 0; $i &lt; 60; ++$i)<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$bar1-&gt;add($i, rand(0,100),&quot;&quot;,Color::RED()); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span><o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$average1-&gt;setPeriodAlign(PeriodAligns::$FIRST); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$average1-&gt;setPeriodStyle(PeriodStyles::$RANGE); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$average1-&gt;setPeriod(6);<o:p></o:p></span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>This will calculate an
+average for each group of points inside every &quot;6&quot; interval. <br>
+(Points with X &gt;=6, X&lt;6 will be used to calculate the first average,
+points with X &gt;=6, X&lt;12 will be used to calculate the second average and
+so on... ). <br>
+Notice this is different than calculating an average for every 6 points. <br>
+<br>
+Use the Period Alignment property to align the function Points within the
+Series range. The following will plot the Function point at the end of a
+monthly Period: <o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-tab-count:
+1'>      </span>$average1-&gt;setPeriodAlign(PeriodAligns::$FIRST); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-tab-count:1'>      </span>$average1-&gt;setPeriodStyle(PeriodStyles::$RANGE); <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-tab-count:1'>      </span>$average1-&gt;setPeriod(DateTime::getDaysInMonth(year,month));<o:p></o:p></span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Period = Month.TotalDays
+and PeriodAligns.First <br>
+As you can see from the picture below, the &quot;average&quot; is plotted at
+the end of the month. <o:p></o:p></span></p>
+
+<p><img border=0 width=448 height=256 id="_x0000_i1030"
+src="timages/periodal1.png"></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Period = Month.TotalDays
+and PeriodAligns.Last <br>
+In this case the &quot;average&quot; is plotted at the beginning of the month. <o:p></o:p></span></p>
+
+<p><img border=0 width=448 height=256 id="_x0000_i1031"
+src="timages/periodal2.png"></p>
+
+<h4><a name=DerivingVCL><span lang=EN-GB style='mso-ansi-language:EN-GB'>Deriving
+custom functions</span></a><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></h4>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Creating a new Function
+component is simply creating a new component derived from Functions class (it
+also can be derived from an existing function ). <u1:p></u1:p>There are 2
+important virtual methods in TTeeFunction that can be overridden to create a
+new Function type.<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>1)&nbsp;Function.Calculate:
+public virtual double Calculate((Series) Source,(int) First,(int) Last)<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>2)&nbsp;Function.CalculateMany:
+public virtual double CalculateMany((ArrayList) SourceSeries, (int) ValueIndex)<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>The Calculate method is
+used to calculate function result if only one series is datasource. CalculateMany
+is used to calculate function result if multiple series can be datasource.<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+
+<p><u><span lang=EN-GB style='mso-ansi-language:EN-GB'>Example : Creating new
+SquareSum Funtion.</span></u><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>Let’s decide we need a
+SquareSum Function to return the &quot;sum of squares&quot;.<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>This function can have only
+one datasource or multiple datasources, so we'll override the Calculate and
+CalculateMany methods.<o:p></o:p></span></p>
+
+<pre><span lang=EN-GB style='mso-ansi-language:EN-GB'>public class quareSum extends Functions {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span>public function quareSum($c=null) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>   </span><span
+style='mso-tab-count:1'>   </span>parent::__constructor($c);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span>} <o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span>public calculate($sourceSeries, $firstIndex, $lastIndex) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$v = $this-&gt;valueList($sourceSeries);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>     </span><span style='mso-spacerun:yes'>   </span>if ($firstIndex == -1) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>return $v-&gt;getTotal();<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>} else {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>result = 0;<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>for ($t = $firstIndex; $t &lt;= $lastIndex; $t++) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>                </span>result+=sqrt($v-&gt;getValue($t));<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>}<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>return (Double)$result;<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span>public function calculateMany($sourceSeriesList,<span style='mso-spacerun:yes'> </span>$valueIndex) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>$result = 0;<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>for ($t = 0; $t &lt; sizeof($sourceSeriesList); $t++) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>$v = $this-&gt;valueList($sourceSeriesList[$t]);<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>if ($v-&gt;count &gt; $valueIndex) {<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>                </span>$result+=sqrt($v-&gt;getValue($valueIndex));<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>            </span>}<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>        </span>return $result;<o:p></o:p></span></pre><pre><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></pre>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>The FirstIndex and EndIndex
+variables are used to &quot;loop&quot; all SourceSeries points to calculate the
+sum of squares.<o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>The &quot;ValueList&quot;
+method is used to extract the mandatory Steema.TeeChart.ValueList to make the
+class work with Series types like HorizBarSeries where &quot;XValues&quot;
+holds the point values and not &quot;YValues&quot;. <o:p></o:p></span></p>
+
+<p><span lang=EN-GB style='mso-ansi-language:EN-GB'>The &quot;Calculate&quot;
+method is used when the Series has <b>only one</b> Series as DataSource. When
+Series have more than one Series as datasources, the &quot;CalculateMany&quot;
+method is called.<br>
+<br>
+&quot;CalculateMany&quot; will get called once for each point in the source
+Series, starting from zero and ending with the minimum point count of all
+datasources. <br>
+<br>
+It is very important to understand the difference between Calculate and
+CalculateMany. &quot;Calculate&quot; is called when there is only one
+datasource and it's called only once. &quot;CalculateMany&quot; is called
+several times (one for each point) when there are more than one Series as
+datasources. <br>
+&nbsp;<o:p></o:p></span></p>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><br
+style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></p>
+
+<ALIGN="CENTER">
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=359
+ style='width:269.25pt;mso-cellspacing:0cm;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width="42%" valign=top style='width:42.0%;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="tutorial6.htm"><span style='text-decoration:none;text-underline:none'><img
+  border=0 width=135 height=81 id="_x0000_i1033" src="timages/backtut.gif"></span></a><o:p></o:p></span></p>
+  </td>
+  <td width="58%" valign=top style='width:58.0%;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana'><a
+  href="tutorial8.htm"><span style='text-decoration:none;text-underline:none'><img
+  border=0 width=116 height=81 id="_x0000_i1034" src="timages/fwdtut.gif"></span></a><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:9.0pt;font-family:Verdana'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+mso-ansi-language:EN-GB'>© 1996-2012 Steema Software SL. All rights reserved. <o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

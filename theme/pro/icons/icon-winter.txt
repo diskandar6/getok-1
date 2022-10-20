@@ -1,0 +1,11 @@
+fas,fa fa-glass-whiskey
+fas,fa fa-icicles
+fas,fa fa-igloo
+fas,fa fa-mitten
+fas,fa fa-mug-hot
+fas,fa fa-skating
+fas,fa fa-skiing
+fas,fa fa-skiing-nordic
+fas,fa fa-snowboarding
+fas,fa fa-snowplow
+fas,fa fa-tram

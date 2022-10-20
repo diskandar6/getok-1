@@ -1,0 +1,15 @@
+far,fas,fa fa-comment
+far,fas,fa fa-comment-alt
+far,fas,fa fa-comment-dots
+fas,fa fa-comment-slash
+far,fas,fa fa-comments
+far,fas,fa fa-frown
+far,fas,fa fa-meh
+fas,fa fa-phone
+fas,fa fa-phone-slash
+fas,fa fa-poo
+fas,fa fa-quote-left
+fas,fa fa-quote-right
+far,fas,fa fa-smile
+fas,fa fa-video
+fas,fa fa-video-slash

@@ -1,0 +1,14 @@
+fas,fa fa-basketball-ball
+fas,fa fa-bowling-ball
+fas,fa fa-dumbbell
+fas,fa fa-football-ball
+far,fas,fa fa-futbol
+fas,fa fa-golf-ball
+fas,fa fa-hockey-puck
+fas,fa fa-quidditch
+fas,fa fa-skating
+fas,fa fa-skiing
+fas,fa fa-skiing-nordic
+fas,fa fa-snowboarding
+fas,fa fa-table-tennis
+fas,fa fa-volleyball-ball

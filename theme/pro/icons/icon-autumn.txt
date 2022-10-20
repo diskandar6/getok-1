@@ -1,0 +1,11 @@
+fas,fa fa-apple-alt
+fas,fa fa-campground
+fas,fa fa-cloud-sun
+fas,fa fa-drumstick-bite
+fas,fa fa-football-ball
+fas,fa fa-hiking
+fas,fa fa-mountain
+fas,fa fa-tractor
+fas,fa fa-tree
+fas,fa fa-wind
+fas,fa fa-wine-bottle

@@ -1,0 +1,28 @@
+RewriteEngine On
+RewriteBase /
+
+DirectoryIndex index.php
+
+RewriteRule ^(image|images)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/(.*)$  index.php?a_fwd=$1&b_fwd=$2&c_fwd=$3&d_fwd=$4&e_fwd=$5&f_fwd=$6&g_fwd=$7&h_fwd=$8&i_fwd=$9&j_fwd=$10&file=$11 [NC,L]
+RewriteRule ^(image|images)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/(.*)$  index.php?a_fwd=$1&b_fwd=$2&c_fwd=$3&d_fwd=$4&e_fwd=$5&f_fwd=$6&g_fwd=$7&h_fwd=$8&i_fwd=$9&file=$10 [NC,L]
+RewriteRule ^(image|images)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/(.*)$  index.php?a_fwd=$1&b_fwd=$2&c_fwd=$3&d_fwd=$4&e_fwd=$5&f_fwd=$6&g_fwd=$7&h_fwd=$8&file=$9 [NC,L]
+RewriteRule ^(image|images)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/(.*)$  index.php?a_fwd=$1&b_fwd=$2&c_fwd=$3&d_fwd=$4&e_fwd=$5&f_fwd=$6&g_fwd=$7&file=$8 [NC,L]
+RewriteRule ^(image|images)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/(.*)$  index.php?a_fwd=$1&b_fwd=$2&c_fwd=$3&d_fwd=$4&e_fwd=$5&f_fwd=$6&file=$7 [NC,L]
+RewriteRule ^(image|images)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/(.*)$  index.php?a_fwd=$1&b_fwd=$2&c_fwd=$3&d_fwd=$4&e_fwd=$5&file=$6 [NC,L]
+RewriteRule ^(image|images)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/(.*)$  index.php?a_fwd=$1&b_fwd=$2&c_fwd=$3&d_fwd=$4&file=$5 [NC,L]
+RewriteRule ^(image|images)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/(.*)$  index.php?a_fwd=$1&b_fwd=$2&c_fwd=$3&file=$4 [NC,L]
+RewriteRule ^(image|images)/([_0-9a-zA-Z-]+)/(.*)$  index.php?a_fwd=$1&b_fwd=$2&file=$3 [NC,L]
+RewriteRule ^(image|images)/(.*)$  index.php?a_fwd=$1&file=$2 [NC,L]
+
+RewriteRule ^([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/?$ index.php?a_fwd=$1&b_fwd=$2&c_fwd=$3&d_fwd=$4&e_fwd=$5&f_fwd=$6&g_fwd=$7&h_fwd=$8&i_fwd=$9&j_fwd=$10 [QSA,NC,L]
+RewriteRule ^([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/?$ index.php?a_fwd=$1&b_fwd=$2&c_fwd=$3&d_fwd=$4&e_fwd=$5&f_fwd=$6&g_fwd=$7&h_fwd=$8&i_fwd=$9 [QSA,NC,L]
+RewriteRule ^([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/?$ index.php?a_fwd=$1&b_fwd=$2&c_fwd=$3&d_fwd=$4&e_fwd=$5&f_fwd=$6&g_fwd=$7&h_fwd=$8 [QSA,NC,L]
+RewriteRule ^([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/?$ index.php?a_fwd=$1&b_fwd=$2&c_fwd=$3&d_fwd=$4&e_fwd=$5&f_fwd=$6&g_fwd=$7 [QSA,NC,L]
+RewriteRule ^([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/?$ index.php?a_fwd=$1&b_fwd=$2&c_fwd=$3&d_fwd=$4&e_fwd=$5&f_fwd=$6 [QSA,NC,L]
+RewriteRule ^([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/?$ index.php?a_fwd=$1&b_fwd=$2&c_fwd=$3&d_fwd=$4&e_fwd=$5 [QSA,NC,L]
+RewriteRule ^([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/?$ index.php?a_fwd=$1&b_fwd=$2&c_fwd=$3&d_fwd=$4 [QSA,NC,L]
+RewriteRule ^([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/?$ index.php?a_fwd=$1&b_fwd=$2&c_fwd=$3 [QSA,NC,L]
+RewriteRule ^([_0-9a-zA-Z-]+)/([_0-9a-zA-Z-]+)/?$ index.php?a_fwd=$1&b_fwd=$2 [QSA,NC,L]
+RewriteRule ^([_0-9a-zA-Z-]+)/?$ index.php?a_fwd=$1 [QSA,NC,L]
+
+ErrorDocument 404 /404

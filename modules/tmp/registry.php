@@ -1,0 +1,14 @@
+<?php
+define('D_login',D_MODULE_PATH.'tmp/uncategory/login/');
+define('D_home',D_MODULE_PATH.'tmp/uncategory/home/');
+define('D_registration',D_MODULE_PATH.'tmp/uncategory/registration/');
+define('D_options',D_MODULE_PATH.'tmp/uncategory/options/');
+define('D_forgot',D_MODULE_PATH.'tmp/uncategory/forgot/');
+define('D_akun',D_MODULE_PATH.'tmp/usermanagement/akun/');
+define('D_gnss',D_MODULE_PATH.'tmp/aplikasi/gnss/');
+define('D_perataan',D_MODULE_PATH.'tmp/aplikasi/perataan/');
+define('D_geoid-calculator',D_MODULE_PATH.'tmp/aplikasi/geoid-calculator/');
+define('D_coordinate-conversion',D_MODULE_PATH.'tmp/aplikasi/coordinate-conversion/');
+define('D_transformasi-datum',D_MODULE_PATH.'tmp/aplikasi/transformasi-datum/');
+define('D_profile',D_MODULE_PATH.'tmp/usermanagement/profile/');
+?>

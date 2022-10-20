@@ -1,0 +1,737 @@
+<SampleList>
+  <Sample ID="Introduction">
+	<ParentNodes ParentID="Overview" ParentNodePath="Overview">
+		<Title>Introduction</Title>                                                     
+	    <SamplePage>Overview.htm</SamplePage>
+	    <SeqOrd>0</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="Features">
+	<ParentNodes ParentID="Overview" ParentNodePath="Overview">
+		<Title>Features</Title>
+	    <SamplePage>Features.htm</SamplePage>
+	    <SeqOrd>1</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="Testimonials">
+	<ParentNodes ParentID="Testimonials" ParentNodePath="Overview">
+		<Title>Testimonials</Title>
+	    <SamplePage>Testimonials.htm</SamplePage>
+		<SeqOrd>2</SeqOrd>
+	</ParentNodes>
+  </Sample>   
+  <Sample ID="VHLineChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Standard">
+		<Title>Horiz. Line Chart</Title>
+	    <SamplePage>VHLineChart.php</SamplePage>
+		<SeqOrd>3</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="FastLineChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Standard">
+		<Title>Fast Line Chart</Title>
+	    <SamplePage>FastLineChart.php</SamplePage>
+	    <SeqOrd>4</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="VHBarChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Standard">
+		<Title>Bar and Horiz. Bar Chart</Title>
+	    <SamplePage>VHBarChart.php</SamplePage>
+	    <SeqOrd>5</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="HorizBar2D">
+    <ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Standard">
+        <Title>Horiz. Bar 2D</Title>
+        <SamplePage>HorizBar2D.php</SamplePage>
+        <SeqOrd>5</SeqOrd>
+    </ParentNodes>
+  </Sample>  
+  <Sample ID="VHAreaChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Standard">
+		<Title>Area and Horiz. Area Chart</Title>
+	    <SamplePage>VHAreaChart.php</SamplePage>
+	    <SeqOrd>6</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="PointsChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Standard">
+		<Title>Points Chart</Title>
+	    <SamplePage>PointsChart.php</SamplePage>
+	    <SeqOrd>6</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="BubbleChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Standard">
+		<Title>Bubble Chart</Title>
+	    <SamplePage>BubbleChart.php</SamplePage>
+	    <SeqOrd>7</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="PieChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Standard">
+		<Title>Pie Chart</Title>
+	    <SamplePage>PieChart.php</SamplePage>
+	    <SeqOrd>8</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="ShapeChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Standard">
+		<Title>Shape Chart</Title>
+	    <SamplePage>ShapeChart.php</SamplePage>
+	    <SeqOrd>9</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="GanttChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Standard">
+		<Title>Gantt Chart</Title>
+	    <SamplePage>GanttChart.php</SamplePage>
+	    <SeqOrd>10</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="Arrow">
+    <ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Standard">
+        <Title>Arrow</Title>
+        <SamplePage>Arrow.php</SamplePage>
+        <SeqOrd>3</SeqOrd>
+    </ParentNodes>
+  </Sample>  
+  <Sample ID="CandleChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Financial">
+		<Title>Candle Chart</Title>
+	    <SamplePage>CandleChart.php</SamplePage>
+	    <SeqOrd>11</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="PointFigureChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Financial">
+		<Title>Point Figure Chart</Title>
+	    <SamplePage>PointFigureChart.php</SamplePage>
+	    <SeqOrd>12</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="VolumeChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Financial">
+		<Title>Volume Chart</Title>
+	    <SamplePage>VolumeChart.php</SamplePage>
+	    <SeqOrd>13</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="ContourChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Extended">
+		<Title>Contour Chart</Title>
+	    <SamplePage>ContourChart.php</SamplePage>
+	    <SeqOrd>14</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="DonutChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Extended">
+		<Title>Donut Chart</Title>
+	    <SamplePage>DonutChart.php</SamplePage>
+	    <SeqOrd>15</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="DonutChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Extended">
+		<Title>Donut Chart</Title>
+	    <SamplePage>DonutChart.php</SamplePage>
+	    <SeqOrd>16</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="RadarChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Extended">
+		<Title>Radar Chart</Title>
+	    <SamplePage>RadarChart.php</SamplePage>
+	    <SeqOrd>17</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="Point3DChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Extended">
+		<Title>Ponit3D Chart</Title>
+	    <SamplePage>Point3DChart.php</SamplePage>
+	    <SeqOrd>18</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="PyramidChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Extended">
+		<Title>Pyramid Chart</Title>
+	    <SamplePage>PyramidChart.php</SamplePage>
+	    <SeqOrd>19</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="Smith">
+    <ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Extended">
+        <Title>Smith Chart</Title>
+        <SamplePage>Smith.php</SamplePage>
+        <SeqOrd>20</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="Polar">
+    <ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Extended">
+        <Title>Polar Chart</Title>
+        <SamplePage>PolarChart.php</SamplePage>
+        <SeqOrd>20</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="Bezier">
+    <ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Extended">
+        <Title>Bezier Chart</Title>
+        <SamplePage>Bezier.php</SamplePage>
+        <SeqOrd>20</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="SurfaceChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Extended">
+		<Title>Surface Chart</Title>
+	    <SamplePage>SurfaceChart.php</SamplePage>
+	    <SeqOrd>21</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="TriSurfaceChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Extended">
+		<Title>Tri. Surface Chart</Title>
+	    <SamplePage>TriSurfaceChart.php</SamplePage>
+	    <SeqOrd>22</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="TowerChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Extended">
+		<Title>Tower Chart</Title>
+	    <SamplePage>TowerChart.php</SamplePage>
+	    <SeqOrd>23</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="VHBoxPlotChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Statistical">
+		<Title>Box-Plot Chart</Title>
+	    <SamplePage>VHBoxPlotChart.php</SamplePage>
+	    <SeqOrd>24</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="ColorGridChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Statistical">
+		<Title>ColorGrid Chart</Title>
+	    <SamplePage>ColorGridChart.php</SamplePage>
+	    <SeqOrd>25</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="ErrorChart">
+    <ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Statistical">
+        <Title>Error Chart</Title>
+        <SamplePage>ErrorChart.php</SamplePage>
+        <SeqOrd>26</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="FunnelChart">
+    <ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Statistical">
+        <Title>Funnel Chart</Title>
+        <SamplePage>FunnelChart.php</SamplePage>
+        <SeqOrd>26</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="ErrorBarChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Statistical">
+		<Title>ErrorBar Chart</Title>
+	    <SamplePage>ErrorBarChart.php</SamplePage>
+	    <SeqOrd>27</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="ErrorPointChart">
+    <ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Statistical">
+        <Title>ErrorPoint Chart</Title>
+        <SamplePage>ErrorPointChart.php</SamplePage>
+        <SeqOrd>27</SeqOrd>
+    </ParentNodes>
+  </Sample>  
+  <Sample ID="HighLowChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Statistical">
+		<Title>Hugh-Low Chart</Title>
+	    <SamplePage>HighLowChart.php</SamplePage>
+	    <SeqOrd>28</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="HistogramChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Statistical">
+		<Title>Histogram Chart</Title>
+	    <SamplePage>HistogramChart.php</SamplePage>
+	    <SeqOrd>29</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="WaterFallChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Statistical">
+		<Title>WaterFall Chart</Title>
+	    <SamplePage>WaterFallChart.php</SamplePage>
+	    <SeqOrd>30</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="Bar3DChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Other">
+		<Title>Bar3D Chart</Title>
+	    <SamplePage>Bar3DChart.php</SamplePage>
+	    <SeqOrd>31</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="BarJoinChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Other">
+		<Title>Bar-Join Chart</Title>
+	    <SamplePage>BarJoinChart.php</SamplePage>
+	    <SeqOrd>32</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="CalendarChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Other">
+		<Title>Calendar Chart</Title>
+	    <SamplePage>CalendarChart.php</SamplePage>
+	    <SeqOrd>33</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="ClockChart">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Other">
+		<Title>Clock Chart</Title>
+	    <SamplePage>ClockChart.php</SamplePage>
+	    <SeqOrd>34</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="AddFunction">
+	<ParentNodes ParentID="Functions" ParentNodePath="Functions/Standard">
+		<Title>Add</Title>
+	    <SamplePage>AddFunction.php</SamplePage>
+	    <SeqOrd>10</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="SubtractFunction">
+	<ParentNodes ParentID="Functions" ParentNodePath="Functions/Standard">
+		<Title>Subtract</Title>
+	    <SamplePage>SubtractFunction.php</SamplePage>
+	    <SeqOrd>11</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="HighFunction">
+	<ParentNodes ParentID="Functions" ParentNodePath="Functions/Standard">
+		<Title>High</Title>
+	    <SamplePage>HighFunction.php</SamplePage>
+	    <SeqOrd>12</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="LowFunction">
+	<ParentNodes ParentID="Functions" ParentNodePath="Functions/Standard">
+		<Title>Low</Title>
+	    <SamplePage>LowFunction.php</SamplePage>
+	    <SeqOrd>13</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="CountFunction">
+	<ParentNodes ParentID="Functions" ParentNodePath="Functions/Standard">
+		<Title>Count</Title>
+	    <SamplePage>CountFunction.php</SamplePage>
+	    <SeqOrd>14</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="MultiplyFunction">
+	<ParentNodes ParentID="Functions" ParentNodePath="Functions/Standard">
+		<Title>Multiply</Title>
+	    <SamplePage>MultiplyFunction.php</SamplePage>
+	    <SeqOrd>15</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="AverageDemo">
+	<ParentNodes ParentID="Functions" ParentNodePath="Functions/Standard">
+		<Title>Average</Title>
+	    <SamplePage>AverageDemo.php</SamplePage>
+	    <SeqOrd>16</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="VarianceFunction">
+	<ParentNodes ParentID="Functions" ParentNodePath="Functions/Extended">
+		<Title>Variance</Title>
+	    <SamplePage>VarianceFunction.php</SamplePage>
+	    <SeqOrd>17</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="PerimeterFunction">
+	<ParentNodes ParentID="Functions" ParentNodePath="Functions/Extended">
+		<Title>Perimeter</Title>
+	    <SamplePage>PerimeterFunction.php</SamplePage>
+	    <SeqOrd>18</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="SmoothingFunction">
+    <ParentNodes ParentID="Functions" ParentNodePath="Functions/Extended">
+        <Title>Smoothing</Title>
+        <SamplePage>SmoothingFunction.php</SamplePage>
+        <SeqOrd>18</SeqOrd>
+    </ParentNodes>
+  </Sample>  
+  <Sample ID="AnnotationTool">
+	<ParentNodes ParentID="Tools" ParentNodePath="Tools">
+		<Title>Annotation</Title>
+	    <SamplePage>AnnotationTool.php</SamplePage>
+	    <SeqOrd>19</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="ExtraLegendTool">
+    <ParentNodes ParentID="Tools" ParentNodePath="Tools">
+        <Title>Extra Legend</Title>
+        <SamplePage>ExtraLegendTool.php</SamplePage>
+        <SeqOrd>20</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="SeriesBandTool">
+    <ParentNodes ParentID="Tools" ParentNodePath="Tools">
+        <Title>Series Band</Title>
+        <SamplePage>SeriesBandTool.php</SamplePage>
+        <SeqOrd>20</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="ColorBandTool">
+	<ParentNodes ParentID="Tools" ParentNodePath="Tools">
+		<Title>ColorBand</Title>
+	    <SamplePage>ColorBandTool.php</SamplePage>
+	    <SeqOrd>21</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="ColorLineTool">
+	<ParentNodes ParentID="Tools" ParentNodePath="Tools">
+		<Title>ColorLine</Title>
+	    <SamplePage>ColorLineTool.php</SamplePage>
+	    <SeqOrd>22</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="GridBandTool">
+	<ParentNodes ParentID="Tools" ParentNodePath="Tools">
+		<Title>GridBand</Title>
+	    <SamplePage>GridBandTool.php</SamplePage>
+	    <SeqOrd>23</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="GridBandCentered">
+    <ParentNodes ParentID="Tools" ParentNodePath="Tools">
+        <Title>GridBand with Centered Grid</Title>
+        <SamplePage>GridBandCentered.php</SamplePage>
+        <SeqOrd>31</SeqOrd>
+    </ParentNodes>
+  </Sample>    
+  <Sample ID="PNGExport">
+	<ParentNodes ParentID="Exporting" ParentNodePath="Exporting/Picture">
+		<Title>PNG</Title>
+	    <SamplePage>PNGExport.php</SamplePage>
+	    <SeqOrd>24</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="JPEGExport">
+	<ParentNodes ParentID="Exporting" ParentNodePath="Exporting/Picture">
+		<Title>JPEG</Title>
+	    <SamplePage>JPEGExport.php</SamplePage>
+	    <SeqOrd>25</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="GIFExport">
+	<ParentNodes ParentID="Exporting" ParentNodePath="Exporting/Picture">
+		<Title>GIF</Title>
+	    <SamplePage>GIFExport.php</SamplePage>
+	    <SeqOrd>26</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="WBMPExport">
+    <ParentNodes ParentID="Exporting" ParentNodePath="Exporting/Picture">
+        <Title>WBMP</Title>
+        <SamplePage>WBMPExport.php</SamplePage>
+        <SeqOrd>27</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="FlashExport">
+    <ParentNodes ParentID="Exporting" ParentNodePath="Exporting/Flash">
+        <Title>Flash Export</Title>
+        <SamplePage>FlashExport.php</SamplePage>
+        <SeqOrd>27</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="PDFExport">
+    <ParentNodes ParentID="Exporting" ParentNodePath="Exporting/PDF">
+        <Title>PDF Export</Title>
+        <SamplePage>fpdf_sample.php</SamplePage>
+        <SeqOrd>27</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="HTML5Export">
+    <ParentNodes ParentID="Exporting" ParentNodePath="Exporting/HTML5">
+        <Title>HTML5 Export</Title>
+        <SamplePage>HTML5Export.php</SamplePage>
+        <SeqOrd>27</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="SVGExport">
+    <ParentNodes ParentID="Exporting" ParentNodePath="Exporting/SVG">
+        <Title>SVG Export</Title>
+        <SamplePage>SVGExport.php</SamplePage>
+        <SeqOrd>27</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="TextExport">
+	<ParentNodes ParentID="Exporting" ParentNodePath="Exporting/Data">
+		<Title>Text</Title>
+	    <SamplePage>TextExport.php</SamplePage>
+	    <SeqOrd>28</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="AspectDemo">
+	<ParentNodes ParentID="Miscellaneous" ParentNodePath="Miscellaneous">
+		<Title>Aspect Options</Title>
+	    <SamplePage>AspectDemo.php</SamplePage>
+	    <SeqOrd>29</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="SeriesDemo">
+	<ParentNodes ParentID="Miscellanous" ParentNodePath="Miscellaneous">
+		<Title>Series Options</Title>
+	    <SamplePage>SeriesDemo.php</SamplePage>
+	    <SeqOrd>30</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="LegendDemo">
+	<ParentNodes ParentID="Miscellaneous" ParentNodePath="Miscellaneous">
+		<Title>Legend Options</Title>
+	    <SamplePage>LegendDemo.php</SamplePage>
+	    <SeqOrd>31</SeqOrd>
+	</ParentNodes>
+  </Sample>	
+  <Sample ID="LoadBackImage">
+	<ParentNodes ParentID="Miscellaneous" ParentNodePath="Miscellaneous">
+		<Title>Back Image Load</Title>
+	    <SamplePage>LoadBackImage.php</SamplePage>
+	    <SeqOrd>31</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="SparkLines">
+	<ParentNodes ParentID="Miscellaneous" ParentNodePath="Miscellaneous">
+		<Title>SparkLines</Title>
+	    <SamplePage>SparkLines.php</SamplePage>
+	    <SeqOrd>31</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="XMLExport">
+	<ParentNodes ParentID="Exporting" ParentNodePath="Exporting/Data">
+		<Title>XML</Title>
+	    <SamplePage>XMLExport.php</SamplePage>
+	    <SeqOrd>32</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="CustomAxesDemo">
+    <ParentNodes ParentID="Axes" ParentNodePath="Axes">
+        <Title>Custom Axes</Title>
+        <SamplePage>CustomAxesDemo.php</SamplePage>
+        <SeqOrd>33</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="OnGetAxisLabelEvent">
+    <ParentNodes ParentID="Axes" ParentNodePath="Axes">
+        <Title>OnGetAxisLabel Event</Title>
+        <SamplePage>OnGetAxisLabelEvent.php</SamplePage>
+        <SeqOrd>33</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="PyramidDemo">
+	<ParentNodes ParentID="ChartStyles" ParentNodePath="ChartStyles/Extended">
+		<Title>Pyramid Series</Title>
+	    <SamplePage>PyramidDemo.php</SamplePage>
+	    <SeqOrd>34</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="XMLImport">
+	<ParentNodes ParentID="Importing" ParentNodePath="Importing/Data">
+		<Title>XML</Title>
+	    <SamplePage>XMLImport.php</SamplePage>
+	    <SeqOrd>35</SeqOrd>
+	</ParentNodes>
+  </Sample>
+  <Sample ID="LineShadow">
+    <ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Standard">
+        <Title>Line with Shadow</Title>
+        <SamplePage>LineShadow.php</SamplePage>
+        <SeqOrd>36</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="Line2D">
+    <ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Standard">
+        <Title>Line 2D</Title>
+        <SamplePage>Line2D.php</SamplePage>
+        <SeqOrd>36</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="Line3D">
+    <ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Standard">
+        <Title>Line 3D</Title>
+        <SamplePage>Line3D.php</SamplePage>
+        <SeqOrd>36</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="LinePoint">
+    <ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Standard">
+        <Title>Line Point</Title>
+        <SamplePage>LinePoint.php</SamplePage>
+        <SeqOrd>36</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="LineSmooth">
+    <ParentNodes ParentID="ChartStyles" ParentNodePath="Chart Styles/Standard">
+        <Title>Line Smoothing</Title>
+        <SamplePage>LineSmooth.php</SamplePage>
+        <SeqOrd>36</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="NativeExport">
+    <ParentNodes ParentID="Exporting" ParentNodePath="Exporting/Native">
+        <Title>Template TEP</Title>
+        <SamplePage>NativeExport.php</SamplePage>
+        <SeqOrd>32</SeqOrd>
+    </ParentNodes>
+  </Sample>  
+  <Sample ID="NativeImport">
+    <ParentNodes ParentID="Importing" ParentNodePath="Importing/Native">
+        <Title>Template TEP</Title>
+        <SamplePage>NativeImport.php</SamplePage>
+        <SeqOrd>32</SeqOrd>
+    </ParentNodes>
+  </Sample>  
+  <Sample ID="EventsDemo">
+    <ParentNodes ParentID="Miscellaneous" ParentNodePath="Miscellaneous">
+        <Title>EventsDemo</Title>
+        <SamplePage>EventsDemo.php</SamplePage>
+        <SeqOrd>32</SeqOrd>
+    </ParentNodes>
+  </Sample>    
+  <Sample ID="scatterplot">
+    <ParentNodes ParentID="Miscellaneous" ParentNodePath="Miscellaneous">
+        <Title>Scatter Plot</Title>
+        <SamplePage>scatterplot.php</SamplePage>
+        <SeqOrd>32</SeqOrd>
+    </ParentNodes>
+  </Sample>    
+  <Sample ID="Legend_CustomPosition">
+    <ParentNodes ParentID="Legend" ParentNodePath="Legend">
+        <Title>Legend Custom Position</Title>
+        <SamplePage>Legend_CustomPosition.php</SamplePage>
+        <SeqOrd>32</SeqOrd>
+    </ParentNodes>
+  </Sample>    
+  <Sample ID="BarGradient">
+    <ParentNodes ParentID="Series" ParentNodePath="Series">
+        <Title>Bar with Gradient</Title>
+        <SamplePage>BarGradient.php</SamplePage>
+        <SeqOrd>31</SeqOrd>
+    </ParentNodes>
+  </Sample>  
+  <Sample ID="Series_NullPoints">
+    <ParentNodes ParentID="Series" ParentNodePath="Series">
+        <Title>Line with Null points</Title>
+        <SamplePage>Series_NullPoints.php</SamplePage>
+        <SeqOrd>31</SeqOrd>
+    </ParentNodes>
+  </Sample>    
+  <Sample ID="Series_AreaTransparency">
+    <ParentNodes ParentID="Series" ParentNodePath="Series">
+        <Title>Area with Transparency</Title>
+        <SamplePage>Series_AreaTransparency.php</SamplePage>
+        <SeqOrd>31</SeqOrd>
+    </ParentNodes>
+  </Sample>    
+  <Sample ID="ThemesDemo">
+    <ParentNodes ParentID="Miscellaneous" ParentNodePath="Miscellaneous">
+        <Title>Themes</Title>
+        <SamplePage>ThemesDemo.php</SamplePage>
+        <SeqOrd>31</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="ZoomUnZoom">
+    <ParentNodes ParentID="Miscellaneous" ParentNodePath="Miscellaneous">
+        <Title>Zoom/UnZoom Rect</Title>
+        <SamplePage>ZoomUnZoom.php</SamplePage>
+        <SeqOrd>31</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="EventsDemo">
+    <ParentNodes ParentID="Miscellaneous" ParentNodePath="Miscellaneous">
+        <Title>Events demo</Title>
+        <SamplePage>EventsDemo.php</SamplePage>
+        <SeqOrd>31</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="TeeChartJavaScript">
+    <ParentNodes ParentID="JScript" ParentNodePath="JScript">
+        <Title>TeeChart with JavaScript</Title>
+        <SamplePage>TeeChartJavaScript.php</SamplePage>
+        <SeqOrd>31</SeqOrd>
+    </ParentNodes>
+  </Sample>  
+  <Sample ID="Annotation">
+    <ParentNodes ParentID="JScript" ParentNodePath="JScript">
+        <Title>Annotation Tool</Title>
+        <SamplePage>Annotation.php</SamplePage>
+        <SeqOrd>31</SeqOrd>
+    </ParentNodes>
+  </Sample>  
+  <Sample ID="Cursor">
+    <ParentNodes ParentID="JScript" ParentNodePath="JScript">
+        <Title>Cursor Tool</Title>
+        <SamplePage>Cursor.php</SamplePage>
+        <SeqOrd>31</SeqOrd>
+    </ParentNodes>
+  </Sample>  
+  <Sample ID="ToolTip">
+    <ParentNodes ParentID="JScript" ParentNodePath="JScript">
+        <Title>ToolTip Tool</Title>
+        <SamplePage>ToolTip.php</SamplePage>
+        <SeqOrd>31</SeqOrd>
+    </ParentNodes>
+  </Sample>  
+  <Sample ID="Slider">
+    <ParentNodes ParentID="JScript" ParentNodePath="JScript">
+        <Title>Slider Tool</Title>
+        <SamplePage>Slider.php</SamplePage>
+        <SeqOrd>31</SeqOrd>
+    </ParentNodes>
+  </Sample>  
+  <Sample ID="Scroller">
+    <ParentNodes ParentID="JScript" ParentNodePath="JScript">
+        <Title>Scroller Tool</Title>
+        <SamplePage>Scroller.php</SamplePage>
+        <SeqOrd>31</SeqOrd>
+    </ParentNodes>
+  </Sample>    
+  <Sample ID="JSLine">
+    <ParentNodes ParentID="JScript" ParentNodePath="JScript/series">
+        <Title>Line</Title>
+        <SamplePage>line.php</SamplePage>
+        <SeqOrd>36</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="JSPoint">
+    <ParentNodes ParentID="JScript" ParentNodePath="JScript/series">
+        <Title>Points</Title>
+        <SamplePage>point.php</SamplePage>
+        <SeqOrd>36</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="JSLinePoint">
+    <ParentNodes ParentID="JScript" ParentNodePath="JScript/series">
+        <Title>LinePoint</Title>
+        <SamplePage>linepoint.php</SamplePage>
+        <SeqOrd>36</SeqOrd>
+    </ParentNodes>
+  </Sample>
+  <Sample ID="JSLinePoint">
+    <ParentNodes ParentID="JScript" ParentNodePath="JScript/series">
+        <Title>LinePoint</Title>
+        <SamplePage>linepoint.php</SamplePage>
+        <SeqOrd>36</SeqOrd>
+    </ParentNodes>
+  </Sample>  
+  <Sample ID="JSLinePoint">
+    <ParentNodes ParentID="JScript" ParentNodePath="JScript/series">
+        <Title>LinePoint</Title>
+        <SamplePage>linepoint.php</SamplePage>
+        <SeqOrd>36</SeqOrd>
+    </ParentNodes>
+  </Sample>  
+</SampleList>

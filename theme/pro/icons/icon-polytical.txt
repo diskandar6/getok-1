@@ -1,0 +1,14 @@
+fas,fa fa-award
+fas,fa fa-balance-scale
+fas,fa fa-bullhorn
+fas,fa fa-check-double
+fas,fa fa-democrat
+fas,fa fa-donate
+fas,fa fa-dove
+fas,fa fa-fist-raised
+fas,fa fa-flag-usa
+far,fas,fa fa-handshake
+fas,fa fa-person-booth
+fas,fa fa-piggy-bank
+fas,fa fa-republican
+fas,fa fa-vote-yea

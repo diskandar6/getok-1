@@ -1,0 +1,16 @@
+fas,fa fa-allergies
+fas,fa fa-fist-raised
+fas,fa fa-hand-holding
+far,fas,fa fa-hand-lizard
+fas,fa fa-hand-middle-finger
+far,fas,fa fa-hand-paper
+far,fas,fa fa-hand-peace
+far,fas,fa fa-hand-point-down
+far,fas,fa fa-hand-point-left
+far,fas,fa fa-hand-point-right
+far,fas,fa fa-hand-point-up
+far,fas,fa fa-hand-pointer
+far,fas,fa fa-hand-rock
+far,fas,fa fa-handshake
+far,fas,fa fa-thumbs-down
+far,fas,fa fa-thumbs-up

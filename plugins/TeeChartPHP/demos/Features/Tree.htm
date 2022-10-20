@@ -1,0 +1,919 @@
+<html>
+	<head>
+		<title>TOC</title><SCRIPT id="ContentExpanding">function expandIt(whichEl)
+		{
+			if(document.getElementById(whichEl) != null)
+			{
+				var ImgID = whichEl + "Img";
+				var ImgID2 = whichEl + "Img2";
+				if( document.getElementById(whichEl).style.display == "none")
+				{
+					document.getElementById(whichEl).style.display = "";
+					document.getElementById(ImgID).src = "images/minus.gif";
+					document.getElementById(ImgID2).src = "images/Folder-Open.bmp";
+				}
+				else
+				{
+					document.getElementById(whichEl).style.display = "none";
+					document.getElementById(ImgID).src = "images/plus.gif";
+					document.getElementById(ImgID2).src = "images/Folder.bmp";
+				}
+			}
+		}
+
+		function SetMouseOverColor(element)
+		{
+			element.style.textDecoration="underline";
+                        element.style.cursor="hand";
+		}
+
+		function SetMouseLeaveColor(element)
+		{
+			element.style.textDecoration="none";
+                        element.style.cursor="default";                        
+		}
+
+		var selectedElement;
+
+		function onMouseDown(element)
+		{
+			parent.onMouseDown(element);
+		}
+
+		</SCRIPT><link type="text/css" rel="stylesheet" href="Styles/ItemsStyles.css"></head><body topMargin="5"><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="" ID="Root">
+			<tr>
+				<td width="11" nowrap ONCLICK="javascript:expandIt('ChartOverview')"><img align="center" src="images/minus.gif" ID="ChartOverviewImg"></td>
+				<td width="16" nowrap ONCLICK="javascript:expandIt('ChartOverview')"><img align="center" src="images/Folder-Open.bmp" ID="ChartOverviewImg2"></td>
+				<td width="100%" nowrap ONCLICK="javascript:expandIt('ChartOverview')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"> Overview</SPAN>
+			<tr>
+				<td></td>
+				<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="" ID="ChartOverview">
+						<tr>
+							<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+							<td width="16"><img align="center" src="images/Overview.bmp"></td>
+							<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="Link1" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+										onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=Introduction&amp;ParentID=Overview&amp;Ord=0">Introduction</SPAN></A></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+            </td></tr><tr>
+                <td width="11" nowrap ONCLICK="javascript:expandIt('JScript')"><img align="center" src="images/plus.gif" ID="SeriesImg"></td>
+                <td width="16" nowrap ONCLICK="javascript:expandIt('JScript')"><img align="center" src="images/Folder.bmp" ID="SeriesImg2"></td>
+                <td width="100%" nowrap ONCLICK="javascript:expandIt('JScript')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">JavaScript / HTML5</SPAN>
+            <tr>
+                <td></td>
+                <td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="" ID="JScript" STYLE="DISPLAY:none">
+                        <TBODY>
+                        
+                </tr>
+                            <tr>
+                                <td width="11" nowrap ONCLICK="javascript:expandIt('SeriesJS')"><img align="center" src="images/plus.gif" ID="DataImportImg"></td>
+                                <td width="16" nowrap ONCLICK="javascript:expandIt('SeriesJS')"><img align="center" src="images/Folder.bmp" ID="DataImport2"></td>
+                                <td width="100%" nowrap ONCLICK="javascript:expandIt('SeriesJS')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Series</SPAN>
+                            <tr>
+                                <td></td>
+                                <td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="JScript" ID="SeriesJS"
+                                        STYLE="DISPLAY:none">
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="seriesJS1" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=JSLine&amp;ParentID=JScript&amp;Ord=32">Line</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="seriesJS2" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=JSPoint&amp;ParentID=JScript&amp;Ord=32">Points</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="seriesJS5" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=JSLinePoint&amp;ParentID=JScript&amp;Ord=32">Line Point</SPAN></A></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                        
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="JScript1" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=TeeChartJavaScript&amp;ParentID=JScript&amp;Ord=33">Chart with JScript</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="JScript2" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=Annotation&amp;ParentID=JScript&amp;Ord=33">Annotation Tool</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="JScript3" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=Cursor&amp;ParentID=JScript&amp;Ord=33">Cursor Tool</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="JScript4" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=ToolTip&amp;ParentID=JScript&amp;Ord=33">ToolTip Chart</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="JScript5" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=Slider&amp;ParentID=JScript&amp;Ord=33">Slider</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="JScript6" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=Scroller&amp;ParentID=JScript&amp;Ord=33">Scroller</SPAN></A></td>
+                                        </tr>
+                </td>
+            </tr>
+            </td></tr></td></tr></table>
+            
+            
+			</td></tr><tr>
+				<td width="11" nowrap ONCLICK="javascript:expandIt('ChartStyles')"><img align="center" src="images/plus.gif" ID="ChartStylesImg"></td>
+				<td width="16" nowrap ONCLICK="javascript:expandIt('ChartStyles')"><img align="center" src="images/Folder.bmp" ID="ChartStylesImg2"></td>
+				<td width="100%" nowrap ONCLICK="javascript:expandIt('ChartStyles')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Chart Styles</SPAN>
+			<tr>
+				<td></td>
+				<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="" ID="ChartStyles" STYLE="DISPLAY:none">
+						<TBODY>
+							<tr>
+								<td width="11" nowrap ONCLICK="javascript:expandIt('StandardCharts')"><img align="center" src="images/plus.gif" ID="StandardChartsImg"></td>
+								<td width="16" nowrap ONCLICK="javascript:expandIt('StandardCharts')"><img align="center" src="images/Folder.bmp" ID="StandardChartsImg2"></td>
+								<td width="100%" nowrap ONCLICK="javascript:expandIt('StandardCharts')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Standard</SPAN>
+							<tr>
+								<td></td>
+								<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="ChartStyles" ID="StandardCharts"
+										STYLE="DISPLAY:none">
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="N0" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=Line2D&amp;ParentID=ChartStyles&amp;Ord=3">Line 2D</SPAN></A></td>
+                                        </tr>                                        
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="N1" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=LinePoint&amp;ParentID=ChartStyles&amp;Ord=3">Line Point</SPAN></A></td>
+                                        </tr>                                        
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="N2" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=Line3D&amp;ParentID=ChartStyles&amp;Ord=3">Line 3D</SPAN></A></td>
+                                        </tr>                                        
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A0" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=VHLineChart&amp;ParentID=ChartStyles&amp;Ord=3">Horiz.Line</SPAN></A></td>
+										</tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A1" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=LineShadow&amp;ParentID=ChartStyles&amp;Ord=3">Line with Shadow</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A2" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=LineSmooth&amp;ParentID=ChartStyles&amp;Ord=3">Line Smoothing</SPAN></A></td>
+                                        </tr>
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><img align="center" src="images/Sample.bmp"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A3" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=FastLineChart&amp;ParentID=ChartStyles&amp;Ord=4">Fast Line</SPAN></A></td>
+										</tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><img align="center" src="images/Sample.bmp"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A4" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=VHBarChart&amp;ParentID=ChartStyles&amp;Ord=5">Bar and Horiz. Bar</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><img align="center" src="images/Sample.bmp"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A444" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=HorizBar2D&amp;ParentID=ChartStyles&amp;Ord=5">Horiz. Bar 2D</SPAN></A></td>
+                                        </tr>
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><img align="center" src="images/Sample.bmp"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A5" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=VHAreaChart&amp;ParentID=ChartStyles&amp;Ord=6">Area and Horiz. Area</SPAN></A></td>
+										</tr>
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><img align="center" src="images/Sample.bmp"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A6" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=PointsChart&amp;ParentID=ChartStyles&amp;Ord=6">Points</SPAN></A></td>
+										</tr>
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><img align="center" src="images/Sample.bmp"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A7" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=BubbleChart&amp;ParentID=ChartStyles&amp;Ord=7">Bubble</SPAN></A></td>
+										</tr>
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><img align="center" src="images/Sample.bmp"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A8" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=PieChart&amp;ParentID=ChartStyles&amp;Ord=8">Pie</SPAN></A></td>
+										</tr>
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><img align="center" src="images/Sample.bmp"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A9" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=ShapeChart&amp;ParentID=ChartStyles&amp;Ord=9">Shape</SPAN></A></td>
+										</tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><img align="center" src="images/Sample.bmp"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A10" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=GanttChart&amp;ParentID=ChartStyles&amp;Ord=10">Gantt</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><img align="center" src="images/Sample.bmp"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A11" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=Arrow&amp;ParentID=ChartStyles&amp;Ord=10">Arrow</SPAN></A></td>
+                                        </tr>
+									</table>
+								</td>
+              </tr>
+			    </tr>
+        </td>
+        
+			<tr>
+				<td width="11" nowrap ONCLICK="javascript:expandIt('FinancialCharts')"><img align="center" src="images/plus.gif" ID="FinancialChartsImg"></td>
+				<td width="16" nowrap ONCLICK="javascript:expandIt('FinancialCharts')"><img align="center" src="images/Folder.bmp" ID="FinancialChartsImg2"></td>
+				<td width="100%" nowrap ONCLICK="javascript:expandIt('FinancialCharts')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Financial</SPAN>
+			<tr>
+				<td></td>
+				<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="ChartStyles" ID="FinancialCharts"
+						STYLE="DISPLAY:none">
+						<tr>
+							<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+							<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+							<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="Fi10" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+										onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=CandleChart&amp;ParentID=ChartStyles&amp;Ord=12">Candle</SPAN></A></td>
+						</tr>
+						<tr>
+							<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+							<td width="16"><img align="center" src="images/Sample.bmp"></td>
+							<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="Fi11" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+										onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=VolumeChart&amp;ParentID=ChartStyles&amp;Ord=13">Volume</SPAN></A></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			</td> </tr>
+			<tr>
+				<td width="11" nowrap ONCLICK="javascript:expandIt('ExtendedCharts')"><img align="center" src="images/plus.gif" ID="ExtendedChartsImg"></td>
+				<td width="16" nowrap ONCLICK="javascript:expandIt('ExtendedCharts')"><img align="center" src="images/Folder.bmp" ID="ExtendedChartsImg2"></td>
+				<td width="100%" nowrap ONCLICK="javascript:expandIt('ExtendedCharts')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Extended</SPAN>
+			<tr>
+				<td></td>
+				<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="ChartStyles" ID="ExtendedCharts"
+						STYLE="DISPLAY:none">
+                        <tr>
+                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                            <td width="20"><img align="center" src="images/Sample.bmp"></td>
+                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A12" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=PyramidChart&amp;ParentID=ChartStyles&amp;Ord=19">Pyramid</SPAN></A></td>
+                        </tr>
+                        <tr>
+                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                            <td width="20"><img align="center" src="images/Sample.bmp"></td>
+                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A14" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=Bezier&amp;ParentID=ChartStyles&amp;Ord=19">Bezier</SPAN></A></td>
+                        </tr>
+                        <tr>
+                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                            <td width="20"><img align="center" src="images/Sample.bmp"></td>
+                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A13" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=DonutChart&amp;ParentID=ChartStyles&amp;Ord=19">Donut</SPAN></A></td>
+                        </tr>
+                        <tr>
+                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                            <td width="20"><img align="center" src="images/Sample.bmp"></td>
+                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A15" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=Smith&amp;ParentID=ChartStyles&amp;Ord=19">Smith</SPAN></A></td>
+                        </tr>
+                        <tr>
+                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                            <td width="20"><img align="center" src="images/Sample.bmp"></td>
+                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A16" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=Polar&amp;ParentID=ChartStyles&amp;Ord=19">Polar</SPAN></A></td>
+                        </tr>
+					</table>
+				</td>
+			</tr>
+			</td></tr><tr>
+				<td width="11" nowrap ONCLICK="javascript:expandIt('StatisticalCharts')"><img align="center" src="images/plus.gif" ID="StatisticalChartsImg"></td>
+				<td width="16" nowrap ONCLICK="javascript:expandIt('StatisticalCharts')"><img align="center" src="images/Folder.bmp" ID="StatisticalChartsImg2"></td>
+				<td width="100%" nowrap ONCLICK="javascript:expandIt('StatisticalCharts')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Statistical</SPAN>
+			<tr>
+				<td></td>
+				<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="ChartStyles" ID="StatisticalCharts"
+						STYLE="DISPLAY:none">
+                        <tr>
+                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                            <td width="16"><img align="center" src="images/Sample.bmp"></td>
+                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="H01" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=HistogramChart&amp;ParentID=ChartStyles&amp;Ord=29">Histogram</SPAN></A></td>
+                        </tr>
+                        <tr>
+                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                            <td width="16"><img align="center" src="images/Sample.bmp"></td>
+                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="H02" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=HighLowChart&amp;ParentID=ChartStyles&amp;Ord=29">High-Low</SPAN></A></td>
+                        </tr>
+                        <tr>
+                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                            <td width="16"><img align="center" src="images/Sample.bmp"></td>
+                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="H03" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=ErrorChart&amp;ParentID=ChartStyles&amp;Ord=29">Error</SPAN></A></td>
+                        </tr>                        
+                        <tr>
+                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                            <td width="16"><img align="center" src="images/Sample.bmp"></td>
+                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="H04" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=ErrorBarChart&amp;ParentID=ChartStyles&amp;Ord=29">Error Bar</SPAN></A></td>
+                        </tr>                                                
+                        <tr>
+                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                            <td width="16"><img align="center" src="images/Sample.bmp"></td>
+                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="H05" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=ErrorPointChart&amp;ParentID=ChartStyles&amp;Ord=29">Error Point</SPAN></A></td>
+                        </tr>                                                
+                        <tr>
+                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                            <td width="16"><img align="center" src="images/Sample.bmp"></td>
+                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="H06" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=FunnelChart&amp;ParentID=ChartStyles&amp;Ord=29">Funnel</SPAN></A></td>
+                        </tr>                                                
+					</table>
+				</td>
+			</tr>
+			</td></tr><tr>
+				<td width="11" nowrap ONCLICK="javascript:expandIt('OtherCharts')"><img align="center" src="images/plus.gif" ID="OtherChartsImg"></td>
+				<td width="16" nowrap ONCLICK="javascript:expandIt('OtherCharts')"><img align="center" src="images/Folder.bmp" ID="OtherChartsImg2"></td>
+				<td width="100%" nowrap ONCLICK="javascript:expandIt('OtherCharts')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Other</SPAN>
+			<tr>
+				<td></td>
+				<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="ChartStyles" ID="OtherCharts"
+						STYLE="DISPLAY:none">
+						<tr>
+							<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+							<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+							<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="AA14" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+										onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=Bar3DChart&amp;ParentID=ChartStyles&amp;Ord=33">Bar 3D</SPAN></A></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			</td></tr></td></tr></table>
+
+
+
+			</td></tr><tr>
+				<td width="11" nowrap ONCLICK="javascript:expandIt('Functions')"><img align="center" src="images/plus.gif" ID="FunctionsImg"></td>
+				<td width="16" nowrap ONCLICK="javascript:expandIt('Functions')"><img align="center" src="images/Folder.bmp" ID="FunctionsImg2"></td>
+				<td width="100%" nowrap ONCLICK="javascript:expandIt('Functions')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Functions</SPAN>
+			<tr>
+				<td></td>
+				<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="" ID="Functions" STYLE="DISPLAY:none">
+						<TBODY>
+							<tr>
+								<td width="11" nowrap ONCLICK="javascript:expandIt('StandardFunctions')"><img align="center" src="images/plus.gif" ID="StandardFunctionsImg"></td>
+								<td width="16" nowrap ONCLICK="javascript:expandIt('StandardFunctions')"><img align="center" src="images/Folder.bmp" ID="StandardFunctionsImg2"></td>
+								<td width="100%" nowrap ONCLICK="javascript:expandIt('StandardFunctions')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Standard</SPAN>
+							<tr>
+								<td></td>
+								<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="Functions" ID="StandardFunctions"
+										STYLE="DISPLAY:none">
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="Aaa15" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=AddFunction&amp;ParentID=Functions&amp;Ord=10">Add</SPAN></A></td>
+										</tr>
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A16" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=SubtractFunction&amp;ParentID=Functions&amp;Ord=11">SubTract</SPAN></A></td>
+										</tr>
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A17" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=HighFunction&amp;ParentID=Functions&amp;Ord=12">High</SPAN></A></td>
+										</tr>
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A18" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=LowFunction&amp;ParentID=Functions&amp;Ord=13">Low</SPAN></A></td>
+										</tr>
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A19" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=CountFunction&amp;ParentID=Functions&amp;Ord=14">Count</SPAN></A></td>
+										</tr>
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A20" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=MultiplyFunction&amp;ParentID=Functions&amp;Ord=15">Multiply</SPAN></A></td>
+										</tr>
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A21" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=AverageDemo&amp;ParentID=Functions&amp;Ord=16">Average</SPAN></A></td>
+										</tr>
+									</table>
+								</td>
+							<tr>
+								<td width="11" nowrap ONCLICK="javascript:expandIt('ExtendedFunctions')"><img align="center" src="images/plus.gif" ID="ExtendedFunctionsImg"></td>
+								<td width="16" nowrap ONCLICK="javascript:expandIt('ExtendedFunctions')"><img align="center" src="images/Folder.bmp" ID="ExtendedFunctionsImg2"></td>
+								<td width="100%" nowrap ONCLICK="javascript:expandIt('ExtendedFunctions')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Extended</SPAN>
+							<tr>
+								<td></td>
+								<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="Functions" ID="ExtendedFunctions"
+										STYLE="DISPLAY:none">
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A22" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=VarianceFunction&amp;ParentID=Functions&amp;Ord=17">Variance</SPAN></A></td>
+										</tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A23" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=PerimeterFunction&amp;ParentID=Functions&amp;Ord=18">Perimeter</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A24" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=SmoothingFunction&amp;ParentID=Functions&amp;Ord=18">Smoothing</SPAN></A></td>
+                                        </tr>
+									</table>
+								</td>
+				</td>
+			</tr>
+			</td></tr></td></tr></table>
+
+
+			</td></tr><tr>
+				<td width="11" nowrap ONCLICK="javascript:expandIt('Tools')"><img align="center" src="images/plus.gif" ID="ToolsImg"></td>
+				<td width="16" nowrap ONCLICK="javascript:expandIt('Tools')"><img align="center" src="images/Folder.bmp" ID="ToolsImg2"></td>
+				<td width="100%" nowrap ONCLICK="javascript:expandIt('Tools')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Tools</SPAN>
+			<tr>
+				<td></td>
+				<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="" ID="Tools" STYLE="DISPLAY:none">
+						<TBODY>
+							<tr>
+								<td width="11" nowrap ONCLICK="javascript:expandIt('SeriesTools')"><img align="center" src="images/plus.gif" ID="StandardChartsImg"></td>
+								<td width="16" nowrap ONCLICK="javascript:expandIt('SeriesTools')"><img align="center" src="images/Folder.bmp" ID="StandardChartsImg2"></td>
+								<td width="100%" nowrap ONCLICK="javascript:expandIt('SeriesTools')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Series</SPAN>
+							<tr>
+								<td></td>
+								<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="Tools" ID="SeriesTools"
+										STYLE="DISPLAY:none">
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="ST1" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=ExtraLegendTool&amp;ParentID=Tools&amp;Ord=20">Extra Legend</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="ST2" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=SeriesBandTool&amp;ParentID=Tools&amp;Ord=20">Series Band</SPAN></A></td>
+                                        </tr>
+									</table>
+								</td>
+              </tr>
+			    </tr>
+							<tr>
+								<td width="11" nowrap ONCLICK="javascript:expandIt('AxisTools')"><img align="center" src="images/plus.gif" ID="StandardChartsImg"></td>
+								<td width="16" nowrap ONCLICK="javascript:expandIt('AxisTools')"><img align="center" src="images/Folder.bmp" ID="StandardChartsImg2"></td>
+								<td width="100%" nowrap ONCLICK="javascript:expandIt('AxisTools')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Axis</SPAN>
+							<tr>
+								<td></td>
+								<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="Tools" ID="AxisTools"
+										STYLE="DISPLAY:none">
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A25" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=ColorBandTool&amp;ParentID=Tools&amp;Ord=21">ColorBand</SPAN></A></td>
+										</tr>
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A26" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=ColorLineTool&amp;ParentID=Tools&amp;Ord=22">ColorLine</SPAN></A></td>
+										</tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A27" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=GridBandTool&amp;ParentID=Tools&amp;Ord=23">GridBand</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="Tools_1" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=GridBandCentered&amp;ParentID=Tools&amp;Ord=23">GridBand Centered Grid</SPAN></A></td>
+                                        </tr>
+									</table>
+								</td>
+              </tr>
+			    </tr>
+        </td>
+							<tr>
+								<td width="11" nowrap ONCLICK="javascript:expandIt('OtherTools')"><img align="center" src="images/plus.gif" ID="OtherToolsImg"></td>
+								<td width="16" nowrap ONCLICK="javascript:expandIt('OtherTools')"><img align="center" src="images/Folder.bmp" ID="OtherToolsImg2"></td>
+								<td width="100%" nowrap ONCLICK="javascript:expandIt('OtherTools')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Other</SPAN>
+							<tr>
+								<td></td>
+								<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="Tools" ID="OtherTools"
+										STYLE="DISPLAY:none">
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A28" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=AnnotationTool&amp;ParentID=Tools&amp;Ord=19">Annotation</SPAN></A></td>
+										</tr>
+									</table>
+								</td>
+              </tr>
+			    </tr>
+
+				</td>
+			</tr>
+			</td></tr></td></tr></table>
+
+
+			</td></tr><tr>
+				<td width="11" nowrap ONCLICK="javascript:expandIt('Exporting')"><img align="center" src="images/plus.gif" ID="FunctionsImg"></td>
+				<td width="16" nowrap ONCLICK="javascript:expandIt('Exporting')"><img align="center" src="images/Folder.bmp" ID="FunctionsImg2"></td>
+				<td width="100%" nowrap ONCLICK="javascript:expandIt('Exporting')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Exporting</SPAN>
+			<tr>
+				<td></td>
+				<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="" ID="Exporting" STYLE="DISPLAY:none">
+						<TBODY>
+                            <tr>
+                                <td width="11" nowrap ONCLICK="javascript:expandIt('HTML5')"><img align="center" src="images/plus.gif" ID="StandardChartsImg"></td>
+                                <td width="16" nowrap ONCLICK="javascript:expandIt('HTML5')"><img align="center" src="images/Folder.bmp" ID="StandardChartsImg2"></td>
+                                <td width="100%" nowrap ONCLICK="javascript:expandIt('HTML5')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">HTML5</SPAN>
+                            <tr>
+                                <td></td>
+                                <td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="Exporting" ID="HTML5"
+                                        STYLE="DISPLAY:none">                        
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="EF00" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=HTML5Export&amp;ParentID=Exporting&amp;Ord=22">HTML5 Export</SPAN></A></td>
+                                        </tr>                        
+                                    </table>
+                                </td>
+                            </tr>
+                            </tr>
+
+                            <tr>
+                                <td width="11" nowrap ONCLICK="javascript:expandIt('SVG')"><img align="center" src="images/plus.gif" ID="StandardChartsImg"></td>
+                                <td width="16" nowrap ONCLICK="javascript:expandIt('SVG')"><img align="center" src="images/Folder.bmp" ID="StandardChartsImg2"></td>
+                                <td width="100%" nowrap ONCLICK="javascript:expandIt('SVG')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">SVG</SPAN>
+                            <tr>
+                                <td></td>
+                                <td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="Exporting" ID="SVG"
+                                        STYLE="DISPLAY:none">                        
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="EF10" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=SVGExport&amp;ParentID=Exporting&amp;Ord=22">SVG Export</SPAN></A></td>
+                                        </tr>                        
+                                    </table>
+                                </td>
+                            </tr>
+                            </tr>
+                        
+                            <tr>
+                                <td width="11" nowrap ONCLICK="javascript:expandIt('Flash')"><img align="center" src="images/plus.gif" ID="StandardChartsImg"></td>
+                                <td width="16" nowrap ONCLICK="javascript:expandIt('Flash')"><img align="center" src="images/Folder.bmp" ID="StandardChartsImg2"></td>
+                                <td width="100%" nowrap ONCLICK="javascript:expandIt('Flash')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Flash</SPAN>
+                            <tr>
+                                <td></td>
+                                <td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="Exporting" ID="Flash"
+                                        STYLE="DISPLAY:none">                        
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="EF01" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=FlashExport&amp;ParentID=Exporting&amp;Ord=22">Flash Export</SPAN></A></td>
+                                        </tr>                        
+                                    </table>
+                                </td>
+                            </tr>
+                            </tr>
+
+                            <tr>
+                                <td width="11" nowrap ONCLICK="javascript:expandIt('PDF')"><img align="center" src="images/plus.gif" ID="StandardChartsImg"></td>
+                                <td width="16" nowrap ONCLICK="javascript:expandIt('PDF')"><img align="center" src="images/Folder.bmp" ID="StandardChartsImg2"></td>
+                                <td width="100%" nowrap ONCLICK="javascript:expandIt('PDF')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">PDF</SPAN>
+                            <tr>
+                                <td></td>
+                                <td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="Exporting" ID="PDF"
+                                        STYLE="DISPLAY:none">                        
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="EP08" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=fpdf_samplet&amp;ParentID=Exporting&amp;Ord=23">FPDF Export</SPAN></A></td>
+                                        </tr>                        
+                                    </table>
+                                </td>
+                            </tr>
+                            </tr>						
+							
+                            <tr>								<td width="11" nowrap ONCLICK="javascript:expandIt('Pictures')"><img align="center" src="images/plus.gif" ID="StandardChartsImg"></td>
+								<td width="16" nowrap ONCLICK="javascript:expandIt('Pictures')"><img align="center" src="images/Folder.bmp" ID="StandardChartsImg2"></td>
+								<td width="100%" nowrap ONCLICK="javascript:expandIt('Pictures')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Pictures</SPAN>
+							<tr>
+								<td></td>
+								<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="Exporting" ID="Pictures"
+										STYLE="DISPLAY:none">
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A29" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=PNGExport&amp;ParentID=Exporting&amp;Ord=24">PNG</SPAN></A></td>
+										</tr>
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A30" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=JPEGExport&amp;ParentID=Exporting&amp;Ord=25">JPEG</SPAN></A></td>
+										</tr>
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A31" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=GIFExport&amp;ParentID=Exporting&amp;Ord=26">GIF</SPAN></A></td>
+										</tr>
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A32" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=WBMPExport&amp;ParentID=Exporting&amp;Ord=27">WBMP</SPAN></A></td>
+										</tr>
+									</table>
+								</td>
+                            </tr>
+			                </tr>
+							<tr>
+								<td width="11" nowrap ONCLICK="javascript:expandIt('Data')"><img align="center" src="images/plus.gif" ID="DataExportImg"></td>
+								<td width="16" nowrap ONCLICK="javascript:expandIt('Data')"><img align="center" src="images/Folder.bmp" ID="DataExport2"></td>
+								<td width="100%" nowrap ONCLICK="javascript:expandIt('Data')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Data</SPAN>
+							<tr>
+								<td></td>
+								<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="Exporting" ID="Data"
+										STYLE="DISPLAY:none">
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A33" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=TextExport&amp;ParentID=Exporting&amp;Ord=28">Text</SPAN></A></td>
+										</tr>
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A34" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=XMLExport&amp;ParentID=Exporting&amp;Ord=32">XML</SPAN></A></td>
+										</tr>
+									</table>
+								</td>
+                            </tr>
+			                </tr>
+        </td>
+							<tr>
+								<td width="11" nowrap ONCLICK="javascript:expandIt('Native')"><img align="center" src="images/plus.gif" ID="NativeImg"></td>
+								<td width="16" nowrap ONCLICK="javascript:expandIt('Native')"><img align="center" src="images/Folder.bmp" ID="NativeImg2"></td>
+								<td width="100%" nowrap ONCLICK="javascript:expandIt('Native')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Native</SPAN>
+							<tr>
+								<td></td>
+								<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="Exporting" ID="Native"
+										STYLE="DISPLAY:none">
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="NE1" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=NativeExport&amp;ParentID=Exporting&amp;Ord=19">Template TEP</SPAN></A></td>
+										</tr>
+									</table>
+								</td>
+                            </tr>
+			                </tr>
+				</td>
+			</tr>
+			</td></tr></td></tr></table>
+
+
+			</td></tr><tr>
+				<td width="11" nowrap ONCLICK="javascript:expandIt('Importing')"><img align="center" src="images/plus.gif" ID="ImprtingImg"></td>
+				<td width="16" nowrap ONCLICK="javascript:expandIt('Importing')"><img align="center" src="images/Folder.bmp" ID="ImportingImg2"></td>
+				<td width="100%" nowrap ONCLICK="javascript:expandIt('Importing')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Importing</SPAN>
+			<tr>
+				<td></td>
+				<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="" ID="Importing" STYLE="DISPLAY:none">
+			    </tr>
+							<tr>
+								<td width="11" nowrap ONCLICK="javascript:expandIt('DataI')"><img align="center" src="images/plus.gif" ID="DataImportImg"></td>
+								<td width="16" nowrap ONCLICK="javascript:expandIt('DataI')"><img align="center" src="images/Folder.bmp" ID="DataImport2"></td>
+								<td width="100%" nowrap ONCLICK="javascript:expandIt('DataI')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Data</SPAN>
+							<tr>
+								<td></td>
+								<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="Importing" ID="DataI"
+										STYLE="DISPLAY:none">
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="A37" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=XMLImport&amp;ParentID=Importing&amp;Ord=32">XML</SPAN></A></td>
+										</tr>
+									</table>
+								</td>
+                            </tr>
+                            <tr>
+                                <td width="11" nowrap ONCLICK="javascript:expandIt('TemplateI')"><img align="center" src="images/plus.gif" ID="DataImportImg"></td>
+                                <td width="16" nowrap ONCLICK="javascript:expandIt('TemplateI')"><img align="center" src="images/Folder.bmp" ID="DataImport2"></td>
+                                <td width="100%" nowrap ONCLICK="javascript:expandIt('TemplateI')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Data</SPAN>
+                            <tr>
+                                <td></td>
+                                <td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="Importing" ID="TemplateI"
+                                        STYLE="DISPLAY:none">
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="TI1" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=NativeImport&amp;ParentID=Importing&amp;Ord=32">Template TEP</SPAN></A></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>                            
+			    </tr>
+        </td>
+			</tr>
+			</td></tr></td></tr></table>
+
+
+			</td></tr><tr>
+				<td width="11" nowrap ONCLICK="javascript:expandIt('Axes')"><img align="center" src="images/plus.gif" ID="AxesImg"></td>
+				<td width="16" nowrap ONCLICK="javascript:expandIt('Axes')"><img align="center" src="images/Folder.bmp" ID="AxesImg2"></td>
+				<td width="100%" nowrap ONCLICK="javascript:expandIt('Axes')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Axes</SPAN>
+			<tr>
+				<td></td>
+				<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="" ID="Axes" STYLE="DISPLAY:none">
+						<TBODY>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="AX1" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=CustomAxesDemo&amp;ParentID=Axes&amp;Ord=33">Custom</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="AX2" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=OnGetAxisLabelEvent&amp;ParentID=Axes&amp;Ord=33">OnGetAxisLabel Event</SPAN></A></td>
+                                        </tr>
+				</td>
+			</tr>
+			</td></tr></td></tr></table>
+
+            </td></tr><tr>
+                <td width="11" nowrap ONCLICK="javascript:expandIt('Legend')"><img align="center" src="images/plus.gif" ID="AxesImg"></td>
+                <td width="16" nowrap ONCLICK="javascript:expandIt('Legend')"><img align="center" src="images/Folder.bmp" ID="AxesImg2"></td>
+                <td width="100%" nowrap ONCLICK="javascript:expandIt('Legend')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Legend</SPAN>
+            <tr>
+                <td></td>
+                <td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="" ID="Legend" STYLE="DISPLAY:none">
+                        <TBODY>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="Le1" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=Legend_CustomPosition&amp;ParentID=Legend&amp;Ord=33">Legend Custom Position</SPAN></A></td>
+                                        </tr>
+                </td>
+            </tr>
+            </td></tr></td></tr></table>
+<!--aqui-->
+
+            </td></tr><tr>
+                <td width="11" nowrap ONCLICK="javascript:expandIt('Series')"><img align="center" src="images/plus.gif" ID="SeriesImg"></td>
+                <td width="16" nowrap ONCLICK="javascript:expandIt('Series')"><img align="center" src="images/Folder.bmp" ID="SeriesImg2"></td>
+                <td width="100%" nowrap ONCLICK="javascript:expandIt('Series')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Series</SPAN>
+            <tr>
+                <td></td>
+                <td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="" ID="Series" STYLE="DISPLAY:none">
+                        <TBODY>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="Series1" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=BarGradient&amp;ParentID=Series&amp;Ord=33">Bar with Gradient</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="Series2" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=Series_NullPoints&amp;ParentID=Series&amp;Ord=33">Line with Null points</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="Series3" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=Series_AreaTransparency&amp;ParentID=Series&amp;Ord=33">Area with Transparency</SPAN></A></td>
+                                        </tr>
+                </td>
+            </tr>
+            </td></tr></td></tr></table>
+
+            
+			</td></tr><tr>
+				<td width="11" nowrap ONCLICK="javascript:expandIt('Miscellaneous')"><img align="center" src="images/plus.gif" ID="MiscellaneousImg"></td>
+				<td width="16" nowrap ONCLICK="javascript:expandIt('Miscellaneous')"><img align="center" src="images/Folder.bmp" ID="MiscellaneousImg2"></td>
+				<td width="100%" nowrap ONCLICK="javascript:expandIt('Miscellaneous')"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)">Miscellaneous</SPAN>
+			<tr>
+				<td></td>
+				<td colspan="2" nowrap><table cellspacing="0" cellpadding="1" border="0" ParentFolderID="" ID="Miscellaneous" STYLE="DISPLAY:none">
+						<TBODY>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="MI1" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=ThemesDemo&amp;ParentID=Miscellaneous&amp;Ord=31">Themes</SPAN></A></td>
+                                        </tr>
+										<tr>
+											<td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+											<td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+											<td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="MI2" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+														onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=LoadBackImage&amp;ParentID=Miscellaneous&amp;Ord=31">Back Image Load</SPAN></A></td>
+										</tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="MI3" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=SparkLines&amp;ParentID=Miscellaneous&amp;Ord=31">SparkLines</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="MI4" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=EventsDemo&amp;ParentID=Miscellaneous&amp;Ord=31">Events Demo</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="MI5" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=scatterplot&amp;ParentID=Miscellaneous&amp;Ord=31">Scatter Plot</SPAN></A></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="11"><img align="center" src="images/ImSpacer.bmp"></td>
+                                            <td width="16"><IMG src="images/Sample.bmp" align="center"></td>
+                                            <td width="100%" nowrap Class="ContentItem"><SPAN Class="ContentItem" onmouseover="SetMouseOverColor(this)" onmouseout="SetMouseLeaveColor(this)"><A id="MI6" style="COLOR:#000000;TEXT-DECORATION:none" onmouseover="SetMouseOverColor(this)"
+                                                        onmouseout="SetMouseLeaveColor(this)" onmousedown="onMouseDown(this)" Class="ContentItem" TARGET="Content" HREF="content3.php?SampleID=ZoomUnZoom&amp;ParentID=Miscellaneous&amp;Ord=31">Zoom/UnZoom Rect</SPAN></A></td>
+                                        </tr>
+				</td>
+			</tr>
+			</td></tr></td></tr></table>
+
+
+
+		</td></tr></TBODY></table></td></tr></td></tr></TBODY></TABLE><SCRIPT id="ContentExpanding2">parent.onMouseDown(document.getElementById(parent.selectedElementID));</SCRIPT></body></html>

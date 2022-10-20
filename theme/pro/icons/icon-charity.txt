@@ -1,0 +1,15 @@
+fas,fa fa-dollar-sign
+fas,fa fa-donate
+fas,fa fa-dove
+fas,fa fa-gift
+fas,fa fa-globe
+fas,fa fa-hand-holding-heart
+fas,fa fa-hand-holding-usd
+fas,fa fa-hands-helping
+far,fas,fa fa-handshake
+far,fas,fa fa-heart
+fas,fa fa-leaf
+fas,fa fa-parachute-box
+fas,fa fa-piggy-bank
+fas,fa fa-ribbon
+fas,fa fa-seedling

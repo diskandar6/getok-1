@@ -1,0 +1,9 @@
+fas,fa fa-box
+fas,fa fa-boxes
+fas,fa fa-clipboard-check
+fas,fa fa-clipboard-list
+fas,fa fa-dolly
+fas,fa fa-dolly-flatbed
+fas,fa fa-pallet
+fas,fa fa-shipping-fast
+fas,fa fa-truck

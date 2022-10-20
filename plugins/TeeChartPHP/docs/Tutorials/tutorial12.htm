@@ -1,0 +1,1090 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="tutorial12_files/filelist.xml">
+<link rel=Edit-Time-Data href="tutorial12_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>TeeChart tutorial 12</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Portatil</o:Author>
+  <o:LastAuthor>pep</o:LastAuthor>
+  <o:Revision>7</o:Revision>
+  <o:TotalTime>218</o:TotalTime>
+  <o:Created>2008-12-05T13:54:00Z</o:Created>
+  <o:LastSaved>2012-10-15T12:25:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>1557</o:Words>
+  <o:Characters>8564</o:Characters>
+  <o:Company>...</o:Company>
+  <o:Lines>71</o:Lines>
+  <o:Paragraphs>20</o:Paragraphs>
+  <o:CharactersWithSpaces>10101</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData href="tutorial12_files/themedata.thmx">
+<link rel=colorSchemeMapping href="tutorial12_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>ES</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SplitPgBreakAndParaMark/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" Name="No List"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<link rel=Stylesheet type="text/css" media=all href=helpstyle.css>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1593833729 1073750107 16 0 415 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-520092929 1073806591 9 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	line-height:28.0pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:black;
+	font-weight:bold;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-margin-top-alt:auto;
+	margin-right:59.5pt;
+	mso-margin-bottom-alt:auto;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-margin-top-alt:auto;
+	margin-right:59.5pt;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:12.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:black;
+	font-weight:bold;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 4 Char";
+	mso-margin-top-alt:auto;
+	margin-right:59.5pt;
+	mso-margin-bottom-alt:auto;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:11.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	color:blue;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	color:blue;}
+p
+	{mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+address
+	{mso-style-unhide:no;
+	mso-style-link:"HTML Address Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:535.65pt;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:12.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-style:italic;}
+code
+	{mso-style-unhide:no;
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{mso-style-unhide:no;
+	mso-style-link:"HTML Preformatted Char";
+	margin-top:0cm;
+	margin-right:142.8pt;
+	margin-bottom:0cm;
+	margin-left:23.8pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:8.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Courier New";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-unhide:no;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;}
+span.HTMLAddressChar
+	{mso-style-name:"HTML Address Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML Address";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-style:italic;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#365F91;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 4";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;
+	font-style:italic;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML Preformatted";
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	mso-bidi-font-family:Consolas;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+span.SpellE1 {mso-style-name:"";
+	mso-spl-e:yes;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:windowtext;}
+table.Tablanormal
+	{mso-style-name:"Tabla normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:windowtext;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=ES link=blue vlink=blue style='tab-interval:35.4pt'
+topmargin=4>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>&nbsp;
+<o:p></o:p></span></p>
+
+<table class=Tablanormal border=0 cellpadding=0 width="100%" style='width:100.0%;
+ mso-cellspacing:1.5pt;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+
+<table class=Tablanormal border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0cm;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  mso-no-proof:yes'><img width=288 height=121 id="_x0000_i1030"
+  src="timages/HeaderLogo.gif"></span><span style='font-size:9.0pt;font-family:
+  "Verdana","sans-serif"'><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>&nbsp; <a
+  href="Contents.HTM"><span class=SpellE><u>Contents</u></span><u>&nbsp;page</u></a>&nbsp;<br>
+  &nbsp; <a href="Tutorial11.htm"><span class=SpellE><u>Previous</u></span></a>&nbsp;</span><span
+  style='font-size:9.0pt;font-family:"Verdana","sans-serif"'> <o:p></o:p></span></p>
+  </td>
+  <td width=20 valign=top style='width:15.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="TeeChart_tutorial_12"></a><span style='mso-fareast-font-family:
+"Times New Roman"'>Tutorial 12 - <span class=SpellE>Javascript</span>/HTML5
+Charts<o:p></o:p></span></h2>
+
+<p style='margin-right:29.75pt'><span lang=EN-US style='mso-ansi-language:EN-US'>How
+to create static and live HTML5 Charts on the client page<o:p></o:p></span></p>
+
+<div class=MsoNormal align=center style='margin-right:29.75pt;text-align:center'><span
+style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<table class=Tablanormal border=0 cellpadding=0 width="80%" style='width:80.0%;
+ mso-cellspacing:1.5pt;mso-yfti-tbllook:1184;mso-padding-alt:2.25pt 2.25pt 2.25pt 2.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span class=SpellE><b><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif"'>Contents</span></b></span><span
+  style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <h3><span style='mso-fareast-font-family:"Times New Roman"'><a href="#Intro"><u><span
+  lang=EN-US style='mso-ansi-language:EN-US'>Introduction</span></u></a></span><span
+  lang=EN-US style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+  EN-US'><o:p></o:p></span></h3>
+  <h3 style='margin-right:89.25pt'><span style='mso-fareast-font-family:"Times New Roman"'><a
+  href="#StaticExport"><u><span lang=EN-US style='mso-ansi-language:EN-US'>Static
+  Export</span></u></a></span><span lang=EN-US style='mso-fareast-font-family:
+  "Times New Roman";mso-ansi-language:EN-US'><o:p></o:p></span></h3>
+  <p class=MsoNormal style='margin-right:59.5pt'><span style='font-size:10.0pt'><a
+  href="#How-toStatic"><u><span lang=EN-US style='mso-ansi-language:EN-US'>How
+  to export to a static HTML5 chart</span></u></a></span><span lang=EN-US
+  style='font-size:10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  <h3 style='margin-right:119.0pt'><span style='mso-fareast-font-family:"Times New Roman"'><a
+  href="#LiveCharts"><u><span lang=EN-US style='mso-ansi-language:EN-US'>Live
+  HTML5 Charts</span></u></a></span><span lang=EN-US style='mso-fareast-font-family:
+  "Times New Roman";mso-ansi-language:EN-US'><o:p></o:p></span></h3>
+  <p class=MsoNormal style='margin-right:89.25pt'><span style='font-size:10.0pt'><a
+  href="#How-toLive"><u><span lang=EN-US style='mso-ansi-language:EN-US'>How to
+  export to a live HTML5 chart</span></u></a></span><span lang=EN-US
+  style='font-size:10.0pt;mso-ansi-language:EN-US'><br>
+  </span><span style='font-size:10.0pt'><a href="#JSTools"><span class=SpellE><u><span
+  lang=EN-US style='mso-ansi-language:EN-US'>Javascript</span></u></span><u><span
+  lang=EN-US style='mso-ansi-language:EN-US'>/HTML5 Chart Tools</span></u></a></span><span
+  lang=EN-US style='font-size:10.0pt;mso-ansi-language:EN-US'><br>
+  </span><span style='font-size:10.0pt'><a href="#CustomCode"><u><span
+  lang=EN-US style='mso-ansi-language:EN-US'>Use Custom code to enhance the
+  Chart on the page</span></u></a></span><span lang=EN-US style='font-size:
+  10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<div class=MsoNormal align=center style='margin-right:29.75pt;text-align:center'><span
+style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h3 style='margin-right:89.25pt'><a name=Intro><span lang=EN-US
+style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US'>Introduction</span></a><span
+lang=EN-US style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN-US'><o:p></o:p></span></h3>
+
+<p style='margin-right:59.5pt'><span class=SpellE><span lang=EN-US
+style='mso-ansi-language:EN-US'>TeeChart</span></span><span lang=EN-US
+style='mso-ansi-language:EN-US'> for PHP offers you the possibility to write
+your Charts to the browser page in native HTML5. There are two modes, <b>Static</b>
+and <b>Live</b>.<o:p></o:p></span></p>
+
+<p style='margin-right:59.5pt'><b><span lang=EN-US style='mso-ansi-language:
+EN-US'>Static</span></b><span lang=EN-US style='mso-ansi-language:EN-US'>
+writes the chart as a primitive level series of canvas commands, faithfully
+reproducing each line, primitive shape and text of your chart as a series of
+native HTML5 canvas instructions. This export format can reproduce every chart
+in the <span class=SpellE>TeeChart</span> PHP Library just as it would as a
+JPEG or PNG format image.<o:p></o:p></span></p>
+
+<p style='margin-right:59.5pt'><b><span lang=EN-US style='mso-ansi-language:
+EN-US'>Live</span></b><span lang=EN-US style='mso-ansi-language:EN-US'> writes
+the chart as a series of addressable HTML5 elements. That allows animation and
+interactivity to <span class=GramE>applied</span> to the Chart in native HTML5 <span
+class=SpellE>Javascript</span> format. This export mode doesn't support all
+chart types, see descriptive section below for more details, but does allow for
+the addition of interactive tools and supports <span class=SpellE>mousedrag</span>
+zoom and scroll on the page. <o:p></o:p></span></p>
+
+<h3 style='margin-right:119.0pt'><a name=StaticExport></a><span class=SpellE><span
+style='mso-bookmark:StaticExport'><span style='mso-fareast-font-family:"Times New Roman"'>Static</span></span></span><span
+style='mso-bookmark:StaticExport'><span style='mso-fareast-font-family:"Times New Roman"'>
+<span class=SpellE>Export</span></span></span><span style='mso-fareast-font-family:
+"Times New Roman"'><o:p></o:p></span></h3>
+
+<p style='margin-right:89.25pt'>Exporting a Chart to static HTML5 will generate a file o text which contains the code necessay for the browser to understand and show the Chart. The appearance obtained is almost identical to the Chart generated with <span
+class=SpellE>GDGraphics</span>.</p>
+<h4 style='margin-right:148.75pt'><a name=How-toStatic><span lang=EN-US
+style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US'>How
+to export to a static HTML5 chart</span></a><span lang=EN-US style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US'><o:p></o:p></span></h4>
+
+<p style='margin-right:119.0pt'><br>
+The step necessary to export a Chart to HTML5 is simple, so simple in fact, it consist of only one line of code :</p>
+
+<p style='margin-right:119.0pt'><o:p>&nbsp;</o:p></p>
+
+<p style='margin-right:119.0pt'><span class=GramE><span lang=EN-US
+style='mso-ansi-language:EN-US'>include &quot;../../../../sources/TChart.php&quot;;<span
+style='mso-spacerun:yes'>      </span><o:p></o:p></span></p>
+
+<p style='margin-right:119.0pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$chart1 = new <span class=SpellE><span
+class=GramE>TChart</span></span><span class=GramE>(</span>500,350);<o:p></o:p></span></p>
+
+<p style='margin-right:119.0pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$chart1-&gt;<span class=SpellE><span
+class=GramE>getAspect</span></span><span class=GramE>(</span>)-&gt;setView3D(false);<o:p></o:p></span></p>
+
+<p style='margin-right:119.0pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$chart1-&gt;<span class=SpellE><span
+class=GramE>getHeader</span></span><span class=GramE>(</span>)-&gt;<span
+class=SpellE>setText</span>(&quot;HTML5 Demo&quot;);<o:p></o:p></span></p>
+
+<p style='margin-right:119.0pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$chart1-&gt;<span class=SpellE><span
+class=GramE>getPanel</span></span><span class=GramE>(</span>)-&gt;<span
+class=SpellE>getGradient</span>()-&gt;<span class=SpellE>setVisible</span>(false);<span
+style='mso-spacerun:yes'>      </span><o:p></o:p></span></p>
+
+<p style='margin-right:119.0pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$chart1-&gt;<span class=SpellE><span
+class=GramE>getPanel</span></span><span class=GramE>(</span>)-&gt;<span
+class=SpellE>setColor</span>(Color::WHITE());<o:p></o:p></span></p>
+
+<p style='margin-right:119.0pt'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin-right:119.0pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>// Add Series to the Chart<o:p></o:p></span></p>
+
+<p style='margin-right:119.0pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$line = new <span class=GramE>Line(</span>$chart1-&gt;<span
+class=SpellE>getChart</span>());<o:p></o:p></span></p>
+
+<p style='margin-right:119.0pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$line-&gt;<span class=SpellE><span
+class=GramE>fillSampleValues</span></span><span class=GramE>(</span>6);<o:p></o:p></span></p>
+
+<p style='margin-right:119.0pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$line-&gt;<span class=SpellE><span
+class=GramE>setColor</span></span><span class=GramE>(</span>Color::DARK_GRAY());<o:p></o:p></span></p>
+
+<p style='margin-right:119.0pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>    </span><span
+style='mso-spacerun:yes'>  </span>$line-&gt;<span class=SpellE><span
+class=GramE>getLinePen</span></span><span class=GramE>(</span>)-&gt;<span
+class=SpellE>setWidth</span>(3);<o:p></o:p></span></p>
+
+<p style='margin-right:119.0pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$line-&gt;<span class=SpellE><span
+class=GramE>getPointer</span></span><span class=GramE>(</span>)-&gt;<span
+class=SpellE>setVisible</span>(true);<o:p></o:p></span></p>
+
+<p style='margin-right:119.0pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$line-&gt;<span class=SpellE><span
+class=GramE>getPointer</span></span><span class=GramE>(</span>)-&gt;<span
+class=SpellE>setStyle</span>(<span class=SpellE>PointerStyle</span>::$CIRCLE);<o:p></o:p></span></p>
+
+<p style='margin-right:119.0pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$chart1-&gt;<span class=GramE>getChart(</span>)-&gt;getExport()-&gt;getImage()-&gt;getHTML5()-&gt;save($path.&quot;\\TChart.html&quot;);<span
+style='mso-tab-count:1'>            </span><o:p></o:p></span></p>
+
+<p style='margin-right:119.0pt'>This code will create an html file containing the lines necessary in order to execute or html 5 Chart.</p>
+
+<p style='margin-right:119.0pt'>You can find an example of how to use it in the Features Demo found in the  <span class=SpellE><strong>Exports</strong></span><strong> -&gt; HTML5 -&gt; HTML5 export</strong> folder.</p>
+
+<h3 style='margin-right:178.5pt'><a name=LiveCharts><span style='mso-fareast-font-family:
+"Times New Roman"'>Live HTML5 Charts</span></a><span style='mso-fareast-font-family:
+"Times New Roman"'><o:p></o:p></span></h3>
+
+<p style='margin-right:148.75pt'>As we have seen in Tutorial 11, the latest version of TeeChart foor PHP includes a version of <span class=SpellE>TeeChart</span> JavaScript within its source code, which allows us on the one hand to use the javascript version independently to produce the Chart in our browser directly using javascript code. Or on the ohter hand, we can continue using our PHP code to create the Chart and then export it to a javascript Chart, thereby obtaining a javascript Chart on our live page without actually having to use a single line of javascript code.</p>
+<p style='margin-right:148.75pt'>Not all Series types are available for this type of export. In the Features Demo you can find an example whereall the Series types available are shown.New Series types will be incorporated with the release of future versions.</p>
+
+<p style='margin-right:148.75pt'>An example can be found in the<span
+class=SpellE>Features</span> demo in <span class=SpellE><strong>Features</strong></span><strong> -&gt;JScript -&gt; TeeChartJavaScript</strong></p>
+
+<p style='margin-right:148.75pt'>Other working examples where different types os Series are used can be found in the  <span
+class=SpellE>Features</span> demo in<strong> Features -&gt;JScript -&gt; Series -&gt; …</strong></p>
+
+<p style='margin-right:148.75pt'><o:p>&nbsp;</o:p></p>
+
+<h4 style='margin-right:208.25pt'><a name=How-toLive><span lang=EN-US
+style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US'>How
+to export to a live HTML5 chart</span></a><span lang=EN-US style='mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US'><o:p></o:p></span></h4>
+
+<p style='margin-right:178.5pt'>We have two options open to us when we eport our Chart to javascript (live)<br>
+</p>
+
+<p style='margin-right:178.5pt'>We can export the Chart to a file in which we generate an HTML file with the necessary code for our browser to show the code in javascript<span class=GramE> :</span></p>
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'>$chart1-&gt;<span
+class=GramE>getChart(</span>)-&gt;getExport()-&gt;getImage()-&gt;getJavaScript()-&gt;SaveToFile('jschartToolTip.html',
+$<span class=SpellE>chartName</span>);<o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'>Or we can export directly to a stream which will allow us to draw the Chart directly in the browser without having to save the code in a file beforehand.</p>
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'>echo<span
+style='mso-spacerun:yes'> 
+</span>$chart1-&gt;getChart()-&gt;getExport()-&gt;getImage()-&gt;getJavaScript()-&gt;Render($chartName)-&gt;toString();<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'>The  $<span class=SpellE>chartName parameter is optional. It will be used as the id when we need to use the name of the Chart</span> <span class="SpellE">in the javascript code  used. If this parameter isn't included, &quot;chart1&quot;</span> will be used by default.</p>
+<p style='margin-right:178.5pt'>You can find an working example in the Fea<span
+class=SpellE>tures</span> demo in the <span class=SpellE>JScript folder</span>.</p>
+
+<p style='margin-right:178.5pt'>Below is an example with full code<span
+class=GramE> :</span></p>
+
+<p style='margin-right:178.5pt'><span class=GramE><span lang=EN-US
+style='mso-ansi-language:EN-US'>&lt;?<span class=SpellE>php</span></span></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>// JavaScript Export Example that shows
+the use of <span class=SpellE>TipTool</span> <o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span><o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>//Includes<o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span><span class=GramE>include</span>
+&quot;../../../sources/<span class=SpellE>TChart.php</span>&quot;;<span
+style='mso-spacerun:yes'>        </span><o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>// Assign Header text<o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$chart1 = new <span class=SpellE><span
+class=GramE>TChart</span></span><span class=GramE>(</span>500,350);<o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>                               </span><o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>// Add Series to the Chart<o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$line = new <span class=GramE>Line(</span>$chart1-&gt;<span
+class=SpellE>getChart</span>());<o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$line-&gt;<span class=SpellE><span
+class=GramE>fillSampleValues</span></span><span class=GramE>(</span>6);<o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$line-&gt;<span class=SpellE><span
+class=GramE>getPointer</span></span><span class=GramE>(</span>)-&gt;<span
+class=SpellE>setVisible</span>(true);<o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span><o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$<span class=SpellE>tipTool</span> = new <span
+class=GramE>ToolTip(</span>$chart1-&gt;<span class=SpellE>getChart</span>());<o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$<span class=SpellE>tipTool</span>-&gt;<span
+class=SpellE><span class=GramE>setSeries</span></span><span class=GramE>(</span>$line);<span
+style='mso-spacerun:yes'>      </span><o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$<span class=SpellE>tipTool</span>-&gt;<span
+class=SpellE><span class=GramE>getFont</span></span><span class=GramE>(</span>)-&gt;<span
+class=SpellE>setName</span>('Tahoma');<o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$<span class=SpellE>tipTool</span>-&gt;<span
+class=SpellE><span class=GramE>getFont</span></span><span class=GramE>(</span>)-&gt;<span
+class=SpellE>setSize</span>(20);<o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$<span class=SpellE>tipTool</span>-&gt;<span
+class=SpellE><span class=GramE>getFont</span></span><span class=GramE>(</span>)-&gt;<span
+class=SpellE>setColor</span>(Color::RED());<o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span><o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$<span class=SpellE>tipTool</span>-&gt;<span
+class=SpellE><span class=GramE>setOnShow</span></span><span class=GramE>(&quot;</span><o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>        </span><span class=GramE>function(</span><span
+class=SpellE>tool,series,index</span>) { scaling=2; <span class=SpellE>poindex</span>=index;
+}<span style='mso-spacerun:yes'>        </span><o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>&quot;);<o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span><o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$<span class=SpellE>tipTool</span>-&gt;<span
+class=SpellE><span class=GramE>setOnHide</span></span><span class=GramE>(&quot;</span><o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>        </span><span class=GramE>function(</span>) {
+scaling=0; <span class=SpellE>poindex</span>=-1; }<o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>&quot;);<o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span><o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$<span class=SpellE>tipTool</span>-&gt;<span
+class=SpellE><span class=GramE>setOnGetText</span></span><span class=GramE>('</span><o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>        </span><span class=GramE>function(</span><span
+class=SpellE>tool,text</span>) { return &quot;Text:\<span class=SpellE>n&quot;+text</span>;
+}<o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>');<o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>// In case you want to save to a file<o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>$chart1-&gt;<span class=GramE>getChart(</span>)-&gt;getExport()-&gt;getImage()-&gt;getJavaScript()-&gt;SaveToFile('jschartToolTip.html');<span
+style='mso-spacerun:yes'>         </span><o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'>?&gt;<span
+style='mso-spacerun:yes'>      </span><o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span class=GramE><span lang=EN-US
+style='mso-ansi-language:EN-US'>&lt;?<span class=SpellE>php</span></span></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><span style='mso-spacerun:yes'> 
+</span><o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>  </span>echo<span style='mso-spacerun:yes'> 
+</span>$chart1-&gt;getChart()-&gt;getExport()-&gt;getImage()-&gt;getJavaScript()-&gt;Render()-&gt;toString();
+<span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
+
+<p style='margin-right:178.5pt'>?&gt;</p>
+
+<p style='margin-right:178.5pt'><o:p>&nbsp;</o:p></p>
+
+<h4 style='margin-right:238.0pt'><a name=JSTools></a><span class=SpellE><span
+style='mso-bookmark:JSTools'><span style='mso-fareast-font-family:"Times New Roman"'>Javascript</span></span></span><span
+style='mso-bookmark:JSTools'><span style='mso-fareast-font-family:"Times New Roman"'>/HTML5
+Chart Tools</span></span><span style='mso-fareast-font-family:"Times New Roman"'>
+<o:p></o:p></span></h4>
+
+<p style='margin-right:208.25pt'>The functionality of  JavaScript included in the PHP version allow us to add various  Tools to our Chart easily. These can only be used when exporting a live Chart.<span style='mso-spacerun:yes'>  The </span>Tools available are:</p>
+<p style='margin-right:208.25pt'><span class=SpellE>Annotation</span></p>
+
+<p style='margin-right:208.25pt'>This tool allows us to add one or various annotations to our Chart. You can se the properties which are available in the Help Library.<br>
+  You can find an example in the <span class=SpellE>Features</span> demo in <span
+class=SpellE><strong>Features</strong></span><strong> -&gt;JScript -&gt; Annotation</strong></p>
+<p style='margin-right:208.25pt'><span style='mso-spacerun:yes'>      </span><span
+lang=EN-US style='mso-ansi-language:EN-US'>$chart1-&gt;<span class=SpellE><span
+class=GramE>getChart</span></span><span class=GramE>(</span>)-&gt;<span
+class=SpellE>getTools</span>()-&gt;add(new Annotation());<o:p></o:p></span></p>
+
+<p style='margin-right:208.25pt'><span lang=EN-US style='mso-ansi-language:
+EN-US'><span style='mso-spacerun:yes'>      </span>$chart1-&gt;<span
+class=GramE>getChart(</span>)-&gt;getTools()-&gt;getTool(0)-&gt;setText(&quot;Annotation&quot;);<o:p></o:p></span></p>
+
+<p style='margin-right:208.25pt'><span lang=EN-US style='mso-ansi-language:
+EN-US'><span style='mso-spacerun:yes'>      </span>$chart1-&gt;<span
+class=SpellE><span class=GramE>getChart</span></span><span class=GramE>(</span>)-&gt;<span
+class=SpellE>getTools</span>()-&gt;<span class=SpellE>getTool</span>(0)-&gt;<span
+class=SpellE>setLeft</span>(100);<o:p></o:p></span></p>
+
+<p style='margin-right:208.25pt'><span lang=EN-US style='mso-ansi-language:
+EN-US'><span style='mso-spacerun:yes'>      </span>$chart1-&gt;<span
+class=SpellE><span class=GramE>getChart</span></span><span class=GramE>(</span>)-&gt;<span
+class=SpellE>getTools</span>()-&gt;<span class=SpellE>getTool</span>(0)-&gt;<span
+class=SpellE>setTop</span>(100);<o:p></o:p></span></p>
+
+<p style='margin-right:208.25pt'>Cursor</p>
+
+<p style='margin-right:208.25pt'>If we use the Cursor tool, we can show different cursors in the Chart. These can be customised to your liking by changing properties like colour, width and length and making it follow the movements on the mouse.</p>
+<p style='margin-right:208.25pt'>It incorporates an event (assigned as a property) OnChange which allows us to add javascript within our page.Change of the This will be assigned as text, and will be executed in the event OnChange of the Cursor.</p>
+<p style='margin-right:208.25pt'>A example can be found in the <span
+class=SpellE>Features</span> demo in <span class=SpellE><strong>Features</strong></span><strong> -&gt;JScript -&gt; Cursor</strong></p>
+
+<p style='margin-right:208.25pt'><span class=SpellE>Scroller</span></p>
+
+<p style='margin-right:208.25pt'>The Scroller Tool lets us select a specific area of the Chart when it contains a lot of data and is difficult to appreciate small details. We can specify the desired size of the chart with all the data, and within this area specify what we want to see in detail, which will be shown in another chart. We  have the option to enlarge or move this selected area easily  with the mouse.</p>
+<p style='margin-right:208.25pt'>Apart from the tool properties  which allow you to customize size, select areas, among others, it also includes the event (assigned as property) OnChanging,  which allows you to add javascript code within your page. This is assigned as text, and will be implemented in the Cursor OnChanging event.</p>
+<p style='margin-right:208.25pt'>You can find an example in the <span
+class=SpellE>Features</span> demo in <span class=SpellE><strong>Features</strong></span><strong> -&gt;JScript -&gt; Scroller</strong></p>
+
+<p style='margin-right:208.25pt'>Slider</p>
+
+<p style='margin-right:208.25pt'>The Slider Tool has a similar function to the Scroller Tool, allowing us to select a maximum and minimum value to be displayed in our Chart, but with the difference that it doesn't create another chart with all the data, but adds a slider component in the position assigned by us instead. This allows us to move through all the chart data with the mouse.</p>
+<p style='margin-right:208.25pt'>It also incorporates the property OnChanging event.</p>
+<p style='margin-right:208.25pt'>You can find an example in the <span
+class=SpellE>Features</span> demo in <span class=SpellE><strong>Features</strong></span><strong> -&gt;JScript -&gt; Slider</strong></p>
+
+<p style='margin-right:208.25pt'><span class=SpellE>ToolTip</span></p>
+
+<p>ToolTip Tool is an essential tool for many types of chart. It allows you to display a label containing a text (eg. the value) when the point of the mouse cursor passes over a specified point and making it disappear as the cursor moves away from the pointhovering above the same point, and hide to get away from the point.</p>
+<p>This allows us to assign different values &#8203;&#8203;for OnShow events, and OnGetText OnHide using the same properties.</p>
+<p style='margin-right:208.25pt'>You can find an example in the <span
+class=SpellE1>Features</span> demo in <span class=SpellE><strong>Features</strong></span><strong> -&gt;JScript -&gt; ToolTip</strong></p>
+
+<p style='margin-right:208.25pt'><o:p>&nbsp;</o:p></p>
+
+<h4 style='margin-right:267.75pt'><a name=CustomCode><span lang=EN-US
+style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US'>Use
+Custom code to enhance the Chart on the page</span></a><span lang=EN-US
+style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US'><o:p></o:p></span></h4>
+
+<p style='margin-right:238.0pt'><br>
+</p>
+
+<p>Since the PHP version allows us to easily add javascript code to our pages, adding the reference to teechart.js gives us the option to improve or customize our javascript Chart using  javascript.</p>
+<p>Inside the folder &quot;Docs&quot; of TeeChart for PHP you will find the necessary documentation of TeeChart javascript, together with the functions in the event that the developer wishes to use jscript code into their pages.</p>
+<p>&nbsp;</p>
+<div class=MsoNormal align=center style='margin-right:238.0pt;text-align:center'><span
+style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p class=MsoNormal style='margin-right:238.0pt'><span style='font-size:9.0pt;
+font-family:"Verdana","sans-serif"'><br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></p>
+
+<div align=center>
+
+<table class=Tablanormal border=0 cellspacing=0 cellpadding=0 width=359
+ style='width:269.25pt;mso-cellspacing:0cm;mso-yfti-tbllook:1184;mso-padding-alt:
+ 5.25pt 5.25pt 5.25pt 5.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width="42%" valign=top style='width:42.0%;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><a href="tutorial11.htm"><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";mso-no-proof:yes'><img border=0 width=135
+  height=81 id="_x0000_i1029" src="timages/backtut.gif"></span></a><span
+  style='font-size:9.0pt;font-family:"Verdana","sans-serif"'><o:p></o:p></span></p>
+  </td>
+  <td width="58%" valign=top style='width:58.0%;background:white;padding:5.25pt 5.25pt 5.25pt 5.25pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div class=MsoNormal align=center style='margin-right:238.0pt;text-align:center'><span
+style='font-size:9.0pt;font-family:"Verdana","sans-serif"'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p class=MsoNormal style='margin-right:238.0pt'><span class=GramE><span
+lang=EN-GB style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-GB'>© 1996-2012 <span class=SpellE>Steema</span> Software
+SL.</span></span><span lang=EN-GB style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-GB'> All rights reserved. <o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

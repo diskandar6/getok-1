@@ -1,0 +1,1 @@
+<?php $var=array('theme'=>'pro','status'=>'1','position'=>'1','browser_title'=>'Admin','page_title'=>'Admin','skin'=>'white-skin','subtheme'=>'admin',);?>

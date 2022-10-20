@@ -1,0 +1,29 @@
+==========================================================
+ TeeChart for PHP version 2019
+
+ Copyright (c) 2006-2019
+ by Steema Software SL
+ All Rights Reserved.
+
+ http://www.teechart.com
+ http://support.steema.com
+ http://www.steema.com 
+ email: general: info@steema.com
+ support forum: http://www.teechart.net/support/index.php
+
+==========================================================
+
+
+TeeChart for PHP v2019 support web:
+
+http://support.steema.com
+
+Forums at:
+
+http://www.teechart.net/support/modules.php?name=Forums
+
+Stop press Information posted at:
+
+http://www.steema.com/support/support.html
+
+------------------------------------------------------------

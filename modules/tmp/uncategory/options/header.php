@@ -1,0 +1,1 @@
+<?php $var=array('theme'=>'pro','status'=>'1','skin'=>'white-skin','subtheme'=>'admin','position'=>'1','browser_title'=>'Options','menu_title'=>'Options','menu_icon'=>'fas fa-cog','parent_menu'=>'Settings','level'=>'admin');?>

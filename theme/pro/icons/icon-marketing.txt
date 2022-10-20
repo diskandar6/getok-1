@@ -1,0 +1,13 @@
+fas,fa fa-ad
+fas,fa fa-bullhorn
+fas,fa fa-bullseye
+fas,fa fa-comment-dollar
+fas,fa fa-comments-dollar
+fas,fa fa-envelope-open-text
+fas,fa fa-funnel-dollar
+far,fas,fa fa-lightbulb
+fas,fa fa-mail-bulk
+fas,fa fa-poll
+fas,fa fa-poll-h
+fas,fa fa-search-dollar
+fas,fa fa-search-location
